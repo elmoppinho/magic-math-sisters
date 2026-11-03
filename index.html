@@ -14,8 +14,8 @@ const questions=[
 {type:'Rechnen',q:'Bestimme die Eigenwerte von \\(A=\\begin{pmatrix}-1&0\\\\0&2\\end{pmatrix}\\).',a:['\\(-1\\) und \\(2\\)','\\(1\\) und \\(-2\\)','\\(-2\\) und \\(1\\)','\\(0\\) und \\(1\\)'],ok:0,why:'Die Eigenwerte einer Diagonalmatrix sind ihre Diagonaleinträge.'},
 {type:'Verständnis',q:'Welche Aussage über \\(u_{tt}=c^2u_{xx}\\) für \\(c>0\\) ist richtig?',a:['Es beschreibt Wärmeleitung.','\\(c\\) ist die Ausbreitungsgeschwindigkeit.','Alle Lösungen zerfallen exponentiell.','Randbedingungen sind immer unnötig.'],ok:1,why:'Die Wellengleichung besitzt endliche Ausbreitungsgeschwindigkeit.'}
 ];
-const treeArt={};for(const name of ['oak','willow']){const img=new Image();img.src='assets/tree-'+name+'-v10.png';treeArt[name]=img;}
-const scenic=new Image();scenic.src='assets/castle-v10.png';const terrainArt=new Image();terrainArt.src='assets/terrain-v10.png';const dragonImg=new Image();dragonImg.src='assets/dragon-v10.png';const enemyArt={};for(const kind of ['slime','beetle','bat']){let img=new Image();img.src='assets/enemy-'+kind+'-v10.png';enemyArt[kind]=img;}const spriteSheets={};for(const name of ['helga','emmy']){const img=new Image();img.src='assets/'+name+'.png';spriteSheets[name]=img;}
+const treeArt={};for(const name of ['oak','willow']){const img=new Image();img.src='assets/tree-'+name+'-v11.png';treeArt[name]=img;}
+const scenic=new Image();scenic.src='assets/castle-v11.png';const terrainArt=new Image();terrainArt.src='assets/terrain-v10.png';const dragonImg=new Image();dragonImg.src='assets/dragon-v11.png';const enemyArt={};for(const kind of ['slime','beetle','bat']){let img=new Image();img.src='assets/enemy-'+kind+'-v10.png';enemyArt[kind]=img;}const spriteSheets={};for(const name of ['helga','emmy']){const img=new Image();img.src='assets/'+name+'.png';spriteSheets[name]=img;}
 let dragon={x:2530,hp:3,max:3,pending:false,dead:false,hitCooldown:0,shots:[]};let quizVersion=0;let bridgeAnimating=0;let bridgeParticles=[];let screenShake=0;
 let obstacles=[],waterDrops=[],keys={},lastShot=0,hero=0,diamonds=0,fire=false,bridge=false,gate=false,boss=false,paused=false,active=null,qi=0,shots=[],enemies=[],gems=[];
 const W=2700,ground=390;let tick=0,particles=[],facing=1,invuln=0,interactionLock=0;let p={x:50,y:330,vx:0,vy:0,on:false};
@@ -41,12 +41,18 @@ let onGap=p.x+19>1040&&p.x+9<1220&&!bridge;if(p.y+38>=ground&&!onGap&&oldBottom<
  const b=enemyBox(e);const stomping=e.type==='beetle'&&p.vy>1.5&&oldBottom<=b.y+12&&p.y+38>=b.y;
  if(stomping){e.alive=false;p.y=b.y-38;p.vy=-10;burst(e.x+18,b.y+10,'#ffe1a2',22);}
  else if(!invuln){p.x=Math.max(0,p.x-90);p.vy=-8;invuln=55;burst(p.x,p.y+18,'#ff7ab6',14)}
-}for(let e of enemies)if(e.alive){e.x=e.origin+Math.sin(tick*(e.type==='bat'?.035:.018)+e.origin)* (e.type==='bat'?62:28)}for(let s of shots){s.x+=11*(s.dir||1);if(s.spent)continue;for(let e of enemies){if(!e.alive)continue;const fireBox={x:s.x-9,y:s.y-6,w:18,h:12};const targetBox=enemyBox(e);if(overlap(fireBox,targetBox)){s.spent=true;if(e.type==='beetle'){burst(s.x,s.y,'#fff2a2',14)}else{e.alive=false;burst(e.x+14,targetBox.y+14,'#7ee9ff',22)}break}}if(!s.spent)for(const o of obstacles)if(o.hp>0&&overlap({x:s.x-9,y:s.y-6,w:18,h:12},o)){o.hp--;s.spent=true;burst(o.x+o.w/2,o.y+o.h/2,'#e3ba85',18);break}}if(p.x>2050&&!dragon.dead){
+}for(let e of enemies)if(e.alive){e.x=e.origin+Math.sin(tick*(e.type==='bat'?.035:.018)+e.origin)* (e.type==='bat'?62:28)}for(let s of shots){s.x+=11*(s.dir||1);if(s.spent)continue;for(let e of enemies){if(!e.alive)continue;const fireBox={x:s.x-9,y:s.y-6,w:18,h:12};const targetBox=enemyBox(e);if(overlap(fireBox,targetBox)){s.spent=true;if(e.type==='beetle'){burst(s.x,s.y,'#fff2a2',14)}else{e.alive=false;burst(e.x+14,targetBox.y+14,'#7ee9ff',22)}break}}if(!s.spent)for(const o of obstacles)if(o.hp>0&&overlap({x:s.x-9,y:s.y-6,w:18,h:12},o)){o.hp--;s.spent=true;burst(o.x+o.w/2,o.y+o.h/2,'#e3ba85',18);break}}// Dragon projectiles are simulated regardless of the player's position.
+ if(!dragon.dead){
+ dragon.shots.forEach(b=>{b.x+=b.vx;b.age=(b.age||0)+1;
+   if(Math.abs(p.x+18-b.x)<23&&Math.abs(p.y+22-b.y)<28&&!invuln){p.x=Math.max(0,p.x-65);p.vy=-7;invuln=65;screenShake=12;burst(p.x,p.y,'#ff6688',15);b.age=9999;}
+ });
+ dragon.shots=dragon.shots.filter(b=>b.age<260&&b.x>-60&&b.x<W+60);
+ }
+ if(p.x>2050&&!dragon.dead){
  dragon.x=2510+Math.sin(tick*.027)*95;
  if(dragon.hitCooldown>0)dragon.hitCooldown--;
- if(tick%115===0)dragon.shots.push({x:dragon.x-36,y:ground-80,vx:-5});
- for(const b of dragon.shots){b.x+=b.vx;if(Math.abs(p.x+18-b.x)<23&&Math.abs(p.y+22-b.y)<28&&!invuln){p.x=Math.max(0,p.x-65);p.vy=-7;invuln=65;screenShake=12;burst(p.x,p.y,'#ff6688',15)}}
- dragon.shots=dragon.shots.filter(b=>b.x>1900);
+ if(tick%115===0)dragon.shots.push({x:dragon.x-36,y:ground-80,vx:-5,age:0});
+
  for(const s of shots)if(!s.spent&&!dragon.pending&&!dragon.hitCooldown&&overlap({x:s.x-8,y:s.y-6,w:16,h:12},{x:dragon.x-44,y:ground-140+Math.sin(tick*.075)*8,w:88,h:100})){
  dragon.pending=true;dragon.hitCooldown=90;s.x=-9999;screenShake=12;burst(dragon.x,ground-70,'#ffbd6c',24);
  ask('🐉 Drachenmagie – Regeneration verhindern',()=>{dragon.hp--;dragon.pending=false;burst(dragon.x,ground-70,'#cf89ff',32);if(dragon.hp<=0){dragon.dead=true;boss=true;setTimeout(()=>alert('🏆 Geschafft! Der Drache ist besiegt.'),200)}});
@@ -173,8 +179,8 @@ if(!dragon.dead){
  if(dragonImg.complete&&dragonImg.naturalWidth)g.drawImage(dragonImg,(Math.floor(tick/9)%6)*256,0,256,224,dx-79,dy-16,158,138);
  else{ellipse(dx,dy+58,50,36,'#682d91')}
  if(p.x>1750){rect(660,64,270,18,'#241633');rect(664,68,262*(dragon.hp/dragon.max),10,'#ff527f');g.fillStyle='#ffe6bd';g.font='bold 14px system-ui';g.fillText('DRACHE · Treffer + Mathematik',670,60)}
- for(const b of dragon.shots){ellipse(b.x-cam,b.y,13,9,'#ff7d34');ellipse(b.x-cam,b.y,7,5,'#fff3b0')}
  }
+ for(const b of dragon.shots){ellipse(b.x-cam,b.y,13,9,'#ff7d34');ellipse(b.x-cam,b.y,7,5,'#fff3b0')}
  if(!invuln||tick%6<3)sprite(p.x-cam,p.y,hero,tick);
 for(let s of shots){ellipse(s.x-cam,s.y,15,8,'#f77c22');ellipse(s.x-cam,s.y,9,7,'#ffe57c');ellipse(s.x-cam,s.y,4,4,'#fffde6')}
 for(let i=particles.length-1;i>=0;i--){let q=particles[i];q.x+=q.vx;q.y+=q.vy;q.vy+=.12;q.life--;ellipse(q.x-cam,q.y,Math.max(1,q.life/12),Math.max(1,q.life/12),q.color);if(q.life<=0)particles.splice(i,1)}
