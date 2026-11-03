@@ -14,20 +14,34 @@ const questions=[
 {type:'Rechnen',q:'Bestimme die Eigenwerte von \\(A=\\begin{pmatrix}-1&0\\\\0&2\\end{pmatrix}\\).',a:['\\(-1\\) und \\(2\\)','\\(1\\) und \\(-2\\)','\\(-2\\) und \\(1\\)','\\(0\\) und \\(1\\)'],ok:0,why:'Die Eigenwerte einer Diagonalmatrix sind ihre Diagonaleinträge.'},
 {type:'Verständnis',q:'Welche Aussage über \\(u_{tt}=c^2u_{xx}\\) für \\(c>0\\) ist richtig?',a:['Es beschreibt Wärmeleitung.','\\(c\\) ist die Ausbreitungsgeschwindigkeit.','Alle Lösungen zerfallen exponentiell.','Randbedingungen sind immer unnötig.'],ok:1,why:'Die Wellengleichung besitzt endliche Ausbreitungsgeschwindigkeit.'}
 ];
-const treeArt={};for(const name of ['oak','willow']){const img=new Image();img.src='assets/tree-'+name+'.png';treeArt[name]=img;}
-const scenic=new Image();scenic.src='assets/castle-only-background.png';const terrainArt=new Image();terrainArt.src='assets/terrain-detailed.png';const dragonImg=new Image();dragonImg.src='assets/dragon.png';const spriteSheets={};for(const name of ['helga','emmy']){const img=new Image();img.src='assets/'+name+'.png';spriteSheets[name]=img;}
+const treeArt={};for(const name of ['oak','willow']){const img=new Image();img.src='assets/tree-'+name+'-v10.png';treeArt[name]=img;}
+const scenic=new Image();scenic.src='assets/castle-v10.png';const terrainArt=new Image();terrainArt.src='assets/terrain-v10.png';const dragonImg=new Image();dragonImg.src='assets/dragon-v10.png';const enemyArt={};for(const kind of ['slime','beetle','bat']){let img=new Image();img.src='assets/enemy-'+kind+'-v10.png';enemyArt[kind]=img;}const spriteSheets={};for(const name of ['helga','emmy']){const img=new Image();img.src='assets/'+name+'.png';spriteSheets[name]=img;}
 let dragon={x:2530,hp:3,max:3,pending:false,dead:false,hitCooldown:0,shots:[]};let quizVersion=0;let bridgeAnimating=0;let bridgeParticles=[];let screenShake=0;
 let obstacles=[],waterDrops=[],keys={},lastShot=0,hero=0,diamonds=0,fire=false,bridge=false,gate=false,boss=false,paused=false,active=null,qi=0,shots=[],enemies=[],gems=[];
 const W=2700,ground=390;let tick=0,particles=[],facing=1,invuln=0,interactionLock=0;let p={x:50,y:330,vx:0,vy:0,on:false};
-function reset(){dragon={x:2530,hp:3,max:3,pending:false,dead:false,hitCooldown:0,shots:[]};hero=0;diamonds=0;fire=false;bridge=false;bridgeAnimating=0;bridgeParticles=[];gate=false;boss=false;paused=false;interactionLock=0;qi=0;p={x:50,y:330,vx:0,vy:0,on:false};shots=[];enemies=[{x:690,origin:690,type:'slime',alive:true,w:36,h:32},{x:1480,origin:1480,type:'beetle',alive:true,w:42,h:24},{x:1810,origin:1810,type:'bat',alive:true,w:38,h:26},{x:2120,origin:2120,type:'slime',alive:true,w:36,h:32},{x:2390,origin:2390,type:'beetle',alive:true,w:42,h:24}];obstacles=[{x:765,y:ground-35,w:35,h:35,hp:2},{x:1610,y:ground-44,w:43,h:44,hp:3}];waterDrops=Array.from({length:45},(_,i)=>({x:1040+(i*37)%180,y:ground+15+(i*17)%85}));gems=Array.from({length:23},(_,i)=>({x:160+i*102,y:310-(i%3)*35,taken:false}));hud()}
+function reset(){dragon={x:2530,hp:3,max:3,pending:false,dead:false,hitCooldown:0,shots:[]};hero=0;diamonds=0;fire=false;bridge=false;bridgeAnimating=0;bridgeParticles=[];gate=false;boss=false;paused=false;interactionLock=0;qi=0;p={x:50,y:330,vx:0,vy:0,on:false};shots=[];enemies=[{x:690,origin:690,type:'slime',alive:true,w:36,h:32},{x:1480,origin:1480,type:'beetle',alive:true,w:42,h:30},{x:1810,origin:1810,type:'bat',alive:true,w:38,h:26},{x:2120,origin:2120,type:'slime',alive:true,w:36,h:32},{x:2390,origin:2390,type:'beetle',alive:true,w:42,h:30}];obstacles=[{x:765,y:ground-35,w:35,h:35,hp:2},{x:1610,y:ground-44,w:43,h:44,hp:3}];waterDrops=Array.from({length:45},(_,i)=>({x:1040+(i*37)%180,y:ground+15+(i*17)%85}));gems=Array.from({length:23},(_,i)=>({x:160+i*102,y:310-(i%3)*35,taken:false}));hud()}
 function hud(){document.getElementById('hud').textContent=`${hero?'Emmy':'Helga'} · Diamanten: ${diamonds} · Feuer: ${fire?'ja':'nein'} · Brücke: ${bridge?'offen':'gesperrt'}`}
 function ask(title,done){paused=true;active=done;let q=questions[qi++%questions.length];document.getElementById('quiz').style.display='block';document.getElementById('qt').textContent=title+' · '+q.type;document.getElementById('question').innerHTML=q.q;document.getElementById('feedback').textContent='';let a=document.getElementById('answers');a.innerHTML='';q.a.forEach((v,i)=>{let b=document.createElement('button');b.innerHTML='<strong>'+ 'ABCD'[i]+')</strong> '+v;b.onclick=()=>{if(i===q.ok){document.getElementById('feedback').innerHTML='✓ Richtig! '+q.why; if(window.MathJax?.typesetPromise)MathJax.typesetPromise([document.getElementById('feedback')]).catch(()=>{});[...a.children].forEach(x=>x.disabled=true);setTimeout(()=>{document.getElementById('quiz').style.display='none';paused=false;done();hud()},1100)}else{document.getElementById('feedback').innerHTML='Noch nicht. Hinweis: '+q.why; if(window.MathJax?.typesetPromise)MathJax.typesetPromise([document.getElementById('feedback')]).catch(()=>{})}};a.append(b)});const version=++quizVersion;
 const render=(attempt=0)=>{if(version!==quizVersion)return;if(window.MathJax?.typesetPromise){MathJax.typesetClear?.([document.getElementById('quiz')]);MathJax.typesetPromise([document.getElementById('quiz')]).catch(console.warn)}else if(attempt<45)setTimeout(()=>render(attempt+1),180);else{for(const el of [document.getElementById('question'),...document.getElementById('answers').children])el.innerHTML=el.innerHTML.replace(/\\\(/g,'').replace(/\\\)/g,'').replace(/'/g,'′').replace(/\\cdot/g,'·')}};render()}
 function overlap(a,b){return a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y}
 const triggers={fire:{x:529,y:ground-105,w:43,h:66},bridge:{x:964,y:ground-100,w:42,h:68}};
-function enemyBox(e){let y=e.type==='bat'?ground-108+Math.sin(tick*.07+e.origin)*20:ground-(e.type==='beetle'?27:37);return {x:e.x-3,y:y,w:e.w,h:e.h}}
+function enemyBox(e){let y=e.type==='bat'?ground-108+Math.sin(tick*.07+e.origin)*20:ground-(e.type==='beetle'?31:37);return {x:e.x-3,y:y,w:e.w,h:e.h}}
 function platforms(){return [{x:350,y:315,w:150},{x:850,y:300,w:140},{x:1280,y:320,w:150},{x:1760,y:290,w:180},{x:2300,y:315,w:130}]}
-function update(){if(paused)return;tick++;if(interactionLock>0)interactionLock--;if(bridgeAnimating>0&&bridgeAnimating<75)bridgeAnimating++;if(screenShake>0)screenShake--;if(invuln)invuln--;if(keys.KeyF)shoot();let speed=hero?4.2:5.3;let target=((keys.ArrowRight||keys.KeyD)?speed:0)-((keys.ArrowLeft||keys.KeyA)?speed:0);if(target)facing=Math.sign(target);p.vx+=(target-p.vx)*(target?0.23:0.17);if((keys.Space||keys.ArrowUp||keys.KeyW)&&p.on){p.vy=hero?-13:-12;p.on=false}let oldBottom=p.y+38;p.vy+=.58;p.x=Math.max(0,Math.min(W-35,p.x+p.vx));p.y+=p.vy;p.on=false;let onGap=p.x+19>1040&&p.x+9<1220&&!bridge;if(p.y+38>=ground&&!onGap&&oldBottom<=ground+15&&p.vy>=0){p.y=ground-38;p.vy=0;p.on=true}for(let b of platforms())if(p.x+27>b.x&&p.x<b.x+b.w&&oldBottom<=b.y+8&&p.y+38>=b.y&&p.vy>=0){p.y=b.y-38;p.vy=0;p.on=true}if(p.y>550){p.x=Math.max(40,p.x-180);p.y=240;p.vy=0;screenShake=12}for(let d of gems)if(!d.taken&&Math.abs(p.x-d.x)<28&&Math.abs(p.y-d.y)<40){d.taken=true;diamonds++;hud()}for(let e of enemies)if(e.alive&&overlap({x:p.x+5,y:p.y+5,w:25,h:32},enemyBox(e))){if(!invuln){p.x=Math.max(0,p.x-90);p.vy=-8;invuln=55;burst(p.x,p.y+18,"#ff7ab6",14)}}for(let e of enemies)if(e.alive){e.x=e.origin+Math.sin(tick*(e.type==='bat'?.035:.018)+e.origin)* (e.type==='bat'?62:28)}for(let s of shots){s.x+=11*(s.dir||1);if(s.spent)continue;for(let e of enemies){if(!e.alive)continue;const fireBox={x:s.x-9,y:s.y-6,w:18,h:12};const targetBox=enemyBox(e);if(overlap(fireBox,targetBox)){e.alive=false;s.spent=true;burst(e.x+14,ground-24,"#7ee9ff",22);break}}if(!s.spent)for(const o of obstacles)if(o.hp>0&&overlap({x:s.x-9,y:s.y-6,w:18,h:12},o)){o.hp--;s.spent=true;burst(o.x+o.w/2,o.y+o.h/2,'#e3ba85',18);break}}if(p.x>2050&&!dragon.dead){
+function update(){if(paused)return;tick++;if(interactionLock>0)interactionLock--;if(bridgeAnimating>0&&bridgeAnimating<75)bridgeAnimating++;if(screenShake>0)screenShake--;if(invuln)invuln--;if(keys.KeyF)shoot();let speed=hero?4.2:5.3;let target=((keys.ArrowRight||keys.KeyD)?speed:0)-((keys.ArrowLeft||keys.KeyA)?speed:0);if(target)facing=Math.sign(target);p.vx+=(target-p.vx)*(target?0.23:0.17);if((keys.Space||keys.ArrowUp||keys.KeyW)&&p.on){p.vy=hero?-13:-12;p.on=false}let oldBottom=p.y+38;p.vy+=.58;p.x=Math.max(0,Math.min(W-35,p.x+p.vx));p.y+=p.vy;p.on=false;
+// Solid breakable blocks: collision on all four sides, never walk through them.
+for(const o of obstacles)if(o.hp>0){const hb={x:p.x+4,y:p.y+2,w:28,h:36};if(overlap(hb,o)){
+ const prevX=p.x-p.vx,prevY=p.y-p.vy;
+ if(prevY+38<=o.y+7&&p.vy>=0){p.y=o.y-38;p.vy=0;p.on=true;}
+ else if(prevY>=o.y+o.h-5&&p.vy<0){p.y=o.y+o.h;p.vy=0;}
+ else if(prevX+32<=o.x+5&&p.vx>0){p.x=o.x-32;p.vx=0;}
+ else if(prevX+4>=o.x+o.w-5&&p.vx<0){p.x=o.x+o.w-4;p.vx=0;}
+ else {p.x=prevX;p.vx=0;}
+}}
+let onGap=p.x+19>1040&&p.x+9<1220&&!bridge;if(p.y+38>=ground&&!onGap&&oldBottom<=ground+15&&p.vy>=0){p.y=ground-38;p.vy=0;p.on=true}for(let b of platforms())if(p.x+27>b.x&&p.x<b.x+b.w&&oldBottom<=b.y+8&&p.y+38>=b.y&&p.vy>=0){p.y=b.y-38;p.vy=0;p.on=true}if(p.y>550){p.x=Math.max(40,p.x-180);p.y=240;p.vy=0;screenShake=12}for(let d of gems)if(!d.taken&&Math.abs(p.x-d.x)<28&&Math.abs(p.y-d.y)<40){d.taken=true;diamonds++;hud()}for(let e of enemies)if(e.alive&&overlap({x:p.x+5,y:p.y+5,w:25,h:32},enemyBox(e))){
+ const b=enemyBox(e);const stomping=e.type==='beetle'&&p.vy>1.5&&oldBottom<=b.y+12&&p.y+38>=b.y;
+ if(stomping){e.alive=false;p.y=b.y-38;p.vy=-10;burst(e.x+18,b.y+10,'#ffe1a2',22);}
+ else if(!invuln){p.x=Math.max(0,p.x-90);p.vy=-8;invuln=55;burst(p.x,p.y+18,'#ff7ab6',14)}
+}for(let e of enemies)if(e.alive){e.x=e.origin+Math.sin(tick*(e.type==='bat'?.035:.018)+e.origin)* (e.type==='bat'?62:28)}for(let s of shots){s.x+=11*(s.dir||1);if(s.spent)continue;for(let e of enemies){if(!e.alive)continue;const fireBox={x:s.x-9,y:s.y-6,w:18,h:12};const targetBox=enemyBox(e);if(overlap(fireBox,targetBox)){s.spent=true;if(e.type==='beetle'){burst(s.x,s.y,'#fff2a2',14)}else{e.alive=false;burst(e.x+14,targetBox.y+14,'#7ee9ff',22)}break}}if(!s.spent)for(const o of obstacles)if(o.hp>0&&overlap({x:s.x-9,y:s.y-6,w:18,h:12},o)){o.hp--;s.spent=true;burst(o.x+o.w/2,o.y+o.h/2,'#e3ba85',18);break}}if(p.x>2050&&!dragon.dead){
  dragon.x=2510+Math.sin(tick*.027)*95;
  if(dragon.hitCooldown>0)dragon.hitCooldown--;
  if(tick%115===0)dragon.shots.push({x:dragon.x-36,y:ground-80,vx:-5});
@@ -130,7 +144,7 @@ function drawDecorations(cam){
 
 function draw(){let cam=Math.max(0,Math.min(W-960,p.x-240));g.clearRect(0,0,960,480);g.save();if(screenShake)g.translate(Math.sin(tick*3)*3,0);let sky=g.createLinearGradient(0,0,0,470);sky.addColorStop(0,'#514e9a');sky.addColorStop(.52,'#e9a5a6');sky.addColorStop(1,'#f9d9a0');g.fillStyle=sky;g.fillRect(0,0,960,480);
 if(scenic.complete&&scenic.naturalWidth){
-  g.save();g.globalAlpha=.94;
+  g.save();g.globalAlpha=.87;
   let drift=(cam*.075)%1180;
   g.drawImage(scenic,-drift,0,1180,390);g.drawImage(scenic,1180-drift,0,1180,390);
   g.restore();
@@ -138,26 +152,25 @@ if(scenic.complete&&scenic.naturalWidth){
  drawClouds(cam);drawSunbeams(cam);
 // Mountains and distant castle move slower than foreground.
 // Distant castle and mountains are already painted into the high-detail backdrop.
-for(let i=0;i<5;i++){let x=i*650+90-cam*.35;let im=treeArt[i%3?'oak':'willow'];if(im.complete&&im.naturalWidth)g.drawImage(im,Math.round(x-130),90,260,302);else tree(x,380,1.2,false)}drawWaterfall(cam);drawRuins(cam);
+for(let i=0;i<3;i++){let x=i*1000+90-cam*.35;let im=treeArt[i%3?'oak':'willow'];if(im.complete&&im.naturalWidth)g.drawImage(im,Math.round(x-130),90,260,302);else tree(x,380,1.2,false)}drawWaterfall(cam);drawRuins(cam);
 // Floating dust and fireflies.
 for(let i=0;i<35;i++){let x=((i*127+Math.sin(tick*.012+i)*22-cam*.5)%1100+1100)%1100-40,y=90+(i*83)%285;ellipse(x,y,1.2+Math.sin(tick*.05+i)*.5,1.2,'#fff3b7aa')}
-for(let i=0;i<4;i++){let x=i*800+110-cam*.72;let im=treeArt[i%2?'oak':'willow'];if(im.complete&&im.naturalWidth)g.drawImage(im,Math.round(x-135),90,270,320)}drawVines(cam);
+for(let i=0;i<3;i++){let x=i*1050+110-cam*.72;let im=treeArt[i%2?'oak':'willow'];if(im.complete&&im.naturalWidth)g.drawImage(im,Math.round(x-135),90,270,320)}drawVines(cam);
 // Ground and stonework.
 drawGround(cam);drawBridge(cam);
 for(let b of platforms()){g.save();g.beginPath();g.rect(b.x-cam,b.y-8,b.w,49);g.clip();if(terrainArt.complete&&terrainArt.naturalWidth){for(let x=b.x;x<b.x+b.w;x+=128)g.drawImage(terrainArt,x-cam,b.y-8,128,128)}else{rect(b.x-cam,b.y,b.w,35,'#635770');rect(b.x-cam,b.y-6,b.w,9,'#b4d66a')}g.restore()}
 drawDecorations(cam);for(let d of gems)if(!d.taken){let y=d.y+Math.sin(tick*.06+d.x)*4;g.fillStyle='#9d6aff';g.beginPath();g.moveTo(d.x-cam,y-14);g.lineTo(d.x+10-cam,y-4);g.lineTo(d.x+8-cam,y+7);g.lineTo(d.x-cam,y+16);g.lineTo(d.x-9-cam,y+4);g.lineTo(d.x-10-cam,y-5);g.fill();rect(d.x-3-cam,y-9,5,13,'#f8ddff')}
 for(let o of obstacles)if(o.hp>0){let x=o.x-cam;rect(x,o.y,o.w,o.h,'#695d72');rect(x+3,o.y+3,o.w-6,7,'#a596a1');for(let j=0;j<o.hp;j++)rect(x+4+j*10,o.y+14,7,4,'#c4b5a2');rect(x+5,o.y+o.h-10,o.w-10,4,'#3d455b')}
 for(let e of enemies)if(e.alive){let b=enemyBox(e),x=b.x-cam,y=b.y;
- if(e.type==='slime'){ellipse(x+19,y+26,21,6,'#192a4266');ellipse(x+19,y+17,19,16,'#176a9c');ellipse(x+19,y+12,16,13,'#61d4ed');ellipse(x+12,y+7,7,4,'#b9faff');ellipse(x+13,y+17,2.5,4,'#19283c');ellipse(x+26,y+17,2.5,4,'#19283c');rect(x+16,y+24,8,2,'#1b4868')}
- else if(e.type==='beetle'){ellipse(x+21,y+20,23,7,'#1b2445');ellipse(x+21,y+11,21,12,'#493b84');ellipse(x+21,y+6,17,9,'#b35fbd');rect(x+12,y+5,7,4,'#f1c4f0');for(let k=0;k<3;k++){rect(x+5+k*12,y+21,4,5,'#342c59')}ellipse(x+32,y+12,3,3,'#f4e7ab')}
- else {g.fillStyle='#31224c';g.beginPath();g.moveTo(x+19,y+12);g.lineTo(x-5,y+2+Math.sin(tick*.25)*7);g.lineTo(x+4,y+25);g.lineTo(x+19,y+19);g.lineTo(x+35,y+25);g.lineTo(x+45,y+2+Math.sin(tick*.25)*7);g.closePath();g.fill();ellipse(x+19,y+14,10,10,'#64417e');ellipse(x+15,y+12,2,2,'#ffb4a8');ellipse(x+23,y+12,2,2,'#ffb4a8')}
+ let img=enemyArt[e.type];if(img.complete&&img.naturalWidth){g.drawImage(img,(Math.floor(tick/(e.type==='bat'?7:13))%4)*96,0,96,96,Math.round(x-7),Math.round(y-19),Math.round(b.w+14),Math.round(b.h+25));}
+ else {ellipse(x+b.w/2,y+b.h/2,b.w/2,b.h/2,e.type==='beetle'?'#987a78':e.type==='bat'?'#654275':'#42c5e0')}
 }
 for(let [x,symbol,enabled] of [[550,'✦',!fire],[985,'?',!bridge],[2350,'⚑',!dragon.dead]])if(enabled){rect(x-21-cam,ground-105,42,66,'#30284f');rect(x-18-cam,ground-101,36,59,'#61518a');rect(x-14-cam,ground-97,28,51,'#322a59');g.font='bold 29px system-ui';g.textAlign='center';g.fillStyle='#ffe7a0';g.fillText(symbol,x-cam,ground-60);g.textAlign='left'}
 // Flowers and mushrooms in foreground.
 for(let i=0;i<135;i++){let x=i*21-cam,y=ground-8;g.strokeStyle=i%3?'#4cba66':'#8dd45f';g.lineWidth=1.5;g.beginPath();g.moveTo(x,y);g.quadraticCurveTo(x+Math.sin(tick*.045+i)*4,y-9,x+Math.sin(tick*.045+i)*6,y-15-(i%5)*2);g.stroke();if(i%7===0){ellipse(x-3,y-15,3,3,'#f4a5d4');ellipse(x+3,y-15,3,3,'#f6e5a1')}}
 if(!dragon.dead){
  let dx=dragon.x-cam,dy=ground-165+Math.sin(tick*.075)*8;
- if(dragonImg.complete&&dragonImg.naturalWidth)g.drawImage(dragonImg,(Math.floor(tick/9)%6)*128,0,128,112,dx-64,dy,128,112);
+ if(dragonImg.complete&&dragonImg.naturalWidth)g.drawImage(dragonImg,(Math.floor(tick/9)%6)*256,0,256,224,dx-79,dy-16,158,138);
  else{ellipse(dx,dy+58,50,36,'#682d91')}
  if(p.x>1750){rect(660,64,270,18,'#241633');rect(664,68,262*(dragon.hp/dragon.max),10,'#ff527f');g.fillStyle='#ffe6bd';g.font='bold 14px system-ui';g.fillText('DRACHE · Treffer + Mathematik',670,60)}
  for(const b of dragon.shots){ellipse(b.x-cam,b.y,13,9,'#ff7d34');ellipse(b.x-cam,b.y,7,5,'#fff3b0')}
