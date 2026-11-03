@@ -15,7 +15,7 @@ const questions=[
 {type:'Verständnis',q:'Welche Aussage über \\(u_{tt}=c^2u_{xx}\\) für \\(c>0\\) ist richtig?',a:['Es beschreibt Wärmeleitung.','\\(c\\) ist die Ausbreitungsgeschwindigkeit.','Alle Lösungen zerfallen exponentiell.','Randbedingungen sind immer unnötig.'],ok:1,why:'Die Wellengleichung besitzt endliche Ausbreitungsgeschwindigkeit.'}
 ];
 const treeArt={};for(const name of ['oak','willow']){const img=new Image();img.src='assets/tree-'+name+'-v11.png';treeArt[name]=img;}
-const scenic=new Image();scenic.src='assets/castle-v11.png';const terrainArt=new Image();terrainArt.src='assets/terrain-v10.png';const dragonImg=new Image();dragonImg.src='assets/dragon-v11.png';const enemyArt={};for(const kind of ['slime','beetle','bat']){let img=new Image();img.src='assets/enemy-'+kind+'-v10.png';enemyArt[kind]=img;}const spriteSheets={};for(const name of ['helga','emmy']){const img=new Image();img.src='assets/'+name+'.png';spriteSheets[name]=img;}
+const scenic=new Image();scenic.src='assets/kingdom-background-v14.png';const terrainArt=new Image();terrainArt.src='assets/terrain-v10.png';const dragonImg=new Image();dragonImg.src='assets/dragon-v11.png';const enemyArt={};for(const kind of ['slime','beetle','bat']){let img=new Image();img.src='assets/enemy-'+kind+'-v10.png';enemyArt[kind]=img;}const spriteSheets={};for(const name of ['helga','emmy']){const img=new Image();img.src='assets/'+name+'.png';spriteSheets[name]=img;}
 let dragon={x:2530,hp:3,max:3,pending:false,dead:false,hitCooldown:0,shots:[]};let quizVersion=0;let bridgeAnimating=0;let bridgeParticles=[];let screenShake=0;
 let obstacles=[],waterDrops=[],keys={},lastShot=0,hero=0,diamonds=0,fire=false,bridge=false,gate=false,boss=false,paused=false,active=null,qi=0,shots=[],enemies=[],gems=[];
 const W=2700,ground=390;let tick=0,particles=[],facing=1,invuln=0,interactionLock=0;let p={x:50,y:330,vx:0,vy:0,on:false};
@@ -167,8 +167,8 @@ function drawDecorations(cam){
 function draw(){let cam=Math.max(0,Math.min(W-960,p.x-240));g.clearRect(0,0,960,480);g.save();if(screenShake)g.translate(Math.sin(tick*3)*3,0);let sky=g.createLinearGradient(0,0,0,470);sky.addColorStop(0,'#514e9a');sky.addColorStop(.52,'#e9a5a6');sky.addColorStop(1,'#f9d9a0');g.fillStyle=sky;g.fillRect(0,0,960,480);
 if(scenic.complete&&scenic.naturalWidth){
   g.save();g.globalAlpha=.87;
-  let drift=(cam*.075)%1180;
-  g.drawImage(scenic,-drift,0,1180,390);g.drawImage(scenic,1180-drift,0,1180,390);
+  let drift=(cam*.075)%1040;
+  g.drawImage(scenic,-drift,0,1040,480);g.drawImage(scenic,1040-drift,0,1040,480);
   g.restore();
  }
  drawClouds(cam);drawSunbeams(cam);
