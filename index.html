@@ -48,17 +48,33 @@ let onGap=p.x+19>1040&&p.x+9<1220&&!bridge;if(p.y+38>=ground&&!onGap&&oldBottom<
  });
  dragon.shots=dragon.shots.filter(b=>b.age<260&&b.x>-60&&b.x<W+60);
  }
- if(p.x>2050&&!dragon.dead){
+ // The boss exists in world space, not only when the player passes an arbitrary x threshold.
+ // Keep its movement, cooldown and hit detection active throughout the level.
+ if(!dragon.dead){
  dragon.x=2510+Math.sin(tick*.027)*95;
  if(dragon.hitCooldown>0)dragon.hitCooldown--;
- if(tick%115===0)dragon.shots.push({x:dragon.x-36,y:ground-80,vx:-5,age:0});
+ // Spawn attacks only when the player is in the boss encounter area.
+ if(p.x>2050&&tick%115===0)dragon.shots.push({x:dragon.x-36,y:ground-80,vx:-5,age:0});
+ // Match the visible dragon's torso and head, not its entire wing silhouette.
+ const dragonHitbox={x:dragon.x-69,y:ground-153+Math.sin(tick*.075)*8,w:138,h:112};
+ for(const s of shots){
+   if(s.spent)continue;
+   const fireBox={x:s.x-9,y:s.y-7,w:18,h:14};
+   if(!overlap(fireBox,dragonHitbox))continue;
+   // Even during invulnerability or an open question, shots must never pass through the dragon.
+   s.spent=true;
+   burst(s.x,s.y,'#ffbd6c',13);
+   if(dragon.pending||dragon.hitCooldown>0)continue;
+   dragon.pending=true;dragon.hitCooldown=90;screenShake=12;
+   ask('🐉 Drachenmagie – Regeneration verhindern',()=>{
+     dragon.hp--;dragon.pending=false;
+     burst(dragon.x,ground-70,'#cf89ff',32);
+     if(dragon.hp<=0){dragon.dead=true;boss=true;dragon.shots=[];setTimeout(()=>alert('🏆 Geschafft! Der Drache ist besiegt.'),200)}
+   });
+   break;
+ }
+ }
 
- for(const s of shots)if(!s.spent&&!dragon.pending&&!dragon.hitCooldown&&overlap({x:s.x-8,y:s.y-6,w:16,h:12},{x:dragon.x-44,y:ground-140+Math.sin(tick*.075)*8,w:88,h:100})){
- dragon.pending=true;dragon.hitCooldown=90;s.x=-9999;screenShake=12;burst(dragon.x,ground-70,'#ffbd6c',24);
- ask('🐉 Drachenmagie – Regeneration verhindern',()=>{dragon.hp--;dragon.pending=false;burst(dragon.x,ground-70,'#cf89ff',32);if(dragon.hp<=0){dragon.dead=true;boss=true;setTimeout(()=>alert('🏆 Geschafft! Der Drache ist besiegt.'),200)}});
- break;
- }
- }
  shots=shots.filter(s=>!s.spent&&Math.abs(s.x-p.x)<750);if(!interactionLock){const hb={x:p.x+5,y:p.y+4,w:25,h:34};if(!fire&&overlap(hb,triggers.fire)){interactionLock=65;ask('🔥 Feuertransformation',()=>{fire=true;interactionLock=65})}else if(!bridge&&overlap(hb,triggers.bridge)){interactionLock=65;ask('🌉 Brücke reparieren',()=>{bridge=true;bridgeAnimating=1;interactionLock=65;burst(1130,ground-15,'#ffdf8d',45)})}}}
 function burst(x,y,color,n){for(let i=0;i<n;i++)particles.push({x,y,vx:(Math.random()-.5)*6,vy:(Math.random()-.8)*6,life:25+Math.random()*25,color})}
 function rect(x,y,w,h,color){g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.ceil(w),Math.ceil(h))}
