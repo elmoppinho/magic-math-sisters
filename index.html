@@ -15,7 +15,7 @@ const questions=[
 {type:'Verständnis',q:'Welche Aussage über \\(u_{tt}=c^2u_{xx}\\) für \\(c>0\\) ist richtig?',a:['Es beschreibt Wärmeleitung.','\\(c\\) ist die Ausbreitungsgeschwindigkeit.','Alle Lösungen zerfallen exponentiell.','Randbedingungen sind immer unnötig.'],ok:1,why:'Die Wellengleichung besitzt endliche Ausbreitungsgeschwindigkeit.'}
 ];
 const treeArt={};for(const name of ['oak','willow']){const img=new Image();img.src='assets/tree-'+name+'-v11.png';treeArt[name]=img;}
-const scenic=new Image();scenic.src='assets/kingdom-background-v15.png';const terrainArt=new Image();terrainArt.src='assets/terrain-v10.png';const dragonImg=new Image();dragonImg.src='assets/dragon-v11.png';const enemyArt={};for(const kind of ['slime','beetle','bat']){let img=new Image();img.src='assets/enemy-'+kind+'-v10.png';enemyArt[kind]=img;}const spriteSheets={};for(const name of ['helga','emmy']){const img=new Image();img.src='assets/'+name+'.png';spriteSheets[name]=img;}
+const scenic=new Image();scenic.src='assets/kingdom-background-approved.png';const terrainArt=new Image();terrainArt.src='assets/terrain-v10.png';const dragonImg=new Image();dragonImg.src='assets/dragon-v11.png';const enemyArt={};for(const kind of ['slime','beetle','bat']){let img=new Image();img.src='assets/enemy-'+kind+'-v10.png';enemyArt[kind]=img;}const spriteSheets={};for(const name of ['helga','emmy']){const img=new Image();img.src='assets/'+name+'.png';spriteSheets[name]=img;}
 let dragon={x:2530,hp:3,max:3,pending:false,dead:false,hitCooldown:0,shots:[]};let quizVersion=0;let bridgeAnimating=0;let bridgeParticles=[];let screenShake=0;
 let obstacles=[],waterDrops=[],keys={},lastShot=0,hero=0,diamonds=0,fire=false,bridge=false,gate=false,boss=false,paused=false,active=null,qi=0,shots=[],enemies=[],gems=[];
 const W=2700,ground=390;let tick=0,particles=[],facing=1,invuln=0,interactionLock=0;let p={x:50,y:330,vx:0,vy:0,on:false};
@@ -164,9 +164,33 @@ function drawDecorations(cam){
  }
 }
 
+function drawSpecialCrate(cx,cy,kind,cam){
+ const x=Math.round(cx-22-cam),y=Math.round(cy),w=44,h=52;
+ g.save();g.lineWidth=2;
+ // Wooden crate with steel corner brackets and plank seams.
+ g.fillStyle='#382638';g.fillRect(x-2,y-2,w+4,h+4);
+ g.fillStyle='#9a5b32';g.fillRect(x,y,w,h);
+ g.fillStyle='#bd7b43';g.fillRect(x+3,y+3,w-6,h-6);
+ g.fillStyle='#75412d';for(let j=1;j<3;j++)g.fillRect(x+4,y+j*16,w-8,2);
+ g.fillStyle='#d89a5d';g.fillRect(x+5,y+4,w-10,2);
+ g.fillStyle='#4b6079';for(const xx of [x,x+w-8])for(const yy of [y,y+h-8]){g.fillRect(xx,yy,8,8);g.fillStyle='#9bb0bf';g.fillRect(xx+2,yy+2,3,3);g.fillStyle='#4b6079'}
+ const mx=x+w/2,my=y+27;
+ if(kind==='fire'){
+   g.fillStyle='#a92e27';g.beginPath();g.moveTo(mx-7,my+9);g.lineTo(mx+1,my-13);g.lineTo(mx+5,my-5);g.lineTo(mx+15,my-18);g.lineTo(mx+12,my+2);g.lineTo(mx+6,my+11);g.closePath();g.fill();
+   g.fillStyle='#ff8b20';g.beginPath();g.arc(mx-4,my+4,10,0,Math.PI*2);g.fill();g.fillStyle='#ffe26b';g.beginPath();g.arc(mx-4,my+4,6,0,Math.PI*2);g.fill();g.fillStyle='#fff8bc';g.fillRect(mx-6,my+1,4,4);
+ }else if(kind==='bridge'){
+   g.fillStyle='#36485b';g.fillRect(mx-16,my+8,32,6);g.fillStyle='#d5d8d9';g.fillRect(mx-17,my+4,34,5);
+   g.strokeStyle='#e6e5dc';g.lineWidth=6;g.beginPath();g.arc(mx,my+12,13,Math.PI,2*Math.PI);g.stroke();
+   g.strokeStyle='#5e6774';g.lineWidth=2;g.beginPath();g.arc(mx,my+12,13,Math.PI,2*Math.PI);g.stroke();
+   g.fillStyle='#677587';g.fillRect(mx-16,my+7,5,8);g.fillRect(mx+11,my+7,5,8);
+ }else{
+   g.fillStyle='#e9d58e';g.fillRect(mx-2,my-13,4,27);g.fillStyle='#c74753';g.beginPath();g.moveTo(mx+2,my-12);g.lineTo(mx+15,my-7);g.lineTo(mx+2,my-2);g.fill();g.fillStyle='#fff2bd';g.fillRect(mx-5,my+13,11,3);
+ }
+ g.restore();
+}
 function draw(){let cam=Math.max(0,Math.min(W-960,p.x-240));g.clearRect(0,0,960,480);g.save();if(screenShake)g.translate(Math.sin(tick*3)*3,0);let sky=g.createLinearGradient(0,0,0,470);sky.addColorStop(0,'#514e9a');sky.addColorStop(.52,'#e9a5a6');sky.addColorStop(1,'#f9d9a0');g.fillStyle=sky;g.fillRect(0,0,960,480);
 if(scenic.complete&&scenic.naturalWidth){
-  g.save();g.globalAlpha=.87;
+  g.save();g.globalAlpha=1;
   let drift=(cam*.075)%1040;
   g.drawImage(scenic,-drift,0,1040,480);g.drawImage(scenic,1040-drift,0,1040,480);
   g.restore();
@@ -187,7 +211,7 @@ for(let e of enemies)if(e.alive){let b=enemyBox(e),x=b.x-cam,y=b.y;
  let img=enemyArt[e.type];if(img.complete&&img.naturalWidth){g.drawImage(img,(Math.floor(tick/(e.type==='bat'?7:13))%4)*96,0,96,96,Math.round(x-7),Math.round(y-19),Math.round(b.w+14),Math.round(b.h+25));}
  else {ellipse(x+b.w/2,y+b.h/2,b.w/2,b.h/2,e.type==='beetle'?'#987a78':e.type==='bat'?'#654275':'#42c5e0')}
 }
-for(let [x,symbol,enabled] of [[550,'✦',!fire],[985,'?',!bridge],[2350,'⚑',!dragon.dead]])if(enabled){rect(x-21-cam,ground-105,42,66,'#30284f');rect(x-18-cam,ground-101,36,59,'#61518a');rect(x-14-cam,ground-97,28,51,'#322a59');g.font='bold 29px system-ui';g.textAlign='center';g.fillStyle='#ffe7a0';g.fillText(symbol,x-cam,ground-60);g.textAlign='left'}
+for(const [x,kind,enabled] of [[550,'fire',!fire],[985,'bridge',!bridge],[2350,'boss',!dragon.dead]])if(enabled)drawSpecialCrate(x,ground-93,kind,cam);
 // Flowers and mushrooms in foreground.
 for(let i=0;i<135;i++){let x=i*21-cam,y=ground-8;g.strokeStyle=i%3?'#4cba66':'#8dd45f';g.lineWidth=1.5;g.beginPath();g.moveTo(x,y);g.quadraticCurveTo(x+Math.sin(tick*.045+i)*4,y-9,x+Math.sin(tick*.045+i)*6,y-15-(i%5)*2);g.stroke();if(i%7===0){ellipse(x-3,y-15,3,3,'#f4a5d4');ellipse(x+3,y-15,3,3,'#f6e5a1')}}
 if(!dragon.dead){
