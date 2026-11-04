@@ -1,7 +1,9 @@
-# ODE-Fragenkatalog – Magic Math Sisters (abwechslungsreiche Fassung)
+# ODE-Fragenkatalog – Magic Math Sisters
 
-300 Fragen auf Grundlage des Skripts „Gewöhnliche Differentialgleichungen für Naturwissenschaftler“ (Kapitel 1–4).
+296 Fragen auf Grundlage des Skripts „Gewöhnliche Differentialgleichungen für Naturwissenschaftler“ (Kapitel 1–4).
 Jede Frage hat genau eine als richtig markierte Antwort und eine kurze Erläuterung.
+
+Welt 1: Kapitel 1–2 · Welt 2: Kapitel 3 · Welt 3: Kapitel 4. Schwerpunkt: Verständnisfragen und einfache Beispiele.
 
 ## Welt 1 – Grundbegriffe und skalare Lösungsverfahren (Kapitel 1–2)
 
@@ -585,96 +587,6 @@ Eine Bakterienkultur erfüllt $y'=y$ und $y(0)=2$. Welche Lösung passt?
 
 > Bei einer proportionalen Änderungsrate ist $y(t)=y(0)e^{at}$.
 
-### Anwendung: exponentielle Prozesse
-Ein Kapitalbestand erfüllt $y'=2y$ und $y(0)=3$. Welche Lösung passt?
-
-- [ ] $2e^{3t}$
-- [x] $3e^{2t}$
-- [ ] $3+2t$
-- [ ] $3e^{-2t}$
-
-> Bei einer proportionalen Änderungsrate ist $y(t)=y(0)e^{at}$.
-
-### Anwendung: exponentielle Prozesse
-Eine Algenpopulation erfüllt $y'=3y$ und $y(0)=4$. Welche Lösung passt?
-
-- [ ] $3e^{4t}$
-- [x] $4e^{3t}$
-- [ ] $4+3t$
-- [ ] $4e^{-3t}$
-
-> Bei einer proportionalen Änderungsrate ist $y(t)=y(0)e^{at}$.
-
-### Anwendung: exponentielle Prozesse
-Eine radioaktive Probe erfüllt $y'=-4y$ und $y(0)=5$. Welche Lösung passt?
-
-- [ ] $5e^{4t}$
-- [ ] $5-4t$
-- [x] $5e^{-4t}$
-- [ ] $4e^{5t}$
-
-> Bei einer proportionalen Änderungsrate ist $y(t)=y(0)e^{at}$.
-
-### Anwendung: exponentielle Prozesse
-Ein Ladungsspeicher erfüllt $y'=-5y$ und $y(0)=6$. Welche Lösung passt?
-
-- [ ] $6-5t$
-- [ ] $6e^{5t}$
-- [ ] $5e^{6t}$
-- [x] $6e^{-5t}$
-
-> Bei einer proportionalen Änderungsrate ist $y(t)=y(0)e^{at}$.
-
-### Anwendung: exponentielle Prozesse
-Eine Medikamentenmenge erfüllt $y'=-y$ und $y(0)=7$. Welche Lösung passt?
-
-- [x] $7e^{-t}$
-- [ ] $7e^{t}$
-- [ ] $e^{7t}$
-- [ ] $7-t$
-
-> Bei einer proportionalen Änderungsrate ist $y(t)=y(0)e^{at}$.
-
-### Anwendung: exponentielle Prozesse
-Ein Wasserstoffvorrat erfüllt $y'=-2y$ und $y(0)=8$. Welche Lösung passt?
-
-- [ ] $8-2t$
-- [ ] $8e^{2t}$
-- [x] $8e^{-2t}$
-- [ ] $2e^{8t}$
-
-> Bei einer proportionalen Änderungsrate ist $y(t)=y(0)e^{at}$.
-
-### Anwendung: exponentielle Prozesse
-Eine Temperaturdifferenz erfüllt $y'=-3y$ und $y(0)=9$. Welche Lösung passt?
-
-- [ ] $3e^{9t}$
-- [ ] $9-3t$
-- [x] $9e^{-3t}$
-- [ ] $9e^{3t}$
-
-> Bei einer proportionalen Änderungsrate ist $y(t)=y(0)e^{at}$.
-
-### Anwendung: exponentielle Prozesse
-Eine Zellpopulation erfüllt $y'=4y$ und $y(0)=10$. Welche Lösung passt?
-
-- [ ] $10+4t$
-- [ ] $10e^{-4t}$
-- [ ] $4e^{10t}$
-- [x] $10e^{4t}$
-
-> Bei einer proportionalen Änderungsrate ist $y(t)=y(0)e^{at}$.
-
-### Anwendung: exponentielle Prozesse
-Eine Farbstoffmenge erfüllt $y'=-5y$ und $y(0)=11$. Welche Lösung passt?
-
-- [ ] $5e^{11t}$
-- [x] $11e^{-5t}$
-- [ ] $11e^{5t}$
-- [ ] $11-5t$
-
-> Bei einer proportionalen Änderungsrate ist $y(t)=y(0)e^{at}$.
-
 ### Rechnen: lineare Modelle
 Ein Modell erfüllt $y'+y=2$ und $y(0)=0$. Wie lautet $y(t)$?
 
@@ -684,116 +596,6 @@ Ein Modell erfüllt $y'+y=2$ und $y(0)=0$. Wie lautet $y(t)$?
 - [x] $2(1-e^{-t})$
 
 > Das Gleichgewicht ist $b/a$ für $y'+ay=b$; bei $y(0)=0$ gilt $y(t)=(b/a)(1-e^{-at})$.
-
-### Rechnen: lineare Modelle
-Ein Modell erfüllt $y'+2y=2$ und $y(0)=0$. Wie lautet $y(t)$?
-
-- [ ] $2t$
-- [x] $(1-e^{-2t})$
-- [ ] $e^{-2t}$
-- [ ] $1+e^{-2t}$
-
-> Das Gleichgewicht ist $b/a$ für $y'+ay=b$; bei $y(0)=0$ gilt $y(t)=(b/a)(1-e^{-at})$.
-
-### Rechnen: lineare Modelle
-Ein Modell erfüllt $y'+3y=6$ und $y(0)=0$. Wie lautet $y(t)$?
-
-- [ ] $2e^{-3t}$
-- [x] $2(1-e^{-3t})$
-- [ ] $2(1+e^{-3t})$
-- [ ] $6t$
-
-> Das Gleichgewicht ist $b/a$ für $y'+ay=b$; bei $y(0)=0$ gilt $y(t)=(b/a)(1-e^{-at})$.
-
-### Rechnen: lineare Modelle
-Ein Modell erfüllt $y'+2y=10$ und $y(0)=0$. Wie lautet $y(t)$?
-
-- [ ] $10t$
-- [ ] $5(1+e^{-2t})$
-- [ ] $5e^{-2t}$
-- [x] $5(1-e^{-2t})$
-
-> Das Gleichgewicht ist $b/a$ für $y'+ay=b$; bei $y(0)=0$ gilt $y(t)=(b/a)(1-e^{-at})$.
-
-### Rechnen: lineare Modelle
-Ein Modell erfüllt $y'+4y=12$ und $y(0)=0$. Wie lautet $y(t)$?
-
-- [x] $3(1-e^{-4t})$
-- [ ] $12t$
-- [ ] $3e^{-4t}$
-- [ ] $3(1+e^{-4t})$
-
-> Das Gleichgewicht ist $b/a$ für $y'+ay=b$; bei $y(0)=0$ gilt $y(t)=(b/a)(1-e^{-at})$.
-
-### Rechnen: lineare Modelle
-Ein Modell erfüllt $y'+5y=5$ und $y(0)=0$. Wie lautet $y(t)$?
-
-- [ ] $e^{-5t}$
-- [ ] $1+e^{-5t}$
-- [ ] $5t$
-- [x] $(1-e^{-5t})$
-
-> Das Gleichgewicht ist $b/a$ für $y'+ay=b$; bei $y(0)=0$ gilt $y(t)=(b/a)(1-e^{-at})$.
-
-### Rechnen: lineare Modelle
-Ein Modell erfüllt $y'+y=4$ und $y(0)=0$. Wie lautet $y(t)$?
-
-- [ ] $4e^{-t}$
-- [x] $4(1-e^{-t})$
-- [ ] $4(1+e^{-t})$
-- [ ] $4t$
-
-> Das Gleichgewicht ist $b/a$ für $y'+ay=b$; bei $y(0)=0$ gilt $y(t)=(b/a)(1-e^{-at})$.
-
-### Rechnen: lineare Modelle
-Ein Modell erfüllt $y'+3y=15$ und $y(0)=0$. Wie lautet $y(t)$?
-
-- [x] $5(1-e^{-3t})$
-- [ ] $5(1+e^{-3t})$
-- [ ] $5e^{-3t}$
-- [ ] $15t$
-
-> Das Gleichgewicht ist $b/a$ für $y'+ay=b$; bei $y(0)=0$ gilt $y(t)=(b/a)(1-e^{-at})$.
-
-### Rechnen: lineare Modelle
-Ein Modell erfüllt $y'+4y=4$ und $y(0)=0$. Wie lautet $y(t)$?
-
-- [ ] $4t$
-- [x] $(1-e^{-4t})$
-- [ ] $1+e^{-4t}$
-- [ ] $e^{-4t}$
-
-> Das Gleichgewicht ist $b/a$ für $y'+ay=b$; bei $y(0)=0$ gilt $y(t)=(b/a)(1-e^{-at})$.
-
-### Rechnen: lineare Modelle
-Ein Modell erfüllt $y'+5y=10$ und $y(0)=0$. Wie lautet $y(t)$?
-
-- [ ] $2(1+e^{-5t})$
-- [ ] $2e^{-5t}$
-- [x] $2(1-e^{-5t})$
-- [ ] $10t$
-
-> Das Gleichgewicht ist $b/a$ für $y'+ay=b$; bei $y(0)=0$ gilt $y(t)=(b/a)(1-e^{-at})$.
-
-### Rechnen: Ableitungen prüfen
-Welche Funktion erfüllt $x'=t^{0}$ und $x(0)=2$?
-
-- [ ] $x(t)=2t^1+2$
-- [ ] $x(t)=t^1-2$
-- [ ] $x(t)=t^2+2$
-- [x] $x(t)=t^1+2$
-
-> Ableiten von $t^m$ liefert $m t^{m-1}$; der Anfangswert legt die Konstante fest.
-
-### Rechnen: Ableitungen prüfen
-Welche Funktion erfüllt $x'=2t^{1}$ und $x(0)=3$?
-
-- [ ] $x(t)=t^2-3$
-- [ ] $x(t)=t^3+3$
-- [x] $x(t)=t^2+3$
-- [ ] $x(t)=2t^2+3$
-
-> Ableiten von $t^m$ liefert $m t^{m-1}$; der Anfangswert legt die Konstante fest.
 
 ### Rechnen: Ableitungen prüfen
 Welche Funktion erfüllt $x'=3t^{2}$ und $x(0)=1$?
@@ -805,86 +607,6 @@ Welche Funktion erfüllt $x'=3t^{2}$ und $x(0)=1$?
 
 > Ableiten von $t^m$ liefert $m t^{m-1}$; der Anfangswert legt die Konstante fest.
 
-### Rechnen: Ableitungen prüfen
-Welche Funktion erfüllt $x'=4t^{3}$ und $x(0)=2$?
-
-- [ ] $x(t)=4t^4+2$
-- [ ] $x(t)=t^5+2$
-- [x] $x(t)=t^4+2$
-- [ ] $x(t)=t^4-2$
-
-> Ableiten von $t^m$ liefert $m t^{m-1}$; der Anfangswert legt die Konstante fest.
-
-### Rechnen: Ableitungen prüfen
-Welche Funktion erfüllt $x'=5t^{4}$ und $x(0)=3$?
-
-- [ ] $x(t)=t^5-3$
-- [ ] $x(t)=t^6+3$
-- [ ] $x(t)=5t^5+3$
-- [x] $x(t)=t^5+3$
-
-> Ableiten von $t^m$ liefert $m t^{m-1}$; der Anfangswert legt die Konstante fest.
-
-### Rechnen: Ableitungen prüfen
-Welche Funktion erfüllt $x'=2t^{1}$ und $x(0)=5$?
-
-- [ ] $x(t)=2t^2+5$
-- [ ] $x(t)=t^2-5$
-- [ ] $x(t)=t^3+5$
-- [x] $x(t)=t^2+5$
-
-> Ableiten von $t^m$ liefert $m t^{m-1}$; der Anfangswert legt die Konstante fest.
-
-### Rechnen: Ableitungen prüfen
-Welche Funktion erfüllt $x'=3t^{2}$ und $x(0)=4$?
-
-- [ ] $x(t)=3t^3+4$
-- [ ] $x(t)=t^3-4$
-- [ ] $x(t)=t^4+4$
-- [x] $x(t)=t^3+4$
-
-> Ableiten von $t^m$ liefert $m t^{m-1}$; der Anfangswert legt die Konstante fest.
-
-### Rechnen: Ableitungen prüfen
-Welche Funktion erfüllt $x'=4t^{3}$ und $x(0)=5$?
-
-- [ ] $x(t)=t^4-5$
-- [x] $x(t)=t^4+5$
-- [ ] $x(t)=4t^4+5$
-- [ ] $x(t)=t^5+5$
-
-> Ableiten von $t^m$ liefert $m t^{m-1}$; der Anfangswert legt die Konstante fest.
-
-### Rechnen: Ableitungen prüfen
-Welche Funktion erfüllt $x'=5t^{4}$ und $x(0)=1$?
-
-- [ ] $x(t)=t^5-1$
-- [x] $x(t)=t^5+1$
-- [ ] $x(t)=5t^5+1$
-- [ ] $x(t)=t^6+1$
-
-> Ableiten von $t^m$ liefert $m t^{m-1}$; der Anfangswert legt die Konstante fest.
-
-### Rechnen: Ableitungen prüfen
-Welche Funktion erfüllt $x'=t^{0}$ und $x(0)=4$?
-
-- [ ] $x(t)=2t^1+4$
-- [ ] $x(t)=t^1-4$
-- [x] $x(t)=t^1+4$
-- [ ] $x(t)=t^2+4$
-
-> Ableiten von $t^m$ liefert $m t^{m-1}$; der Anfangswert legt die Konstante fest.
-
-### Modell verstehen
-Ein Bestand $N$ erfüllt $N'=2-N$. Was ist sein stationärer Wert?
-
-- [ ] $1/2$
-- [ ] $3$
-- [ ] $12$
-- [x] $2/1$
-
-> Stationär bedeutet $N'=0$; daher $N=a/b$.
-
 ### Modell verstehen
 Ein Bestand $N$ erfüllt $N'=3-2N$. Was ist sein stationärer Wert?
 
@@ -893,97 +615,7 @@ Ein Bestand $N$ erfüllt $N'=3-2N$. Was ist sein stationärer Wert?
 - [ ] $2/3$
 - [ ] $16$
 
-> Stationär bedeutet $N'=0$; daher $N=a/b$.
-
-### Modell verstehen
-Ein Bestand $N$ erfüllt $N'=4-3N$. Was ist sein stationärer Wert?
-
-- [x] $4/3$
-- [ ] $3/4$
-- [ ] $22$
-- [ ] $7$
-
-> Stationär bedeutet $N'=0$; daher $N=a/b$.
-
-### Modell verstehen
-Ein Bestand $N$ erfüllt $N'=5-4N$. Was ist sein stationärer Wert?
-
-- [ ] $30$
-- [x] $5/4$
-- [ ] $4/5$
-- [ ] $9$
-
-> Stationär bedeutet $N'=0$; daher $N=a/b$.
-
-### Modell verstehen
-Ein Bestand $N$ erfüllt $N'=6-2N$. Was ist sein stationärer Wert?
-
-- [ ] $22$
-- [x] $6/2$
-- [ ] $8$
-- [ ] $2/6$
-
-> Stationär bedeutet $N'=0$; daher $N=a/b$.
-
-### Modell verstehen
-Ein Bestand $N$ erfüllt $N'=7-3N$. Was ist sein stationärer Wert?
-
-- [ ] $10$
-- [x] $7/3$
-- [ ] $31$
-- [ ] $3/7$
-
-> Stationär bedeutet $N'=0$; daher $N=a/b$.
-
-### Modell verstehen
-Ein Bestand $N$ erfüllt $N'=8-4N$. Was ist sein stationärer Wert?
-
-- [ ] $42$
-- [ ] $4/8$
-- [ ] $12$
-- [x] $8/4$
-
-> Stationär bedeutet $N'=0$; daher $N=a/b$.
-
-### Modell verstehen
-Ein Bestand $N$ erfüllt $N'=9-5N$. Was ist sein stationärer Wert?
-
-- [ ] $55$
-- [ ] $5/9$
-- [ ] $14$
-- [x] $9/5$
-
-> Stationär bedeutet $N'=0$; daher $N=a/b$.
-
-### Modell verstehen
-Ein Bestand $N$ erfüllt $N'=10-N$. Was ist sein stationärer Wert?
-
-- [x] $10/1$
-- [ ] $11$
-- [ ] $1/10$
-- [ ] $20$
-
-> Stationär bedeutet $N'=0$; daher $N=a/b$.
-
-### Modell verstehen
-Ein Bestand $N$ erfüllt $N'=11-2N$. Was ist sein stationärer Wert?
-
-- [ ] $2/11$
-- [ ] $13$
-- [ ] $32$
-- [x] $11/2$
-
-> Stationär bedeutet $N'=0$; daher $N=a/b$.
-
-### Lösungen überprüfen
-Ist $x(t)=e^{t}$ eine Lösung von $x'=x$?
-
-- [ ] Nur für $t<0$.
-- [ ] Nein, denn $x'=x$.
-- [x] Ja, für alle $t$.
-- [ ] Nur bei $t=0$.
-
-> Die Ableitung von $e^{kt}$ ist $ke^{kt}$; damit ist die jeweilige Gleichung erfüllt.
+> Stationär bedeutet $N'=0$; für $N'=a-bN$ folgt $N=a/b$.
 
 ### Lösungen überprüfen
 Ist $x(t)=e^{2t}$ eine Lösung von $x'=2x$?
@@ -995,20 +627,400 @@ Ist $x(t)=e^{2t}$ eine Lösung von $x'=2x$?
 
 > Die Ableitung von $e^{kt}$ ist $ke^{kt}$; damit ist die jeweilige Gleichung erfüllt.
 
-### Lösungen überprüfen
-Ist $x(t)=e^{3t}$ eine Lösung von $x'=3x$?
+### Grundbegriffe
+Ein Körper kühlt nach $T'=-k\,(T-T_U)$ ab ($k>0$, Raumtemperatur $T_U\neq0$ konstant). Wie lässt sich die Gleichung einordnen?
 
-- [ ] Nur bei $t=0$.
-- [ ] Nein, denn $x'=x$.
-- [ ] Nur für $t<0$.
+- [ ] Linear, homogen und nicht autonom
+- [ ] Linear und zweiter Ordnung
+- [ ] Nichtlinear und autonom
+- [x] Linear, inhomogen, autonom, erster Ordnung
+
+> Ausmultipliziert: $T'+kT=kT_U$. Die rechte Seite hängt nicht explizit von $t$ ab, der Störterm $kT_U$ ist nicht null.
+
+### Grundbegriffe
+Wie viele Komponenten hat das System erster Ordnung, das zu $x'''=f(t,x,x',x'')$ gehört?
+
+- [x] Drei
+- [ ] Sechs
+- [ ] Zwei
+- [ ] Eine
+
+> Man setzt $x_1=x$, $x_2=x'$, $x_3=x''$.
+
+### Grundbegriffe
+Wie macht man die nicht-autonome Gleichung $x'=t\,x$ autonom?
+
+- [x] Mit $y_1=x$, $y_2=t$: $y_1'=y_2y_1$, $y_2'=1$
+- [ ] Das ist nicht möglich.
+- [ ] Indem man $t$ einfach weglässt.
+- [ ] Durch die Substitution $u=x/t$.
+
+> Die Zeit wird als zusätzliche Zustandsgröße mit $y_2'=1$ eingeführt; die Dimension steigt um eins.
+
+### Grundbegriffe
+Welche Gleichung liegt in impliziter Form vor (nicht nach der höchsten Ableitung aufgelöst)?
+
+- [ ] $x'=\sin t$
+- [ ] $x''=-x$
+- [x] $(x')^2+t\,x'=x$
+- [ ] $x'=x^2$
+
+> Hier steht $x'$ quadratisch und ist nicht isoliert.
+
+### Grundbegriffe
+Ein Becken leert sich durch eine Bodenöffnung: $h'=-c\sqrt{h}$ mit $c>0$. Welche Eigenschaft hat diese Gleichung?
+
+- [ ] Sie ist zweiter Ordnung.
+- [ ] Sie ist nicht trennbar.
+- [ ] Sie ist linear und homogen.
+- [x] Sie ist autonom und nichtlinear.
+
+> Die rechte Seite hängt nur von $h$ ab, aber über $\sqrt{h}$ – also nichtlinear.
+
+### Grundbegriffe
+Was ist eine Lösung der Differentialgleichung $x'=f(t,x)$ auf einem Intervall $I$?
+
+- [ ] Eine Funktion, die die Gleichung nur in $t_0$ erfüllt
+- [ ] Eine Zahl $x$ mit $f(t,x)=0$
+- [x] Eine differenzierbare Funktion $x$, die $x'(t)=f(t,x(t))$ für alle $t\in I$ erfüllt
+- [ ] Die Funktion $f$ selbst
+
+> Lösungen sind Funktionen, und die Gleichung muss auf dem ganzen Intervall gelten.
+
+### Grundbegriffe
+Ist $x(t)=\cos(2t)$ eine Lösung von $x''+4x=0$?
+
+- [ ] Nur für $t=0$.
+- [ ] Nein, nur $\sin(2t)$ ist Lösung.
 - [x] Ja, für alle $t$.
+- [ ] Nein, dazu müsste die Gleichung $x''+2x=0$ lauten.
 
-> Die Ableitung von $e^{kt}$ ist $ke^{kt}$; damit ist die jeweilige Gleichung erfüllt.
+> $x''=-4\cos(2t)$, also $x''+4x=0$.
+
+### Grundbegriffe
+Welche Gleichung ist eine partielle und damit keine gewöhnliche Differentialgleichung?
+
+- [x] $u_t=u_{xx}$
+- [ ] $x'''=1$
+- [ ] $x''+x=0$
+- [ ] $x'=t\,x$
+
+> Die gesuchte Funktion hängt von zwei Variablen ab, es treten partielle Ableitungen auf.
+
+### Grundbegriffe
+Ein Auto bremst mit konstanter Verzögerung: $x''=-a$. Welche Anfangsdaten legen die Bewegung eindeutig fest?
+
+- [ ] Nur der Ort zur Startzeit
+- [x] Ort und Geschwindigkeit zur Startzeit
+- [ ] Nur die Verzögerung $a$
+- [ ] Keine – die Bewegung ist schon festgelegt.
+
+> Zweimal integrieren erzeugt zwei Konstanten, die durch $x(t_0)$ und $x'(t_0)$ bestimmt werden.
+
+### Grundbegriffe
+Welche Gleichung ist linear, obwohl ihre Koeffizienten nichtlinear von $t$ abhängen?
+
+- [ ] $x\,x'=1$
+- [ ] $x'=\sin x$
+- [x] $x'+e^{t^2}x=\sin t$
+- [ ] $x'=x^2+t$
+
+> Linearität betrifft nur die gesuchte Funktion $x$, nicht die Abhängigkeit von $t$.
+
+### Trennbare Gleichungen
+Welche Gleichung ist trennbar?
+
+- [ ] $x'=\ln(t+x)$
+- [x] $x'=e^{t+x}$
+- [ ] $x'=\sin(t\,x)$
+- [ ] $x'=t+x$
+
+> $e^{t+x}=e^t\cdot e^x$ ist ein Produkt aus einer Funktion von $t$ und einer von $x$.
+
+### Trennbare Gleichungen
+Ein Kaffee kühlt nach $T'=-k\,(T-20)$ ab, $T(0)=80$. Wie lautet $T(t)$?
+
+- [ ] $60+20e^{-kt}$
+- [ ] $80e^{-kt}$
+- [x] $20+60e^{-kt}$
+- [ ] $20-60e^{-kt}$
+
+> Für $u=T-20$ gilt $u'=-ku$, $u(0)=60$.
+
+### Trennbare Gleichungen
+Welche Halbwertszeit hat ein Zerfall nach $N'=-kN$ mit $k>0$?
+
+- [x] $\ln(2)/k$
+- [ ] $1/(2k)$
+- [ ] $k/2$
+- [ ] $2k$
+
+> Aus $e^{-kT}=\tfrac12$ folgt $T=\ln(2)/k$.
+
+### Trennbare Gleichungen
+Welche konstanten Lösungen hat $x'=x^2-4$?
+
+- [ ] Keine
+- [ ] $x\equiv0$ und $x\equiv4$
+- [ ] Nur $x\equiv2$
+- [x] $x\equiv2$ und $x\equiv-2$
+
+> Konstante Lösungen sind die Nullstellen der rechten Seite.
+
+### Trennbare Gleichungen
+Löse $x'=x\cos t$, $x(0)=2$.
+
+- [ ] $2+\sin t$
+- [ ] $2\cos t$
+- [ ] $2e^{\cos t}$
+- [x] $2e^{\sin t}$
+
+> Trennung: $\ln|x|=\sin t+C$; der Anfangswert liefert den Faktor 2.
+
+### Trennbare Gleichungen
+Warum bleibt das Ergebnis der Trennung der Variablen manchmal nur implizit?
+
+- [x] Weil sich $\Phi(x)=G(t)+C$ nicht immer nach $x$ auflösen lässt
+- [ ] Weil die Integrale nie existieren
+- [ ] Weil die Gleichung dann linear ist
+- [ ] Weil keine Anfangsbedingung gegeben ist
+
+> Man erhält eine Gleichung zwischen Stammfunktionen; die Umkehrung von $\Phi$ ist nicht immer elementar.
+
+### Trennbare Gleichungen
+Logistisches Wachstum $x'=x(1-x)$ mit $0<x(0)<1$: Wohin strebt $x(t)$ für $t\to\infty$?
+
+- [x] Gegen $1$
+- [ ] Gegen $0$
+- [ ] Gegen unendlich
+- [ ] Die Lösung schwingt um $1$.
+
+> Zwischen den Gleichgewichten $0$ und $1$ ist $x'>0$; die Lösung wächst monoton gegen $1$.
+
+### Trennbare Gleichungen
+Welche Kurven beschreiben die Lösungen von $x'=-t/x$?
+
+- [ ] Geraden durch den Ursprung
+- [ ] Parabeln $x=Ct^2$
+- [ ] Hyperbeln $x^2-t^2=C$
+- [x] Kreise $t^2+x^2=C$
+
+> Trennung: $x\,dx=-t\,dt$, also $x^2/2=-t^2/2+c$.
+
+### Lineare Gleichungen erster Ordnung
+Woran erkennt man beim Ansatz zur Variation der Konstanten, dass richtig gerechnet wurde?
+
+- [ ] Die Gleichung für $C$ wird quadratisch.
+- [ ] $C'(t)$ fällt heraus.
+- [x] Nach dem Einsetzen fällt $C(t)$ heraus, nur $C'(t)$ bleibt übrig.
+- [ ] $C(t)$ wird identisch null.
+
+> Die Terme mit $C(t)$ heben sich auf, weil $e^{-P(t)}$ die homogene Gleichung löst – eine gute Rechenkontrolle.
+
+### Lineare Gleichungen erster Ordnung
+Ein Kondensator wird über einen Widerstand geladen: $RC\,U'+U=U_0$, $U(0)=0$. Wie lautet $U(t)$?
+
+- [ ] $U_0\,t/(RC)$
+- [x] $U_0\left(1-e^{-t/(RC)}\right)$
+- [ ] $U_0e^{-t/(RC)}$
+- [ ] $U_0\left(1+e^{-t/(RC)}\right)$
+
+> Gleichgewicht $U_0$, homogener Anteil $e^{-t/(RC)}$, Anfangswert null.
+
+### Lineare Gleichungen erster Ordnung
+Welche Lösung hat $x'-x=e^t$ mit $x(0)=0$?
+
+- [ ] $e^t-1$
+- [ ] $e^{2t}$
+- [x] $t\,e^t$
+- [ ] $t\,e^{-t}$
+
+> Variation der Konstanten: $x=C(t)e^t$ ergibt $C'=1$.
+
+### Lineare Gleichungen erster Ordnung
+Wie lauten die Lösungen der homogenen Gleichung $x'+\frac1t\,x=0$ für $t>0$?
+
+- [x] $x=C/t$
+- [ ] $x=Ct$
+- [ ] $x=Ce^t$
+- [ ] $x=C\ln t$
+
+> Mit $P(t)=\ln t$ ist $x=Ce^{-P(t)}=C/t$.
+
+### Lineare Gleichungen erster Ordnung
+Welche Funktion ist eine partikuläre Lösung von $x'+\frac{x}{t}=1$ für $t>0$?
+
+- [x] $x=t/2$
+- [ ] $x=t$
+- [ ] $x=t^2$
+- [ ] $x=1$
+
+> $x'=\tfrac12$ und $x/t=\tfrac12$, zusammen $1$.
+
+### Lineare Gleichungen erster Ordnung
+Ein Tank enthält 100 l Salzlösung; pro Minute fließen 2 l Wasser zu und 2 l Lösung ab. Für die Salzmenge gilt $S'=-S/50$. Was folgt?
+
+- [x] $S(t)=S(0)\,e^{-t/50}$
+- [ ] $S$ nimmt linear ab.
+- [ ] $S$ wächst exponentiell.
+- [ ] $S$ bleibt konstant.
+
+> Abfluss proportional zur Konzentration $S/100$ mal 2 l/min.
+
+### Lineare Gleichungen erster Ordnung
+Wie verhalten sich die Lösungen von $x'=-2x+\cos t$ für große $t$?
+
+- [ ] Sie wachsen exponentiell.
+- [x] Sie nähern sich unabhängig vom Anfangswert einer periodischen Lösung.
+- [ ] Sie streben alle gegen null.
+- [ ] Sie sind alle konstant.
+
+> Allgemeine Lösung = periodische partikuläre Lösung + $Ce^{-2t}$; der homogene Anteil klingt ab.
+
+### Exakte Differentialgleichungen
+Die Gleichung $(2x+t)\,x'+(x+2t)=0$ ist exakt. Welche Stammfunktion $F$ gehört dazu?
+
+- [ ] $F(t,x)=tx$
+- [x] $F(t,x)=t^2+tx+x^2$
+- [ ] $F(t,x)=t^2+x^2$
+- [ ] $F(t,x)=2tx$
+
+> $F_t=2t+x=g$ und $F_x=t+2x=h$.
+
+### Exakte Differentialgleichungen
+Ist $t\,x'-x=0$ (also $h=t$, $g=-x$) exakt?
+
+- [ ] Ja, für alle $t$.
+- [ ] Ja, weil sie linear ist.
+- [ ] Nur für $t>0$.
+- [x] Nein, denn $g_x=-1\neq h_t=1$.
+
+> Die Integrabilitätsbedingung $g_x=h_t$ ist verletzt.
+
+### Exakte Differentialgleichungen
+Welcher integrierende Faktor $\mu(t)$ macht $t\,x'-x=0$ für $t>0$ exakt?
+
+- [ ] $\mu=e^t$
+- [x] $\mu=1/t^2$
+- [ ] $\mu=t$
+- [ ] $\mu=t^2$
+
+> $(g_x-h_t)/h=-2/t$ hängt nur von $t$ ab; $\mu'=-\tfrac2t\mu$. Es entsteht $(x/t)'=0$.
+
+### Exakte Differentialgleichungen
+Wozu dient der Satz von Schwarz bei exakten Gleichungen?
+
+- [x] Er zeigt, dass $g_x=h_t$ für eine Stammfunktion notwendig ist.
+- [ ] Er liefert die Lösung explizit.
+- [ ] Er macht das Gebiet einfach zusammenhängend.
+- [ ] Er macht jede Gleichung linear.
+
+> Aus $F_t=g$, $F_x=h$ folgt $g_x=F_{tx}=F_{xt}=h_t$.
+
+### Exakte Differentialgleichungen
+In welche äquivalente exakte Form lässt sich die trennbare Gleichung $x'=f(x)\,g(t)$ (mit $f\neq0$) bringen?
+
+- [x] $\frac{1}{f(x)}\,x'-g(t)=0$
+- [ ] $f(x)\,x'+g(t)=0$
+- [ ] $x'-f(x)g(t)=0$ (ist immer exakt)
+- [ ] $g(t)\,x'-f(x)=0$
+
+> Mit $h=1/f(x)$ und $g=-g(t)$ ist $\partial_x g=0=\partial_t h$.
+
+### Exakte Differentialgleichungen
+Ist die Halbebene $D=\{(t,x):t>0\}$ einfach zusammenhängend?
+
+- [ ] Nein, sie ist nicht zusammenhängend.
+- [x] Ja, sie hat keine Löcher.
+- [ ] Nein, sie hat ein Loch bei $t=0$.
+- [ ] Nein, sie ist nicht offen.
+
+> Jede geschlossene Kurve in der Halbebene lässt sich darin auf einen Punkt zusammenziehen.
+
+### Ähnlichkeit, Bernoulli und Riccati
+Ist $x'=\dfrac{t^2+x^2}{t\,x}$ eine Ähnlichkeitsgleichung?
+
+- [x] Ja, denn die rechte Seite ist $\frac{1}{u}+u$ mit $u=x/t$.
+- [ ] Ja, aber sie lässt sich nicht lösen.
+- [ ] Nein, wegen der Quadrate.
+- [ ] Nur für $x=t$.
+
+> Zähler und Nenner durch $t^2$ teilen.
+
+### Ähnlichkeit, Bernoulli und Riccati
+Welche Substitution macht $x'=(t+x)^2$ trennbar?
+
+- [ ] $z=1/x$
+- [ ] $z=x^2$
+- [ ] $u=x/t$
+- [x] $z=t+x$, dann $z'=1+z^2$
+
+> Typ $x'=f(at+bx+c)$: Mit $z=t+x$ wird $z'=1+x'=1+z^2$.
+
+### Ähnlichkeit, Bernoulli und Riccati
+Welche Lösungen hat $x'=2x/t$ für $t>0$?
+
+- [ ] $x=Ce^{2t}$
+- [ ] $x=Ct$
+- [x] $x=Ct^2$
+- [ ] $x=C/t^2$
+
+> Mit $u=x/t$ folgt $t\,u'=u$, also $u=Ct$.
+
+### Ähnlichkeit, Bernoulli und Riccati
+$x'=x+t\sqrt{x}$ ($x>0$) ist eine Bernoulli-Gleichung. Welche Substitution linearisiert sie?
+
+- [ ] Keine, sie ist schon linear.
+- [ ] $y=1/x$ (Exponent $n=2$)
+- [x] $y=\sqrt{x}$ (Exponent $n=\tfrac12$)
+- [ ] $y=x/t$
+
+> Allgemein $y=x^{1-n}$; hier $1-n=\tfrac12$.
+
+### Ähnlichkeit, Bernoulli und Riccati
+Warum schließt man bei $x'=p(t)x+q(t)x^n$ die Fälle $n=0$ und $n=1$ aus?
+
+- [ ] Dann ist sie automatisch exakt.
+- [x] Dann ist die Gleichung bereits linear.
+- [ ] Dann gibt es keine Lösung.
+- [ ] Dann wird die Substitution unendlich.
+
+> Für $n=0$ ist $q$ ein Störterm, für $n=1$ ein zusätzlicher Koeffizient von $x$.
+
+### Ähnlichkeit, Bernoulli und Riccati
+Welche Gleichung entsteht aus $x'=x-x^2$ mit der Substitution $y=1/x$?
+
+- [x] $y'=1-y$
+- [ ] $y'=-y^2$
+- [ ] $y'=y^2$
+- [ ] $y'=y-1$
+
+> $y'=-x'/x^2=-(x-x^2)/x^2=1-1/x=1-y$.
+
+### Ähnlichkeit, Bernoulli und Riccati
+Welche Funktion ist eine partikuläre Lösung der Riccati-Gleichung $x'=x^2-2tx+t^2+1$?
+
+- [ ] $x_p=t^2$
+- [x] $x_p=t$
+- [ ] $x_p=0$
+- [ ] $x_p=1$
+
+> Für $x=t$: links $1$, rechts $t^2-2t^2+t^2+1=1$.
+
+### Ähnlichkeit, Bernoulli und Riccati
+Was entsteht, wenn man in eine Riccati-Gleichung den Ansatz $x=y+x_p$ mit bekannter Lösung $x_p$ einsetzt?
+
+- [ ] Eine exakte Gleichung
+- [ ] Sofort eine lineare homogene Gleichung
+- [ ] Eine Ähnlichkeitsgleichung
+- [x] Eine Bernoulli-Gleichung für $y$ mit $n=2$
+
+> Die Terme ohne $y$ heben sich auf; übrig bleibt $y'=[q+2rx_p]y+ry^2$.
 
 ## Welt 2 – Existenz und Eindeutigkeit (Kapitel 3)
 
 ### Existenz und Eindeutigkeit
-Welche Eigenschaft sichert Picard-Lindelöf lokal?
+Welche Voraussetzungen verlangt der Satz von Picard-Lindelöf für lokale Existenz und Eindeutigkeit?
 
 - [ ] Nur Differenzierbarkeit nach $t$.
 - [ ] Beschränktheit einer beliebigen Lösung.
@@ -1317,193 +1329,13 @@ Für $f(x)=x^2$ auf $[-1,1]$: Was ist die kleinste Lipschitz-Konstante?
 
 > Für $f(x)=kx^2$ ist $f'(x)=2kx$. Auf $[-1,1]$ ist die kleinste Lipschitz-Konstante daher $2k$.
 
-### Lipschitz-Bedingungen
-Für $f(x)=2x^2$ auf $[-1,1]$: Was ist die kleinste Lipschitz-Konstante?
-
-- [x] $4$
-- [ ] $2$
-- [ ] $5$
-- [ ] $0$
-
-> Für $f(x)=kx^2$ ist $f'(x)=2kx$. Auf $[-1,1]$ ist die kleinste Lipschitz-Konstante daher $2k$.
-
-### Lipschitz-Bedingungen
-Für $f(x)=3x^2$ auf $[-1,1]$: Was ist die kleinste Lipschitz-Konstante?
-
-- [ ] $3$
-- [ ] $0$
-- [ ] $7$
-- [x] $6$
-
-> Für $f(x)=kx^2$ ist $f'(x)=2kx$. Auf $[-1,1]$ ist die kleinste Lipschitz-Konstante daher $2k$.
-
-### Lipschitz-Bedingungen
-Für $f(x)=4x^2$ auf $[-1,1]$: Was ist die kleinste Lipschitz-Konstante?
-
-- [x] $8$
-- [ ] $4$
-- [ ] $9$
-- [ ] $0$
-
-> Für $f(x)=kx^2$ ist $f'(x)=2kx$. Auf $[-1,1]$ ist die kleinste Lipschitz-Konstante daher $2k$.
-
-### Lipschitz-Bedingungen
-Für $f(x)=5x^2$ auf $[-1,1]$: Was ist die kleinste Lipschitz-Konstante?
-
-- [ ] $11$
-- [x] $10$
-- [ ] $0$
-- [ ] $5$
-
-> Für $f(x)=kx^2$ ist $f'(x)=2kx$. Auf $[-1,1]$ ist die kleinste Lipschitz-Konstante daher $2k$.
-
-### Lipschitz-Bedingungen
-Für $f(x)=6x^2$ auf $[-1,1]$: Was ist die kleinste Lipschitz-Konstante?
-
-- [ ] $0$
-- [x] $12$
-- [ ] $13$
-- [ ] $6$
-
-> Für $f(x)=kx^2$ ist $f'(x)=2kx$. Auf $[-1,1]$ ist die kleinste Lipschitz-Konstante daher $2k$.
-
-### Lipschitz-Bedingungen
-Für $f(x)=7x^2$ auf $[-1,1]$: Was ist die kleinste Lipschitz-Konstante?
-
-- [ ] $0$
-- [x] $14$
-- [ ] $15$
-- [ ] $7$
-
-> Für $f(x)=kx^2$ ist $f'(x)=2kx$. Auf $[-1,1]$ ist die kleinste Lipschitz-Konstante daher $2k$.
-
-### Lipschitz-Bedingungen
-Für $f(x)=8x^2$ auf $[-1,1]$: Was ist die kleinste Lipschitz-Konstante?
-
-- [x] $16$
-- [ ] $17$
-- [ ] $0$
-- [ ] $8$
-
-> Für $f(x)=kx^2$ ist $f'(x)=2kx$. Auf $[-1,1]$ ist die kleinste Lipschitz-Konstante daher $2k$.
-
-### Lipschitz-Bedingungen
-Für $f(x)=9x^2$ auf $[-1,1]$: Was ist die kleinste Lipschitz-Konstante?
-
-- [ ] $9$
-- [ ] $0$
-- [ ] $19$
-- [x] $18$
-
-> Für $f(x)=kx^2$ ist $f'(x)=2kx$. Auf $[-1,1]$ ist die kleinste Lipschitz-Konstante daher $2k$.
-
-### Lipschitz-Bedingungen
-Für $f(x)=10x^2$ auf $[-1,1]$: Was ist die kleinste Lipschitz-Konstante?
-
-- [x] $20$
-- [ ] $0$
-- [ ] $10$
-- [ ] $21$
-
-> Für $f(x)=kx^2$ ist $f'(x)=2kx$. Auf $[-1,1]$ ist die kleinste Lipschitz-Konstante daher $2k$.
-
-### Picard-Iteration
-Für $x'=t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
-
-- [ ] $t^2/2$
-- [ ] $2+t$
-- [ ] $2+t^2$
-- [x] $2+t^2/2$
-
-> Bei $x'=kt$ ergibt die erste Picard-Iteration $x^{(1)}(t)=2+kt^2/2$.
-
-### Picard-Iteration
-Für $x'=2t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
-
-- [ ] $2+2t$
-- [x] $2+2t^2/2$
-- [ ] $2+2t^2$
-- [ ] $2t^2/2$
-
-> Bei $x'=kt$ ergibt die erste Picard-Iteration $x^{(1)}(t)=2+kt^2/2$.
-
-### Picard-Iteration
-Für $x'=3t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
-
-- [ ] $2+3t$
-- [x] $2+3t^2/2$
-- [ ] $3t^2/2$
-- [ ] $2+3t^2$
-
-> Bei $x'=kt$ ergibt die erste Picard-Iteration $x^{(1)}(t)=2+kt^2/2$.
-
-### Picard-Iteration
-Für $x'=4t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
-
-- [ ] $4t^2/2$
-- [ ] $2+4t$
-- [ ] $2+4t^2$
-- [x] $2+4t^2/2$
-
-> Bei $x'=kt$ ergibt die erste Picard-Iteration $x^{(1)}(t)=2+kt^2/2$.
-
 ### Picard-Iteration
 Für $x'=5t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
 
-- [x] $2+5t^2/2$
+- [x] $2+\tfrac{5}{2}t^2$
 - [ ] $2+5t^2$
-- [ ] $5t^2/2$
+- [ ] $\tfrac{5}{2}t^2$
 - [ ] $2+5t$
-
-> Bei $x'=kt$ ergibt die erste Picard-Iteration $x^{(1)}(t)=2+kt^2/2$.
-
-### Picard-Iteration
-Für $x'=6t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
-
-- [ ] $2+6t$
-- [ ] $6t^2/2$
-- [x] $2+6t^2/2$
-- [ ] $2+6t^2$
-
-> Bei $x'=kt$ ergibt die erste Picard-Iteration $x^{(1)}(t)=2+kt^2/2$.
-
-### Picard-Iteration
-Für $x'=7t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
-
-- [ ] $2+7t$
-- [ ] $2+7t^2$
-- [x] $2+7t^2/2$
-- [ ] $7t^2/2$
-
-> Bei $x'=kt$ ergibt die erste Picard-Iteration $x^{(1)}(t)=2+kt^2/2$.
-
-### Picard-Iteration
-Für $x'=8t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
-
-- [ ] $2+8t^2$
-- [ ] $2+8t$
-- [ ] $8t^2/2$
-- [x] $2+8t^2/2$
-
-> Bei $x'=kt$ ergibt die erste Picard-Iteration $x^{(1)}(t)=2+kt^2/2$.
-
-### Picard-Iteration
-Für $x'=9t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
-
-- [x] $2+9t^2/2$
-- [ ] $9t^2/2$
-- [ ] $2+9t^2$
-- [ ] $2+9t$
-
-> Bei $x'=kt$ ergibt die erste Picard-Iteration $x^{(1)}(t)=2+kt^2/2$.
-
-### Picard-Iteration
-Für $x'=10t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
-
-- [x] $2+10t^2/2$
-- [ ] $2+10t$
-- [ ] $2+10t^2$
-- [ ] $10t^2/2$
 
 > Bei $x'=kt$ ergibt die erste Picard-Iteration $x^{(1)}(t)=2+kt^2/2$.
 
@@ -1511,141 +1343,11 @@ Für $x'=10t$, $x(0)=2$: Was ist die erste Picard-Iterierte?
 Für $x'=x^2$, $x(0)=1$: Wann tritt die Vorwärts-Explosion auf?
 
 - [ ] $t=-1$
-- [ ] $Nie$
+- [ ] Nie
 - [ ] $t=2$
 - [x] $t=1$
 
 > Für $x'=kx^2$ gilt $x(t)=1/(1-kt)$; der Nenner verschwindet bei $t=1/k$.
-
-### Maximale Fortsetzung
-Für $x'=2x^2$, $x(0)=1$: Wann tritt die Vorwärts-Explosion auf?
-
-- [x] $t=1/2$
-- [ ] $t=-1/2$
-- [ ] $Nie$
-- [ ] $t=2$
-
-> Für $x'=kx^2$ gilt $x(t)=1/(1-kt)$; der Nenner verschwindet bei $t=1/k$.
-
-### Maximale Fortsetzung
-Für $x'=3x^2$, $x(0)=1$: Wann tritt die Vorwärts-Explosion auf?
-
-- [ ] $Nie$
-- [ ] $t=3$
-- [x] $t=1/3$
-- [ ] $t=-1/3$
-
-> Für $x'=kx^2$ gilt $x(t)=1/(1-kt)$; der Nenner verschwindet bei $t=1/k$.
-
-### Maximale Fortsetzung
-Für $x'=4x^2$, $x(0)=1$: Wann tritt die Vorwärts-Explosion auf?
-
-- [ ] $Nie$
-- [ ] $t=4$
-- [x] $t=1/4$
-- [ ] $t=-1/4$
-
-> Für $x'=kx^2$ gilt $x(t)=1/(1-kt)$; der Nenner verschwindet bei $t=1/k$.
-
-### Maximale Fortsetzung
-Für $x'=5x^2$, $x(0)=1$: Wann tritt die Vorwärts-Explosion auf?
-
-- [ ] $t=5$
-- [ ] $t=-1/5$
-- [ ] $Nie$
-- [x] $t=1/5$
-
-> Für $x'=kx^2$ gilt $x(t)=1/(1-kt)$; der Nenner verschwindet bei $t=1/k$.
-
-### Maximale Fortsetzung
-Für $x'=6x^2$, $x(0)=1$: Wann tritt die Vorwärts-Explosion auf?
-
-- [ ] $Nie$
-- [ ] $t=-1/6$
-- [ ] $t=6$
-- [x] $t=1/6$
-
-> Für $x'=kx^2$ gilt $x(t)=1/(1-kt)$; der Nenner verschwindet bei $t=1/k$.
-
-### Maximale Fortsetzung
-Für $x'=7x^2$, $x(0)=1$: Wann tritt die Vorwärts-Explosion auf?
-
-- [ ] $Nie$
-- [ ] $t=-1/7$
-- [ ] $t=7$
-- [x] $t=1/7$
-
-> Für $x'=kx^2$ gilt $x(t)=1/(1-kt)$; der Nenner verschwindet bei $t=1/k$.
-
-### Maximale Fortsetzung
-Für $x'=8x^2$, $x(0)=1$: Wann tritt die Vorwärts-Explosion auf?
-
-- [ ] $Nie$
-- [ ] $t=-1/8$
-- [x] $t=1/8$
-- [ ] $t=8$
-
-> Für $x'=kx^2$ gilt $x(t)=1/(1-kt)$; der Nenner verschwindet bei $t=1/k$.
-
-### Maximale Fortsetzung
-Für $x'=9x^2$, $x(0)=1$: Wann tritt die Vorwärts-Explosion auf?
-
-- [ ] $t=-1/9$
-- [ ] $t=9$
-- [ ] $Nie$
-- [x] $t=1/9$
-
-> Für $x'=kx^2$ gilt $x(t)=1/(1-kt)$; der Nenner verschwindet bei $t=1/k$.
-
-### Maximale Fortsetzung
-Für $x'=10x^2$, $x(0)=1$: Wann tritt die Vorwärts-Explosion auf?
-
-- [ ] $t=-1/10$
-- [ ] $Nie$
-- [ ] $t=10$
-- [x] $t=1/10$
-
-> Für $x'=kx^2$ gilt $x(t)=1/(1-kt)$; der Nenner verschwindet bei $t=1/k$.
-
-### Parameter und Anfangsdaten
-Für $x'=-x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
-
-- [x] $\lambda e^{-t}$
-- [ ] $\lambda e^{t}$
-- [ ] $\lambda+t$
-- [ ] $e^{-\lambda t}$
-
-> Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
-
-### Parameter und Anfangsdaten
-Für $x'=-2x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
-
-- [ ] $e^{-\lambda t}$
-- [x] $\lambda e^{-2t}$
-- [ ] $2\lambda e^{-t}$
-- [ ] $\lambda+2t$
-
-> Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
-
-### Parameter und Anfangsdaten
-Für $x'=-3x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
-
-- [ ] $\lambda+3t$
-- [ ] $3\lambda e^{-t}$
-- [x] $\lambda e^{-3t}$
-- [ ] $e^{-\lambda t}$
-
-> Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
-
-### Parameter und Anfangsdaten
-Für $x'=-4x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
-
-- [ ] $4\lambda e^{-t}$
-- [ ] $\lambda+4t$
-- [ ] $e^{-\lambda t}$
-- [x] $\lambda e^{-4t}$
-
-> Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
 
 ### Parameter und Anfangsdaten
 Für $x'=-5x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
@@ -1654,56 +1356,6 @@ Für $x'=-5x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
 - [x] $\lambda e^{-5t}$
 - [ ] $\lambda+5t$
 - [ ] $5\lambda e^{-t}$
-
-> Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
-
-### Parameter und Anfangsdaten
-Für $x'=-6x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
-
-- [ ] $\lambda+6t$
-- [ ] $6\lambda e^{-t}$
-- [x] $\lambda e^{-6t}$
-- [ ] $e^{-\lambda t}$
-
-> Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
-
-### Parameter und Anfangsdaten
-Für $x'=-7x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
-
-- [ ] $7\lambda e^{-t}$
-- [ ] $e^{-\lambda t}$
-- [x] $\lambda e^{-7t}$
-- [ ] $\lambda+7t$
-
-> Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
-
-### Parameter und Anfangsdaten
-Für $x'=-8x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
-
-- [ ] $8\lambda e^{-t}$
-- [ ] $e^{-\lambda t}$
-- [x] $\lambda e^{-8t}$
-- [ ] $\lambda+8t$
-
-> Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
-
-### Parameter und Anfangsdaten
-Für $x'=-9x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
-
-- [x] $\lambda e^{-9t}$
-- [ ] $e^{-\lambda t}$
-- [ ] $9\lambda e^{-t}$
-- [ ] $\lambda+9t$
-
-> Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
-
-### Parameter und Anfangsdaten
-Für $x'=-10x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
-
-- [x] $\lambda e^{-10t}$
-- [ ] $e^{-\lambda t}$
-- [ ] $\lambda+10t$
-- [ ] $10\lambda e^{-t}$
 
 > Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
 
@@ -1717,192 +1369,12 @@ Für $x'=x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$
 
 > Bei $x'=kx$ ist die Differenz zweier Lösungen mit Anfangsdifferenz eins gleich $e^{kt}$.
 
-### Lösungsabschätzungen
-Für $x'=2x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$?
-
-- [ ] $e^{-2}$
-- [x] $e^2$
-- [ ] $1$
-- [ ] $2e^2$
-
-> Bei $x'=kx$ ist die Differenz zweier Lösungen mit Anfangsdifferenz eins gleich $e^{kt}$.
-
-### Lösungsabschätzungen
-Für $x'=3x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$?
-
-- [ ] $1$
-- [ ] $e^{-3}$
-- [ ] $2e^3$
-- [x] $e^3$
-
-> Bei $x'=kx$ ist die Differenz zweier Lösungen mit Anfangsdifferenz eins gleich $e^{kt}$.
-
-### Lösungsabschätzungen
-Für $x'=4x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$?
-
-- [ ] $2e^4$
-- [x] $e^4$
-- [ ] $e^{-4}$
-- [ ] $1$
-
-> Bei $x'=kx$ ist die Differenz zweier Lösungen mit Anfangsdifferenz eins gleich $e^{kt}$.
-
-### Lösungsabschätzungen
-Für $x'=5x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$?
-
-- [ ] $2e^5$
-- [ ] $1$
-- [ ] $e^{-5}$
-- [x] $e^5$
-
-> Bei $x'=kx$ ist die Differenz zweier Lösungen mit Anfangsdifferenz eins gleich $e^{kt}$.
-
-### Lösungsabschätzungen
-Für $x'=6x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$?
-
-- [x] $e^6$
-- [ ] $2e^6$
-- [ ] $1$
-- [ ] $e^{-6}$
-
-> Bei $x'=kx$ ist die Differenz zweier Lösungen mit Anfangsdifferenz eins gleich $e^{kt}$.
-
-### Lösungsabschätzungen
-Für $x'=7x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$?
-
-- [ ] $1$
-- [ ] $e^{-7}$
-- [x] $e^7$
-- [ ] $2e^7$
-
-> Bei $x'=kx$ ist die Differenz zweier Lösungen mit Anfangsdifferenz eins gleich $e^{kt}$.
-
-### Lösungsabschätzungen
-Für $x'=8x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$?
-
-- [ ] $1$
-- [x] $e^8$
-- [ ] $e^{-8}$
-- [ ] $2e^8$
-
-> Bei $x'=kx$ ist die Differenz zweier Lösungen mit Anfangsdifferenz eins gleich $e^{kt}$.
-
-### Lösungsabschätzungen
-Für $x'=9x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$?
-
-- [x] $e^9$
-- [ ] $2e^9$
-- [ ] $1$
-- [ ] $e^{-9}$
-
-> Bei $x'=kx$ ist die Differenz zweier Lösungen mit Anfangsdifferenz eins gleich $e^{kt}$.
-
-### Lösungsabschätzungen
-Für $x'=10x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$?
-
-- [ ] $1$
-- [x] $e^10$
-- [ ] $e^{-10}$
-- [ ] $2e^10$
-
-> Bei $x'=kx$ ist die Differenz zweier Lösungen mit Anfangsdifferenz eins gleich $e^{kt}$.
-
-### Eindeutigkeit und Gegenbeispiele
-Für $x'=\sqrt{|x|}$, $x(0)=0$: Welche Aussage stimmt?
-
-- [ ] Alle Lösungen sind negativ.
-- [ ] Es gibt keine Lösung.
-- [ ] Es gibt genau eine Lösung.
-- [x] Es gibt die Nulllösung und weitere Lösungen.
-
-> Die rechte Seite ist an null nicht lokal Lipschitz; verzögerte Starts sind möglich.
-
 ### Eindeutigkeit und Gegenbeispiele
 Für $x'=2\sqrt{|x|}$, $x(0)=0$: Welche Aussage stimmt?
 
 - [ ] Es gibt genau eine Lösung.
 - [ ] Es gibt keine Lösung.
 - [x] Es gibt die Nulllösung und weitere Lösungen.
-- [ ] Alle Lösungen sind negativ.
-
-> Die rechte Seite ist an null nicht lokal Lipschitz; verzögerte Starts sind möglich.
-
-### Eindeutigkeit und Gegenbeispiele
-Für $x'=3\sqrt{|x|}$, $x(0)=0$: Welche Aussage stimmt?
-
-- [ ] Alle Lösungen sind negativ.
-- [ ] Es gibt genau eine Lösung.
-- [ ] Es gibt keine Lösung.
-- [x] Es gibt die Nulllösung und weitere Lösungen.
-
-> Die rechte Seite ist an null nicht lokal Lipschitz; verzögerte Starts sind möglich.
-
-### Eindeutigkeit und Gegenbeispiele
-Für $x'=4\sqrt{|x|}$, $x(0)=0$: Welche Aussage stimmt?
-
-- [x] Es gibt die Nulllösung und weitere Lösungen.
-- [ ] Es gibt keine Lösung.
-- [ ] Alle Lösungen sind negativ.
-- [ ] Es gibt genau eine Lösung.
-
-> Die rechte Seite ist an null nicht lokal Lipschitz; verzögerte Starts sind möglich.
-
-### Eindeutigkeit und Gegenbeispiele
-Für $x'=5\sqrt{|x|}$, $x(0)=0$: Welche Aussage stimmt?
-
-- [ ] Es gibt keine Lösung.
-- [ ] Alle Lösungen sind negativ.
-- [x] Es gibt die Nulllösung und weitere Lösungen.
-- [ ] Es gibt genau eine Lösung.
-
-> Die rechte Seite ist an null nicht lokal Lipschitz; verzögerte Starts sind möglich.
-
-### Eindeutigkeit und Gegenbeispiele
-Für $x'=6\sqrt{|x|}$, $x(0)=0$: Welche Aussage stimmt?
-
-- [ ] Es gibt genau eine Lösung.
-- [ ] Es gibt keine Lösung.
-- [x] Es gibt die Nulllösung und weitere Lösungen.
-- [ ] Alle Lösungen sind negativ.
-
-> Die rechte Seite ist an null nicht lokal Lipschitz; verzögerte Starts sind möglich.
-
-### Eindeutigkeit und Gegenbeispiele
-Für $x'=7\sqrt{|x|}$, $x(0)=0$: Welche Aussage stimmt?
-
-- [ ] Alle Lösungen sind negativ.
-- [ ] Es gibt keine Lösung.
-- [x] Es gibt die Nulllösung und weitere Lösungen.
-- [ ] Es gibt genau eine Lösung.
-
-> Die rechte Seite ist an null nicht lokal Lipschitz; verzögerte Starts sind möglich.
-
-### Eindeutigkeit und Gegenbeispiele
-Für $x'=8\sqrt{|x|}$, $x(0)=0$: Welche Aussage stimmt?
-
-- [x] Es gibt die Nulllösung und weitere Lösungen.
-- [ ] Alle Lösungen sind negativ.
-- [ ] Es gibt keine Lösung.
-- [ ] Es gibt genau eine Lösung.
-
-> Die rechte Seite ist an null nicht lokal Lipschitz; verzögerte Starts sind möglich.
-
-### Eindeutigkeit und Gegenbeispiele
-Für $x'=9\sqrt{|x|}$, $x(0)=0$: Welche Aussage stimmt?
-
-- [ ] Es gibt keine Lösung.
-- [ ] Es gibt genau eine Lösung.
-- [x] Es gibt die Nulllösung und weitere Lösungen.
-- [ ] Alle Lösungen sind negativ.
-
-> Die rechte Seite ist an null nicht lokal Lipschitz; verzögerte Starts sind möglich.
-
-### Eindeutigkeit und Gegenbeispiele
-Für $x'=10\sqrt{|x|}$, $x(0)=0$: Welche Aussage stimmt?
-
-- [x] Es gibt die Nulllösung und weitere Lösungen.
-- [ ] Es gibt genau eine Lösung.
-- [ ] Es gibt keine Lösung.
 - [ ] Alle Lösungen sind negativ.
 
 > Die rechte Seite ist an null nicht lokal Lipschitz; verzögerte Starts sind möglich.
@@ -1917,95 +1389,595 @@ Für $x'=x/(1+t^2)+1$ mit $x(0)=0$: Was gilt?
 
 > Lineare Gleichung mit auf ganz $\mathbb R$ stetigen Koeffizienten.
 
-### Existenz auf Intervallen
-Für $x'=x/(1+t^2)+2$ mit $x(0)=0$: Was gilt?
+### Integralgleichung und Picard-Iteration
+Welche Integralgleichung ist äquivalent zu $x'=\cos t$, $x(0)=1$?
 
-- [ ] Die Lösung explodiert zwingend bei $t=1$.
-- [x] Es gibt eine eindeutige Lösung auf ganz $\mathbb R$.
-- [ ] Eindeutigkeit ist ausgeschlossen.
-- [ ] Eine Lösung existiert nur für $t>0$.
+- [ ] $x(t)=\int_0^t x(s)\,ds$
+- [ ] $x(t)=\cos t$
+- [ ] $x(t)=1+\cos t$
+- [x] $x(t)=1+\int_0^t\cos s\,ds$
 
-> Lineare Gleichung mit auf ganz $\mathbb R$ stetigen Koeffizienten.
+> Allgemein: $x(t)=x_0+\int_{t_0}^t f(s,x(s))\,ds$.
 
-### Existenz auf Intervallen
-Für $x'=x/(1+t^2)+3$ mit $x(0)=0$: Was gilt?
+### Integralgleichung und Picard-Iteration
+Warum genügt es, für die Integralgleichung nur stetige Funktionen $x$ zu betrachten?
 
-- [ ] Eindeutigkeit ist ausgeschlossen.
-- [x] Es gibt eine eindeutige Lösung auf ganz $\mathbb R$.
-- [ ] Die Lösung explodiert zwingend bei $t=1$.
-- [ ] Eine Lösung existiert nur für $t>0$.
+- [ ] Weil die Lösung immer ein Polynom ist.
+- [ ] Weil Ableitungen dort nicht vorkommen dürfen.
+- [x] Das Integral einer stetigen Funktion ist automatisch differenzierbar (Hauptsatz).
+- [ ] Weil $f$ immer konstant ist.
 
-> Lineare Gleichung mit auf ganz $\mathbb R$ stetigen Koeffizienten.
+> Aus der Integralgleichung folgt Differenzierbarkeit und $x'=f(t,x)$.
 
-### Existenz auf Intervallen
-Für $x'=x/(1+t^2)+4$ mit $x(0)=0$: Was gilt?
+### Integralgleichung und Picard-Iteration
+Was ist die erste Picard-Iterierte für $x'=2x$, $x(0)=1$?
 
-- [ ] Eindeutigkeit ist ausgeschlossen.
-- [ ] Eine Lösung existiert nur für $t>0$.
-- [x] Es gibt eine eindeutige Lösung auf ganz $\mathbb R$.
-- [ ] Die Lösung explodiert zwingend bei $t=1$.
+- [x] $1+2t$
+- [ ] $1+t$
+- [ ] $2t$
+- [ ] $e^{2t}$
 
-> Lineare Gleichung mit auf ganz $\mathbb R$ stetigen Koeffizienten.
+> $x^{(1)}=1+\int_0^t 2\cdot1\,ds$.
 
-### Existenz auf Intervallen
-Für $x'=x/(1+t^2)+5$ mit $x(0)=0$: Was gilt?
+### Integralgleichung und Picard-Iteration
+Was ist die zweite Picard-Iterierte für $x'=2x$, $x(0)=1$?
 
-- [x] Es gibt eine eindeutige Lösung auf ganz $\mathbb R$.
-- [ ] Eindeutigkeit ist ausgeschlossen.
-- [ ] Eine Lösung existiert nur für $t>0$.
-- [ ] Die Lösung explodiert zwingend bei $t=1$.
+- [ ] $1+2t+4t^2$
+- [ ] $(1+2t)^2$
+- [x] $1+2t+2t^2$
+- [ ] $1+2t+t^2$
 
-> Lineare Gleichung mit auf ganz $\mathbb R$ stetigen Koeffizienten.
+> $1+\int_0^t2(1+2s)\,ds=1+2t+2t^2$ – die ersten Glieder von $e^{2t}$.
 
-### Existenz auf Intervallen
-Für $x'=x/(1+t^2)+6$ mit $x(0)=0$: Was gilt?
+### Integralgleichung und Picard-Iteration
+Was ist die erste Picard-Iterierte für $x'=t\,x$, $x(0)=1$?
 
-- [ ] Eindeutigkeit ist ausgeschlossen.
-- [ ] Eine Lösung existiert nur für $t>0$.
-- [x] Es gibt eine eindeutige Lösung auf ganz $\mathbb R$.
-- [ ] Die Lösung explodiert zwingend bei $t=1$.
+- [ ] $1+t$
+- [x] $1+t^2/2$
+- [ ] $1+t^2$
+- [ ] $e^{t^2/2}$
 
-> Lineare Gleichung mit auf ganz $\mathbb R$ stetigen Koeffizienten.
+> $1+\int_0^t s\cdot1\,ds$.
 
-### Existenz auf Intervallen
-Für $x'=x/(1+t^2)+7$ mit $x(0)=0$: Was gilt?
+### Integralgleichung und Picard-Iteration
+Was ist die zweite Picard-Iterierte für $x'=1+x^2$, $x(0)=0$?
 
-- [ ] Eine Lösung existiert nur für $t>0$.
-- [ ] Die Lösung explodiert zwingend bei $t=1$.
-- [ ] Eindeutigkeit ist ausgeschlossen.
-- [x] Es gibt eine eindeutige Lösung auf ganz $\mathbb R$.
+- [ ] $\tan t$
+- [x] $t+t^3/3$
+- [ ] $t+t^2/2$
+- [ ] $t$
 
-> Lineare Gleichung mit auf ganz $\mathbb R$ stetigen Koeffizienten.
+> $x^{(1)}=t$, dann $x^{(2)}=\int_0^t(1+s^2)\,ds$.
 
-### Existenz auf Intervallen
-Für $x'=x/(1+t^2)+8$ mit $x(0)=0$: Was gilt?
+### Integralgleichung und Picard-Iteration
+Was ist die $N$-te Picard-Iterierte für $x'=x$, $x(0)=1$?
 
-- [ ] Die Lösung explodiert zwingend bei $t=1$.
-- [ ] Eine Lösung existiert nur für $t>0$.
-- [ ] Eindeutigkeit ist ausgeschlossen.
-- [x] Es gibt eine eindeutige Lösung auf ganz $\mathbb R$.
+- [ ] $e^{Nt}$
+- [ ] $(1+t)^N$
+- [x] $\sum_{k=0}^{N}\frac{t^k}{k!}$
+- [ ] $1+Nt$
 
-> Lineare Gleichung mit auf ganz $\mathbb R$ stetigen Koeffizienten.
+> Jede Iteration fügt das nächste Glied der Exponentialreihe hinzu.
 
-### Existenz auf Intervallen
-Für $x'=x/(1+t^2)+9$ mit $x(0)=0$: Was gilt?
+### Integralgleichung und Picard-Iteration
+Warum nutzt man Picard-Iterierte in der Praxis kaum als numerisches Verfahren?
 
-- [ ] Eine Lösung existiert nur für $t>0$.
-- [ ] Eindeutigkeit ist ausgeschlossen.
-- [ ] Die Lösung explodiert zwingend bei $t=1$.
-- [x] Es gibt eine eindeutige Lösung auf ganz $\mathbb R$.
+- [ ] Sie funktionieren nur bei linearen Gleichungen.
+- [ ] Sie liefern keine eindeutige Lösung.
+- [x] Die Konvergenz ist dafür zu langsam und jede Iteration erfordert eine Integration.
+- [ ] Sie konvergieren nie.
 
-> Lineare Gleichung mit auf ganz $\mathbb R$ stetigen Koeffizienten.
+> Theoretisch liefern sie Existenz, praktisch gibt es effizientere numerische Verfahren.
 
-### Existenz auf Intervallen
-Für $x'=x/(1+t^2)+10$ mit $x(0)=0$: Was gilt?
+### Integralgleichung und Picard-Iteration
+Welche Reihe dient beim Konvergenzbeweis der Picard-Iterierten als Majorante?
 
-- [x] Es gibt eine eindeutige Lösung auf ganz $\mathbb R$.
-- [ ] Eine Lösung existiert nur für $t>0$.
-- [ ] Eindeutigkeit ist ausgeschlossen.
-- [ ] Die Lösung explodiert zwingend bei $t=1$.
+- [ ] Die harmonische Reihe
+- [x] Die Exponentialreihe
+- [ ] Die geometrische Reihe
+- [ ] Eine Fourier-Reihe
 
-> Lineare Gleichung mit auf ganz $\mathbb R$ stetigen Koeffizienten.
+> Es gilt $|x^{(N+1)}-x^{(N)}|\le ML^N|t-t_0|^{N+1}/(N+1)!$.
+
+### Integralgleichung und Picard-Iteration
+Warum bleiben die Picard-Iterierten im Satz von Picard-Lindelöf im Bereich $|x-x_0|\le\beta$?
+
+- [ ] Weil die Lipschitz-Konstante klein ist
+- [x] Weil $|x^{(N)}(t)-x_0|\le M|t-t_0|\le M\delta\le\beta$ gilt
+- [ ] Weil immer $x_0=0$ ist
+- [ ] Weil $f$ linear ist
+
+> Genau dafür wird $\delta\le\beta/M$ gewählt.
+
+### Lipschitz-Bedingungen
+Welche Lipschitz-Konstante in $x$ hat $f(t,x)=t\sin x$ für $|t|\le2$?
+
+- [ ] $L=\pi$
+- [ ] Es gibt keine.
+- [ ] $L=1$
+- [x] $L=2$
+
+> $|t\sin x-t\sin y|\le|t|\,|x-y|\le2|x-y|$.
+
+### Lipschitz-Bedingungen
+Welche Funktion ist auf $\mathbb R$ lokal, aber nicht global Lipschitz-stetig?
+
+- [ ] $|x|$
+- [ ] $3x+1$
+- [ ] $\sin x$
+- [x] $x^3$
+
+> Die Ableitung $3x^2$ ist auf beschränkten Mengen beschränkt, auf ganz $\mathbb R$ aber nicht.
+
+### Lipschitz-Bedingungen
+Ist $f(x)=x^{2/3}$ in einer Umgebung von $x=0$ Lipschitz-stetig?
+
+- [ ] Ja, weil $f$ stetig ist.
+- [ ] Ja, mit $L=1$.
+- [ ] Ja, weil $f$ überall differenzierbar ist.
+- [x] Nein, die Steigung $\frac23x^{-1/3}$ wird bei $0$ unbeschränkt.
+
+> Differenzenquotienten $|f(x)-f(0)|/|x|=|x|^{-1/3}$ sind nicht beschränkt.
+
+### Lipschitz-Bedingungen
+Welche Voraussetzung sichert nach dem Skript (Lemma 3.8) auf einem kompakten Quader $Q$ eine Lipschitz-Bedingung?
+
+- [x] Stetige partielle Ableitungen von $f$ nach $x_1,\dots,x_n$
+- [ ] Nur Stetigkeit von $f$
+- [ ] Monotonie in $t$
+- [ ] Beschränktheit von $f$
+
+> Mit dem Mittelwertsatz folgt $L=nM$, wobei $M$ die Ableitungen beschränkt.
+
+### Lipschitz-Bedingungen
+Welche kleinste Lipschitz-Konstante hat $f(x)=e^x$ auf $[0,1]$?
+
+- [ ] $e^2$
+- [x] $e$
+- [ ] $1$
+- [ ] $0$
+
+> Das Maximum von $|f'(x)|=e^x$ auf $[0,1]$ ist $e$.
+
+### Lipschitz-Bedingungen
+Ist $f(t,x)=\dfrac{x}{1+t^2}$ auf $\mathbb R\times\mathbb R$ global Lipschitz in $x$?
+
+- [ ] Nur für $t>0$.
+- [x] Ja, mit $L=1$.
+- [ ] Nein, weil $t$ unbeschränkt ist.
+- [ ] Ja, mit $L=0$.
+
+> $\frac{1}{1+t^2}\le1$ für alle $t$.
+
+### Lipschitz-Bedingungen
+Warum ist $f(t,x)=t\,x$ auf $\mathbb R\times\mathbb R$ nicht global Lipschitz in $x$?
+
+- [ ] Sie ist es doch, mit $L=1$.
+- [x] Die Konstante müsste $\ge|t|$ sein, und $|t|$ ist unbeschränkt.
+- [ ] Weil $f$ nicht stetig ist.
+- [ ] Weil $f$ linear in $x$ ist.
+
+> Die Lipschitz-Konstante darf nicht von $t$ abhängen. Auf beschränkten Zeitintervallen klappt es.
+
+### Lipschitz-Bedingungen
+Hängt es von der gewählten Norm im $\mathbb R^n$ ab, ob $f$ eine Lipschitz-Bedingung erfüllt?
+
+- [x] Nein, nur der Wert der Konstanten ändert sich.
+- [ ] Ja, man braucht immer die euklidische Norm.
+- [ ] Ja, außer für $n=1$.
+- [ ] Ja, nur die Maximumnorm ist zulässig.
+
+> Im $\mathbb R^n$ sind alle Normen äquivalent.
+
+### Lipschitz-Bedingungen
+Welche Funktion ist auf $[-1,1]\times[-1,1]$ Lipschitz in $x$, obwohl sie in $t$ nicht differenzierbar ist?
+
+- [ ] $f(t,x)=\sqrt{|x|}$
+- [x] $f(t,x)=|t|\,x$
+- [ ] $f(t,x)=x^{1/3}$
+- [ ] $f(t,x)=1/x$
+
+> Für die Lipschitz-Bedingung zählt nur die Abhängigkeit von $x$; hier ist $L=1$.
+
+### Satz von Picard-Lindelöf
+Was bedeutet die Größe $\beta/M$ in $\delta=\min(\alpha,\beta/M)$ anschaulich?
+
+- [ ] Den Anfangswert
+- [ ] Die Lipschitz-Konstante
+- [ ] Die Länge des maximalen Existenzintervalls
+- [x] Die Zeit, in der eine Lösung mit Steigung höchstens $M$ den Streifen $|x-x_0|\le\beta$ nicht verlassen kann
+
+> Mit Steigung $\le M$ ändert sich $x$ in der Zeit $\delta$ um höchstens $M\delta\le\beta$.
+
+### Satz von Picard-Lindelöf
+Für $f(t,x)=1+x^2$ auf $Q=\{|t|\le1,\ |x|\le1\}$: Welches $\delta$ liefert Picard-Lindelöf?
+
+- [ ] $\delta=1$
+- [ ] $\delta=2$
+- [ ] $\delta=1/4$
+- [x] $\delta=1/2$
+
+> $M=\max|f|=2$, also $\delta=\min(1,1/2)$.
+
+### Satz von Picard-Lindelöf
+Für $f(t,x)=t$ auf $Q=\{|t|\le1,\ |x|\le3\}$: Welches $\delta$ liefert Picard-Lindelöf?
+
+- [ ] $\delta=3$
+- [ ] $\delta=0$
+- [ ] $\delta=1/3$
+- [x] $\delta=1$
+
+> $M=1$, also $\delta=\min(1,3)=1$.
+
+### Satz von Picard-Lindelöf
+Was garantiert der Satz von Picard-Lindelöf im Allgemeinen nicht?
+
+- [ ] Lokale Existenz einer Lösung
+- [x] Existenz auf dem ganzen Intervall $[t_0-\alpha,t_0+\alpha]$
+- [ ] Lokale Eindeutigkeit
+- [ ] Stetige Differenzierbarkeit der Lösung
+
+> Er liefert nur ein Intervall $I_\delta(t_0)$ mit $\delta\le\alpha$.
+
+### Satz von Picard-Lindelöf
+Was setzt der Satz von Peano voraus, und was liefert er?
+
+- [ ] Lipschitz-Stetigkeit; er liefert globale Existenz.
+- [x] Nur Stetigkeit von $f$; er liefert lokale Existenz, aber keine Eindeutigkeit.
+- [ ] Differenzierbarkeit; er liefert Eindeutigkeit.
+- [ ] Linearität; er liefert explizite Lösungen.
+
+> Ohne Lipschitz-Bedingung kann es mehrere Lösungen geben.
+
+### Satz von Picard-Lindelöf
+Was bedeutet „lokal“ im Satz von Picard-Lindelöf?
+
+- [ ] Nur kleine Anfangswerte sind erlaubt.
+- [x] Existenz und Eindeutigkeit gelten auf einem (eventuell kleinen) Intervall um $t_0$.
+- [ ] Die Aussage gilt nur im Punkt $t_0$.
+- [ ] Die Lösung existiert für alle $t$.
+
+> Wie weit die Lösung reicht, klärt erst die maximale Fortsetzung.
+
+### Satz von Picard-Lindelöf
+Ist die Lösung von $x'=f(t,x)$ mit stetigem $f$ stetig differenzierbar?
+
+- [ ] Nur, wenn $f$ konstant ist.
+- [ ] Nur, wenn $f$ linear ist.
+- [x] Ja, denn $x'(t)=f(t,x(t))$ ist als Verkettung stetiger Funktionen stetig.
+- [ ] Nein, nur stetig.
+
+> Die Ableitung ist durch die stetige rechte Seite gegeben.
+
+### Lemma von Gronwall
+Aus $0\le r(t)\le\int_0^t 3\,r(s)\,ds$ für $t\ge0$ folgt nach Gronwall:
+
+- [x] $r\equiv0$
+- [ ] $r\equiv3$
+- [ ] $r(t)\le e^{3t}$
+- [ ] Nichts
+
+> Gronwall mit $\varepsilon=0$ liefert $r(t)\le0\cdot e^{3t}$.
+
+### Lemma von Gronwall
+Aus $0\le r(t)\le2+\int_0^t r(s)\,ds$ für $t\ge0$ folgt:
+
+- [ ] $r(t)\le e^{2t}$
+- [ ] $r(t)\le2$
+- [x] $r(t)\le2e^{t}$
+- [ ] $r(t)\le2+t$
+
+> Gronwall mit $\varepsilon=2$, $\delta=1$.
+
+### Lemma von Gronwall
+Wie folgt die Eindeutigkeit aus der Abschätzung $|x(t)-y(t)|\le|x_0-y_0|e^{L|t-t_0|}$?
+
+- [ ] Gar nicht – man braucht zusätzlich Linearität.
+- [ ] Durch eine Taylor-Entwicklung
+- [x] Für $x_0=y_0$ wird die rechte Seite null, also $x=y$.
+- [ ] Weil $e^{L|t-t_0|}$ beschränkt ist
+
+> Diese Abschätzung ist das Ergebnis von Lemma 3.3 mit Gronwall.
+
+### Lemma von Gronwall
+Zwei Lösungen von $x'=-x$ starten mit Abstand $0{,}1$. Wie groß ist ihr Abstand bei $t=1$?
+
+- [x] $0{,}1\,e^{-1}$
+- [ ] $0{,}1$
+- [ ] $0$
+- [ ] $0{,}1\,e$
+
+> Die Differenz löst selbst $z'=-z$.
+
+### Lemma von Gronwall
+Für $x'=\sin x$ (Lipschitz-Konstante $1$) starten zwei Lösungen mit Abstand $0{,}01$. Welche Schranke liefert Gronwall bei $t=2$?
+
+- [x] $0{,}01\,e^{2}$
+- [ ] $0{,}02$
+- [ ] $0{,}01$
+- [ ] $e^{0{,}02}$
+
+> $|x(t)-y(t)|\le|x_0-y_0|e^{L|t-t_0|}$.
+
+### Lemma von Gronwall
+Warum ist die Gronwall-Schranke $e^{L|t-t_0|}$ für $x'=-x$ (mit $L=1$) sehr pessimistisch?
+
+- [ ] Die Lipschitz-Konstante ist hier null.
+- [ ] Sie ist für diese Gleichung falsch.
+- [x] Sie erlaubt Wachstum wie $e^{t}$, tatsächlich schrumpft der Abstand wie $e^{-t}$.
+- [ ] Gronwall gilt nur für wachsende Lösungen.
+
+> Die Lipschitz-Konstante sieht nur den Betrag, nicht das Vorzeichen der Kopplung.
+
+### Eindeutigkeit und Gegenbeispiele
+Ein Tank leert sich nach $h'=-\sqrt{h}$. Warum kann man aus „der Tank ist jetzt leer“ nicht eindeutig zurückrechnen, wann er leer wurde?
+
+- [ ] Weil die Lösung periodisch ist
+- [x] Weil $\sqrt{h}$ bei $h=0$ nicht Lipschitz ist und viele Lösungen in $h=0$ enden
+- [ ] Weil die Gleichung linear ist
+- [ ] Weil Picard-Lindelöf global gilt
+
+> Jede Lösung $h=(c-t)^2/4$ für $t\le c$ und $h=0$ danach endet in $0$, für jedes $c$.
+
+### Eindeutigkeit und Gegenbeispiele
+Welche Funktion löst neben $x\equiv0$ ebenfalls $x'=3x^{2/3}$, $x(0)=0$?
+
+- [ ] $x(t)=t^2$
+- [ ] $x(t)=3t$
+- [x] $x(t)=t^3$
+- [ ] $x(t)=e^{3t}$
+
+> $x'=3t^2$ und $3(t^3)^{2/3}=3t^2$.
+
+### Eindeutigkeit und Gegenbeispiele
+Warum widerspricht die Mehrdeutigkeit bei $x'=3x^{2/3}$, $x(0)=0$ nicht dem Satz von Picard-Lindelöf?
+
+- [ ] Weil der Satz Mehrdeutigkeit erlaubt
+- [ ] Weil $t^3$ keine Lösung ist
+- [x] Weil $3x^{2/3}$ bei $x=0$ keine Lipschitz-Bedingung erfüllt
+- [ ] Weil $3x^{2/3}$ nicht stetig ist
+
+> Eine Voraussetzung des Satzes fehlt, also gilt seine Aussage nicht.
+
+### Eindeutigkeit und Gegenbeispiele
+Können sich zwei verschiedene Lösungskurven von $x'=\sin(x)+t$ schneiden?
+
+- [x] Nein, wegen der Eindeutigkeit (die rechte Seite ist stetig differenzierbar).
+- [ ] Ja, beliebig oft.
+- [ ] Nur bei $t=0$.
+- [ ] Ja, immer genau einmal.
+
+> Im Schnittpunkt hätten beide denselben Anfangswert.
+
+### Eindeutigkeit und Gegenbeispiele
+Kann eine Lösung von $x'=f(x)$ mit stetig differenzierbarem $f$ eine konstante Lösung in endlicher Zeit erreichen?
+
+- [ ] Ja, immer.
+- [x] Nein, sonst wäre sie wegen der Eindeutigkeit selbst konstant.
+- [ ] Ja, falls $f(0)=0$.
+- [ ] Nur bei periodischem $f$.
+
+> Gleichgewichte werden höchstens asymptotisch erreicht.
+
+### Eindeutigkeit und Gegenbeispiele
+Was gilt für $x'=|x|$?
+
+- [ ] Die Lösungen explodieren in endlicher Zeit.
+- [ ] Es gibt keine Lösung.
+- [ ] Wegen des Knicks bei $0$ gibt es keine Eindeutigkeit.
+- [x] Jedes Anfangswertproblem hat eine eindeutige, für alle $t$ existierende Lösung.
+
+> $|x|$ ist global Lipschitz mit $L=1$ – ein Knick schadet nicht.
+
+### Eindeutigkeit und Gegenbeispiele
+$f$ ist stetig, aber nicht Lipschitz. Folgt daraus, dass das Anfangswertproblem mehrere Lösungen hat?
+
+- [ ] Ja, immer.
+- [x] Nein, die Lipschitz-Bedingung ist hinreichend, aber nicht notwendig für Eindeutigkeit.
+- [ ] Ja, aber nur in Dimension eins.
+- [ ] Ja, wenn $f$ beschränkt ist.
+
+> Ohne Lipschitz-Bedingung ist Eindeutigkeit nur nicht mehr garantiert.
+
+### Maximale Fortsetzung
+Welches maximale Existenzintervall hat $x'=1+x^2$, $x(0)=0$?
+
+- [ ] $(0,\pi)$
+- [ ] $\mathbb R$
+- [ ] $(-1,1)$
+- [x] $(-\pi/2,\pi/2)$
+
+> Die Lösung ist $x=\tan t$.
+
+### Maximale Fortsetzung
+Welches maximale Existenzintervall hat $x'=-x^2$, $x(0)=-1$?
+
+- [x] $(-\infty,1)$
+- [ ] $(1,\infty)$
+- [ ] $\mathbb R$
+- [ ] $(-1,\infty)$
+
+> $x=1/(t-1)$; für $t\to1^-$ gilt $x\to-\infty$.
+
+### Maximale Fortsetzung
+Welches maximale Existenzintervall hat $x'=2t\,x^2$, $x(0)=1$?
+
+- [ ] $\mathbb R$
+- [x] $(-1,1)$
+- [ ] $(0,1)$
+- [ ] $(-\infty,1)$
+
+> Trennung ergibt $x=1/(1-t^2)$.
+
+### Maximale Fortsetzung
+Welches maximale Existenzintervall hat $x'=x^3$, $x(0)=1$?
+
+- [ ] $(-1/2,1/2)$
+- [ ] $(-\infty,1)$
+- [ ] $\mathbb R$
+- [x] $(-\infty,1/2)$
+
+> $x^{-2}=1-2t$, also $x=(1-2t)^{-1/2}$.
+
+### Maximale Fortsetzung
+Ist das maximale Existenzintervall einer Lösung offen oder abgeschlossen?
+
+- [ ] Abgeschlossen
+- [ ] Immer ganz $\mathbb R$
+- [x] Offen – an einem Randpunkt im Inneren des Definitionsbereichs könnte man weiter fortsetzen.
+- [ ] Immer $[0,\infty)$
+
+> Läge der Endpunkt noch im Definitionsbereich, liefert Picard-Lindelöf dort eine Fortsetzung.
+
+### Maximale Fortsetzung
+Was passiert, wenn die Lösung nur bis $t_+<\infty$ existiert und $t\to t_+$?
+
+- [ ] Die Lösung wird periodisch.
+- [ ] Nichts Besonderes, man hat nur aufgehört zu rechnen.
+- [ ] Die Lösung wird konstant.
+- [x] $|x(t)|\to\infty$ oder $(t,x(t))$ nähert sich dem Rand des Definitionsbereichs.
+
+> Das ist die Aussage zum Verhalten am Rand des maximalen Existenzintervalls.
+
+### Maximale Fortsetzung
+Warum endet die Lösung von $x'=1/x$, $x(0)=1$ (Definitionsbereich $x>0$) bei $t=-1/2$?
+
+- [ ] Sie endet gar nicht.
+- [ ] Sie explodiert dort.
+- [ ] $f$ ist bei $t=-1/2$ nicht stetig.
+- [x] Die Lösung $\sqrt{1+2t}$ erreicht dort den Rand $x=0$ des Definitionsbereichs.
+
+> Hier endet die Lösung, ohne unbeschränkt zu werden.
+
+### Maximale Fortsetzung
+Bei welchem Zeitpunkt explodiert die Lösung von $x'=x^2$ mit $x(0)=x_0>0$?
+
+- [ ] $t=x_0$
+- [x] $t=1/x_0$
+- [ ] $t=-1/x_0$
+- [ ] Nie
+
+> $x(t)=1/(1/x_0-t)$: Je größer der Anfangswert, desto früher die Explosion.
+
+### Maximale Fortsetzung
+Wie verhält sich die Lösung von $x'=x^2$, $x(0)=-1$ für $t\to\infty$?
+
+- [ ] Sie bleibt konstant $-1$.
+- [x] Sie existiert für alle $t\ge0$ und strebt gegen $0$.
+- [ ] Sie explodiert bei $t=1$.
+- [ ] Sie wächst unbeschränkt.
+
+> $x(t)=-1/(1+t)$; explodiert wird nur rückwärts bei $t=-1$.
+
+### Maximale Fortsetzung
+Welche Gleichung hat für jeden Anfangswert eine für alle $t$ existierende Lösung?
+
+- [ ] $x'=e^x$
+- [x] $x'=\sin x$
+- [ ] $x'=x^2$
+- [ ] $x'=x^3$
+
+> $\sin x$ ist beschränkt und global Lipschitz; die anderen wachsen überlinear.
+
+### Maximale Fortsetzung
+Ein Wachstumsmodell lautet $x'=x^{3/2}$ mit $x(0)>0$. Was folgt?
+
+- [ ] Periodische Schwankungen
+- [ ] Konvergenz gegen eine Kapazität
+- [ ] Exponentielles Wachstum für alle Zeiten
+- [x] Die Population explodiert in endlicher Zeit; das Modell taugt nur für begrenzte Zeiträume.
+
+> $(x^{-1/2})'=-\tfrac12$: $x^{-1/2}$ fällt linear und erreicht null in endlicher Zeit.
+
+### Maximale Fortsetzung
+Ein Stein fällt mit Luftwiderstand: $v'=g-kv^2$, $v(0)=0$ ($g,k>0$). Existiert die Lösung für alle $t\ge0$?
+
+- [ ] Nein, sie explodiert wegen $v^2$.
+- [ ] Nein, die rechte Seite ist nicht Lipschitz.
+- [x] Ja, sie bleibt zwischen $0$ und $\sqrt{g/k}$ und kann nicht explodieren.
+- [ ] Nur bis $t=1$.
+
+> $v=\sqrt{g/k}$ ist ein Gleichgewicht, das nicht überschritten werden kann (Endgeschwindigkeit).
+
+### Maximale Fortsetzung
+Welches maximale Existenzintervall hat $x'=\dfrac{1}{1-t}$, $x(0)=0$ (definiert für $t<1$)?
+
+- [ ] $\mathbb R$
+- [ ] $(-1,1)$
+- [ ] $(0,1)$
+- [x] $(-\infty,1)$
+
+> $x=-\ln(1-t)$ wird für $t\to1^-$ unbeschränkt.
+
+### Maximale Fortsetzung
+Warum existieren Lösungen von $x'=a(t)x+b(t)$ mit auf $\mathbb R$ stetigen $a,b$ für alle $t$?
+
+- [ ] Weil die Lösung konstant ist
+- [ ] Das gilt nicht.
+- [x] Die rechte Seite wächst höchstens linear in $x$, eine Explosion ist ausgeschlossen.
+- [ ] Weil $a$ und $b$ beschränkt sein müssen
+
+> Die Lösung ist explizit über Variation der Konstanten auf ganz $\mathbb R$ gegeben.
+
+### Parameterabhängige Probleme
+Was bedeutet „korrekt gestellt“ für ein Anfangswertproblem?
+
+- [x] Es ist lösbar, die Lösung ist eindeutig und hängt stetig von den Daten ab.
+- [ ] Es ist explizit lösbar.
+- [ ] Es ist nur lösbar.
+- [ ] Es ist lösbar und linear.
+
+> Das sind die drei Eigenschaften aus Abschnitt 3.3.
+
+### Parameterabhängige Probleme
+Warum ist stetige Abhängigkeit von den Daten in Anwendungen so wichtig?
+
+- [ ] Damit die Lösung periodisch wird
+- [ ] Weil Parameter nie variieren
+- [ ] Weil Computer exakt rechnen
+- [x] Messdaten sind ungenau; kleine Fehler sollen nur kleine Änderungen der Lösung bewirken.
+
+> Sonst hätte die Modelllösung keinen verlässlichen Bezug zur Realität.
+
+### Parameterabhängige Probleme
+Für $x'=\mu x$, $x(0)=1$: Wie verhält sich $x(1,\mu)$ für $\mu\to0$?
+
+- [x] Es strebt gegen $1$.
+- [ ] Es springt.
+- [ ] Es strebt gegen unendlich.
+- [ ] Es strebt gegen $0$.
+
+> $x(1,\mu)=e^{\mu}$ hängt stetig von $\mu$ ab.
+
+### Parameterabhängige Probleme
+Ein Getränk kühlt nach $T'=-k\,(T-20)$, $T(0)=90$. Was ist $\partial T/\partial k$ bei fester Zeit $t$?
+
+- [ ] $-70\,e^{-kt}$
+- [x] $-70\,t\,e^{-kt}$
+- [ ] $70\,k\,t\,e^{-kt}$
+- [ ] $0$
+
+> $T=20+70e^{-kt}$; Ableitung nach dem Parameter $k$.
+
+### Parameterabhängige Probleme
+Für $x'=\mu x^2$, $x(0)=1$, $\mu>0$: Wie hängt der Explosionszeitpunkt von $\mu$ ab?
+
+- [x] $t^*=1/\mu$ – er wird kleiner, je größer $\mu$ ist.
+- [ ] $t^*=\mu$
+- [ ] Es gibt keine Explosion.
+- [ ] $t^*=1$ unabhängig von $\mu$
+
+> $x=1/(1-\mu t)$.
+
+### Parameterabhängige Probleme
+Welche Unabhängigkeit verlangt Satz 3.17 von der Lipschitz-Konstanten $L$?
+
+- [x] $L$ darf weder von $x,y,t$ noch vom Parameter $\mu$ abhängen.
+- [ ] Eine Lipschitz-Bedingung ist nicht nötig.
+- [ ] $L$ darf nur von $t$ abhängen.
+- [ ] $L$ muss von $\mu$ abhängen.
+
+> Die Lipschitz-Bedingung muss gleichmäßig im Parameter gelten.
 
 ## Welt 3 – Lineare Differentialgleichungssysteme (Kapitel 4)
 
@@ -2340,7 +2312,7 @@ Welche Zeitfaktoren treten bei einem Jordanblock der Größe zwei zum Eigenwert 
 > Der nilpotente Anteil erzeugt einen zusätzlichen Faktor $t$.
 
 ### Struktur linearer Systeme
-Wie bestimmt man $x_0$ aus $x(t_0)=X(t_0)c$?
+Wie bestimmt man $c$ aus der Anfangsbedingung $X(t_0)c=x_0$?
 
 - [x] $c=X(t_0)^{-1}x_0$
 - [ ] $c=0$
@@ -2509,106 +2481,6 @@ Für $x'=\operatorname{diag}(-1,2)x$ und $x(0)=(1,1)^T$: Welche Lösung stimmt?
 
 > Jede Komponente löst ihre eigene skalare lineare Gleichung.
 
-### Diagonal-Systeme
-Für $x'=\operatorname{diag}(-2,3)x$ und $x(0)=(1,1)^T$: Welche Lösung stimmt?
-
-- [ ] $(e^{-2t},e^{-3t})^T$
-- [ ] $(-2t,3t)^T$
-- [ ] $(e^{2t},e^{-3t})^T$
-- [x] $(e^{-2t},e^{3t})^T$
-
-> Jede Komponente löst ihre eigene skalare lineare Gleichung.
-
-### Diagonal-Systeme
-Für $x'=\operatorname{diag}(-3,4)x$ und $x(0)=(1,1)^T$: Welche Lösung stimmt?
-
-- [x] $(e^{-3t},e^{4t})^T$
-- [ ] $(-3t,4t)^T$
-- [ ] $(e^{-3t},e^{-4t})^T$
-- [ ] $(e^{3t},e^{-4t})^T$
-
-> Jede Komponente löst ihre eigene skalare lineare Gleichung.
-
-### Diagonal-Systeme
-Für $x'=\operatorname{diag}(-4,5)x$ und $x(0)=(1,1)^T$: Welche Lösung stimmt?
-
-- [x] $(e^{-4t},e^{5t})^T$
-- [ ] $(e^{4t},e^{-5t})^T$
-- [ ] $(e^{-4t},e^{-5t})^T$
-- [ ] $(-4t,5t)^T$
-
-> Jede Komponente löst ihre eigene skalare lineare Gleichung.
-
-### Diagonal-Systeme
-Für $x'=\operatorname{diag}(-5,1)x$ und $x(0)=(1,1)^T$: Welche Lösung stimmt?
-
-- [ ] $(-5t,t)^T$
-- [ ] $(e^{-5t},e^{-t})^T$
-- [x] $(e^{-5t},e^{t})^T$
-- [ ] $(e^{5t},e^{-t})^T$
-
-> Jede Komponente löst ihre eigene skalare lineare Gleichung.
-
-### Diagonal-Systeme
-Für $x'=\operatorname{diag}(-2,5)x$ und $x(0)=(1,1)^T$: Welche Lösung stimmt?
-
-- [x] $(e^{-2t},e^{5t})^T$
-- [ ] $(-2t,5t)^T$
-- [ ] $(e^{2t},e^{-5t})^T$
-- [ ] $(e^{-2t},e^{-5t})^T$
-
-> Jede Komponente löst ihre eigene skalare lineare Gleichung.
-
-### Diagonal-Systeme
-Für $x'=\operatorname{diag}(-3,1)x$ und $x(0)=(1,1)^T$: Welche Lösung stimmt?
-
-- [x] $(e^{-3t},e^{t})^T$
-- [ ] $(e^{-3t},e^{-t})^T$
-- [ ] $(-3t,t)^T$
-- [ ] $(e^{3t},e^{-t})^T$
-
-> Jede Komponente löst ihre eigene skalare lineare Gleichung.
-
-### Diagonal-Systeme
-Für $x'=\operatorname{diag}(-4,2)x$ und $x(0)=(1,1)^T$: Welche Lösung stimmt?
-
-- [ ] $(-4t,2t)^T$
-- [x] $(e^{-4t},e^{2t})^T$
-- [ ] $(e^{-4t},e^{-2t})^T$
-- [ ] $(e^{4t},e^{-2t})^T$
-
-> Jede Komponente löst ihre eigene skalare lineare Gleichung.
-
-### Diagonal-Systeme
-Für $x'=\operatorname{diag}(-5,3)x$ und $x(0)=(1,1)^T$: Welche Lösung stimmt?
-
-- [ ] $(e^{-5t},e^{-3t})^T$
-- [ ] $(-5t,3t)^T$
-- [ ] $(e^{5t},e^{-3t})^T$
-- [x] $(e^{-5t},e^{3t})^T$
-
-> Jede Komponente löst ihre eigene skalare lineare Gleichung.
-
-### Diagonal-Systeme
-Für $x'=\operatorname{diag}(-1,4)x$ und $x(0)=(1,1)^T$: Welche Lösung stimmt?
-
-- [ ] $(e^{-t},e^{-4t})^T$
-- [ ] $(-t,4t)^T$
-- [x] $(e^{-t},e^{4t})^T$
-- [ ] $(e^{t},e^{-4t})^T$
-
-> Jede Komponente löst ihre eigene skalare lineare Gleichung.
-
-### Eigenwerte erkennen
-Welche Eigenwerte besitzt $A=\begin{pmatrix}1&0\\0&-2\end{pmatrix}$?
-
-- [ ] $2$ und $0$
-- [x] $1$ und $-2$
-- [ ] $1$ und $2$
-- [ ] $-1$ und $-2$
-
-> Bei einer Diagonalmatrix sind die Diagonaleinträge Eigenwerte.
-
 ### Eigenwerte erkennen
 Welche Eigenwerte besitzt $A=\begin{pmatrix}2&0\\0&-3\end{pmatrix}$?
 
@@ -2616,86 +2488,6 @@ Welche Eigenwerte besitzt $A=\begin{pmatrix}2&0\\0&-3\end{pmatrix}$?
 - [x] $2$ und $-3$
 - [ ] $2$ und $3$
 - [ ] $6$ und $0$
-
-> Bei einer Diagonalmatrix sind die Diagonaleinträge Eigenwerte.
-
-### Eigenwerte erkennen
-Welche Eigenwerte besitzt $A=\begin{pmatrix}3&0\\0&-4\end{pmatrix}$?
-
-- [ ] $12$ und $0$
-- [ ] $-3$ und $-4$
-- [x] $3$ und $-4$
-- [ ] $3$ und $4$
-
-> Bei einer Diagonalmatrix sind die Diagonaleinträge Eigenwerte.
-
-### Eigenwerte erkennen
-Welche Eigenwerte besitzt $A=\begin{pmatrix}4&0\\0&-5\end{pmatrix}$?
-
-- [x] $4$ und $-5$
-- [ ] $-4$ und $-5$
-- [ ] $20$ und $0$
-- [ ] $4$ und $5$
-
-> Bei einer Diagonalmatrix sind die Diagonaleinträge Eigenwerte.
-
-### Eigenwerte erkennen
-Welche Eigenwerte besitzt $A=\begin{pmatrix}5&0\\0&-6\end{pmatrix}$?
-
-- [x] $5$ und $-6$
-- [ ] $30$ und $0$
-- [ ] $5$ und $6$
-- [ ] $-5$ und $-6$
-
-> Bei einer Diagonalmatrix sind die Diagonaleinträge Eigenwerte.
-
-### Eigenwerte erkennen
-Welche Eigenwerte besitzt $A=\begin{pmatrix}6&0\\0&-7\end{pmatrix}$?
-
-- [ ] $-6$ und $-7$
-- [x] $6$ und $-7$
-- [ ] $6$ und $7$
-- [ ] $42$ und $0$
-
-> Bei einer Diagonalmatrix sind die Diagonaleinträge Eigenwerte.
-
-### Eigenwerte erkennen
-Welche Eigenwerte besitzt $A=\begin{pmatrix}7&0\\0&-8\end{pmatrix}$?
-
-- [ ] $7$ und $8$
-- [x] $7$ und $-8$
-- [ ] $-7$ und $-8$
-- [ ] $56$ und $0$
-
-> Bei einer Diagonalmatrix sind die Diagonaleinträge Eigenwerte.
-
-### Eigenwerte erkennen
-Welche Eigenwerte besitzt $A=\begin{pmatrix}8&0\\0&-9\end{pmatrix}$?
-
-- [ ] $8$ und $9$
-- [x] $8$ und $-9$
-- [ ] $72$ und $0$
-- [ ] $-8$ und $-9$
-
-> Bei einer Diagonalmatrix sind die Diagonaleinträge Eigenwerte.
-
-### Eigenwerte erkennen
-Welche Eigenwerte besitzt $A=\begin{pmatrix}9&0\\0&-10\end{pmatrix}$?
-
-- [ ] $-9$ und $-10$
-- [ ] $9$ und $10$
-- [ ] $90$ und $0$
-- [x] $9$ und $-10$
-
-> Bei einer Diagonalmatrix sind die Diagonaleinträge Eigenwerte.
-
-### Eigenwerte erkennen
-Welche Eigenwerte besitzt $A=\begin{pmatrix}10&0\\0&-11\end{pmatrix}$?
-
-- [x] $10$ und $-11$
-- [ ] $-10$ und $-11$
-- [ ] $110$ und $0$
-- [ ] $10$ und $11$
 
 > Bei einer Diagonalmatrix sind die Diagonaleinträge Eigenwerte.
 
@@ -2709,96 +2501,6 @@ Eine skalare Gleichung lautet $x'=-x+2$. Wo liegt das Gleichgewicht?
 
 > Bei $x'=-kx+2k$ ergibt $0=-kx+2k$ den stationären Wert $x_*=2$.
 
-### Gleichgewichte
-Eine skalare Gleichung lautet $x'=-2x+4$. Wo liegt das Gleichgewicht?
-
-- [ ] $x_*=-2$
-- [ ] $x_*=6$
-- [x] $x_*=2$
-- [ ] $x_*=0$
-
-> Bei $x'=-kx+2k$ ergibt $0=-kx+2k$ den stationären Wert $x_*=2$.
-
-### Gleichgewichte
-Eine skalare Gleichung lautet $x'=-3x+6$. Wo liegt das Gleichgewicht?
-
-- [ ] $x_*=9$
-- [x] $x_*=2$
-- [ ] $x_*=-3$
-- [ ] $x_*=0$
-
-> Bei $x'=-kx+2k$ ergibt $0=-kx+2k$ den stationären Wert $x_*=2$.
-
-### Gleichgewichte
-Eine skalare Gleichung lautet $x'=-4x+8$. Wo liegt das Gleichgewicht?
-
-- [ ] $x_*=0$
-- [ ] $x_*=12$
-- [ ] $x_*=-4$
-- [x] $x_*=2$
-
-> Bei $x'=-kx+2k$ ergibt $0=-kx+2k$ den stationären Wert $x_*=2$.
-
-### Gleichgewichte
-Eine skalare Gleichung lautet $x'=-5x+10$. Wo liegt das Gleichgewicht?
-
-- [ ] $x_*=15$
-- [ ] $x_*=-5$
-- [x] $x_*=2$
-- [ ] $x_*=0$
-
-> Bei $x'=-kx+2k$ ergibt $0=-kx+2k$ den stationären Wert $x_*=2$.
-
-### Gleichgewichte
-Eine skalare Gleichung lautet $x'=-6x+12$. Wo liegt das Gleichgewicht?
-
-- [ ] $x_*=18$
-- [x] $x_*=2$
-- [ ] $x_*=-6$
-- [ ] $x_*=0$
-
-> Bei $x'=-kx+2k$ ergibt $0=-kx+2k$ den stationären Wert $x_*=2$.
-
-### Gleichgewichte
-Eine skalare Gleichung lautet $x'=-7x+14$. Wo liegt das Gleichgewicht?
-
-- [ ] $x_*=0$
-- [ ] $x_*=21$
-- [ ] $x_*=-7$
-- [x] $x_*=2$
-
-> Bei $x'=-kx+2k$ ergibt $0=-kx+2k$ den stationären Wert $x_*=2$.
-
-### Gleichgewichte
-Eine skalare Gleichung lautet $x'=-8x+16$. Wo liegt das Gleichgewicht?
-
-- [ ] $x_*=24$
-- [ ] $x_*=-8$
-- [x] $x_*=2$
-- [ ] $x_*=0$
-
-> Bei $x'=-kx+2k$ ergibt $0=-kx+2k$ den stationären Wert $x_*=2$.
-
-### Gleichgewichte
-Eine skalare Gleichung lautet $x'=-9x+18$. Wo liegt das Gleichgewicht?
-
-- [ ] $x_*=0$
-- [x] $x_*=2$
-- [ ] $x_*=27$
-- [ ] $x_*=-9$
-
-> Bei $x'=-kx+2k$ ergibt $0=-kx+2k$ den stationären Wert $x_*=2$.
-
-### Gleichgewichte
-Eine skalare Gleichung lautet $x'=-10x+20$. Wo liegt das Gleichgewicht?
-
-- [x] $x_*=2$
-- [ ] $x_*=0$
-- [ ] $x_*=-10$
-- [ ] $x_*=30$
-
-> Bei $x'=-kx+2k$ ergibt $0=-kx+2k$ den stationären Wert $x_*=2$.
-
 ### Matrixexponential
 Für $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
 
@@ -2809,192 +2511,12 @@ Für $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
 
 > Da $A^2=0$, ist $e^{tA}=I+tA$.
 
-### Matrixexponential
-Für $A=\begin{pmatrix}0&2\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
-
-- [ ] $\begin{pmatrix}e^t&2t\\0&e^t\end{pmatrix}$
-- [ ] $\begin{pmatrix}0&2t\\0&0\end{pmatrix}$
-- [ ] $\begin{pmatrix}1&2\\0&1\end{pmatrix}$
-- [x] $\begin{pmatrix}1&2t\\0&1\end{pmatrix}$
-
-> Da $A^2=0$, ist $e^{tA}=I+tA$.
-
-### Matrixexponential
-Für $A=\begin{pmatrix}0&3\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
-
-- [x] $\begin{pmatrix}1&3t\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}e^t&3t\\0&e^t\end{pmatrix}$
-- [ ] $\begin{pmatrix}1&3\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}0&3t\\0&0\end{pmatrix}$
-
-> Da $A^2=0$, ist $e^{tA}=I+tA$.
-
-### Matrixexponential
-Für $A=\begin{pmatrix}0&4\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
-
-- [ ] $\begin{pmatrix}1&4\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}0&4t\\0&0\end{pmatrix}$
-- [ ] $\begin{pmatrix}e^t&4t\\0&e^t\end{pmatrix}$
-- [x] $\begin{pmatrix}1&4t\\0&1\end{pmatrix}$
-
-> Da $A^2=0$, ist $e^{tA}=I+tA$.
-
-### Matrixexponential
-Für $A=\begin{pmatrix}0&5\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
-
-- [ ] $\begin{pmatrix}e^t&5t\\0&e^t\end{pmatrix}$
-- [ ] $\begin{pmatrix}1&5\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}0&5t\\0&0\end{pmatrix}$
-- [x] $\begin{pmatrix}1&5t\\0&1\end{pmatrix}$
-
-> Da $A^2=0$, ist $e^{tA}=I+tA$.
-
-### Matrixexponential
-Für $A=\begin{pmatrix}0&6\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
-
-- [ ] $\begin{pmatrix}1&6\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}0&6t\\0&0\end{pmatrix}$
-- [x] $\begin{pmatrix}1&6t\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}e^t&6t\\0&e^t\end{pmatrix}$
-
-> Da $A^2=0$, ist $e^{tA}=I+tA$.
-
-### Matrixexponential
-Für $A=\begin{pmatrix}0&7\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
-
-- [ ] $\begin{pmatrix}1&7\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}0&7t\\0&0\end{pmatrix}$
-- [x] $\begin{pmatrix}1&7t\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}e^t&7t\\0&e^t\end{pmatrix}$
-
-> Da $A^2=0$, ist $e^{tA}=I+tA$.
-
-### Matrixexponential
-Für $A=\begin{pmatrix}0&8\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
-
-- [x] $\begin{pmatrix}1&8t\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}e^t&8t\\0&e^t\end{pmatrix}$
-- [ ] $\begin{pmatrix}1&8\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}0&8t\\0&0\end{pmatrix}$
-
-> Da $A^2=0$, ist $e^{tA}=I+tA$.
-
-### Matrixexponential
-Für $A=\begin{pmatrix}0&9\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
-
-- [ ] $\begin{pmatrix}e^t&9t\\0&e^t\end{pmatrix}$
-- [x] $\begin{pmatrix}1&9t\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}1&9\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}0&9t\\0&0\end{pmatrix}$
-
-> Da $A^2=0$, ist $e^{tA}=I+tA$.
-
-### Matrixexponential
-Für $A=\begin{pmatrix}0&10\\0&0\end{pmatrix}$: Was ist $e^{tA}$?
-
-- [x] $\begin{pmatrix}1&10t\\0&1\end{pmatrix}$
-- [ ] $\begin{pmatrix}0&10t\\0&0\end{pmatrix}$
-- [ ] $\begin{pmatrix}e^t&10t\\0&e^t\end{pmatrix}$
-- [ ] $\begin{pmatrix}1&10\\0&1\end{pmatrix}$
-
-> Da $A^2=0$, ist $e^{tA}=I+tA$.
-
 ### Modellierung: gekoppelte Prozesse
-Zwei Stoffmengen erfüllen $u'=-1u+1v$ und $v'=1u-1v$. Welche Größe bleibt erhalten?
+Zwei Stoffmengen erfüllen $u'=-u+v$ und $v'=u-v$. Welche Größe bleibt erhalten?
 
 - [x] $u+v$
 - [ ] $u^2+v$
 - [ ] $uv$
-- [ ] $u-v$
-
-> Addiert man beide Gleichungen, erhält man $(u+v)'=0$.
-
-### Modellierung: gekoppelte Prozesse
-Zwei Stoffmengen erfüllen $u'=-2u+2v$ und $v'=2u-2v$. Welche Größe bleibt erhalten?
-
-- [ ] $u^2+v$
-- [x] $u+v$
-- [ ] $uv$
-- [ ] $u-v$
-
-> Addiert man beide Gleichungen, erhält man $(u+v)'=0$.
-
-### Modellierung: gekoppelte Prozesse
-Zwei Stoffmengen erfüllen $u'=-3u+3v$ und $v'=3u-3v$. Welche Größe bleibt erhalten?
-
-- [ ] $u-v$
-- [ ] $uv$
-- [ ] $u^2+v$
-- [x] $u+v$
-
-> Addiert man beide Gleichungen, erhält man $(u+v)'=0$.
-
-### Modellierung: gekoppelte Prozesse
-Zwei Stoffmengen erfüllen $u'=-4u+4v$ und $v'=4u-4v$. Welche Größe bleibt erhalten?
-
-- [ ] $uv$
-- [x] $u+v$
-- [ ] $u-v$
-- [ ] $u^2+v$
-
-> Addiert man beide Gleichungen, erhält man $(u+v)'=0$.
-
-### Modellierung: gekoppelte Prozesse
-Zwei Stoffmengen erfüllen $u'=-5u+5v$ und $v'=5u-5v$. Welche Größe bleibt erhalten?
-
-- [ ] $u-v$
-- [ ] $u^2+v$
-- [ ] $uv$
-- [x] $u+v$
-
-> Addiert man beide Gleichungen, erhält man $(u+v)'=0$.
-
-### Modellierung: gekoppelte Prozesse
-Zwei Stoffmengen erfüllen $u'=-6u+6v$ und $v'=6u-6v$. Welche Größe bleibt erhalten?
-
-- [ ] $u-v$
-- [x] $u+v$
-- [ ] $uv$
-- [ ] $u^2+v$
-
-> Addiert man beide Gleichungen, erhält man $(u+v)'=0$.
-
-### Modellierung: gekoppelte Prozesse
-Zwei Stoffmengen erfüllen $u'=-7u+7v$ und $v'=7u-7v$. Welche Größe bleibt erhalten?
-
-- [ ] $u^2+v$
-- [x] $u+v$
-- [ ] $uv$
-- [ ] $u-v$
-
-> Addiert man beide Gleichungen, erhält man $(u+v)'=0$.
-
-### Modellierung: gekoppelte Prozesse
-Zwei Stoffmengen erfüllen $u'=-8u+8v$ und $v'=8u-8v$. Welche Größe bleibt erhalten?
-
-- [ ] $uv$
-- [ ] $u-v$
-- [x] $u+v$
-- [ ] $u^2+v$
-
-> Addiert man beide Gleichungen, erhält man $(u+v)'=0$.
-
-### Modellierung: gekoppelte Prozesse
-Zwei Stoffmengen erfüllen $u'=-9u+9v$ und $v'=9u-9v$. Welche Größe bleibt erhalten?
-
-- [ ] $u^2+v$
-- [ ] $uv$
-- [x] $u+v$
-- [ ] $u-v$
-
-> Addiert man beide Gleichungen, erhält man $(u+v)'=0$.
-
-### Modellierung: gekoppelte Prozesse
-Zwei Stoffmengen erfüllen $u'=-10u+10v$ und $v'=10u-10v$. Welche Größe bleibt erhalten?
-
-- [ ] $uv$
-- [x] $u+v$
-- [ ] $u^2+v$
 - [ ] $u-v$
 
 > Addiert man beide Gleichungen, erhält man $(u+v)'=0$.
@@ -3008,4 +2530,444 @@ Für $x'=-x+1$ und $x(0)=0$: Welche Lösung gilt?
 - [ ] $x(t)=1+e^{-t}$
 
 > Eine konstante partikuläre Lösung ist eins; der homogene Anteil korrigiert den Anfangswert.
+
+### Struktur der Lösung
+Warum existieren Lösungen von $x'=A(t)x+b(t)$ mit stetigen $A,b$ auf dem ganzen Intervall $I$ – anders als bei $x'=x^2$?
+
+- [ ] Weil $b=0$ gelten muss
+- [ ] Weil $A$ konstant sein muss
+- [ ] Weil nur $n=1$ erlaubt ist
+- [x] Die rechte Seite wächst höchstens linear in $x$, eine Explosion kann nicht auftreten.
+
+> Das ist Satz 4.1: globale Existenz und Eindeutigkeit für lineare Systeme.
+
+### Struktur der Lösung
+Welche Größe hat eine Fundamentalmatrix eines Systems mit drei Zustandsgrößen?
+
+- [ ] $9\times9$
+- [ ] $1\times3$
+- [ ] $3\times1$
+- [x] $3\times3$
+
+> Drei linear unabhängige Lösungen mit je drei Komponenten bilden die Spalten.
+
+### Struktur der Lösung
+Die Lösung $x_1$ löst $x'=Ax+b_1$, die Lösung $x_2$ löst $x'=Ax+b_2$. Welche Gleichung löst $x_1+x_2$?
+
+- [ ] $x'=Ax$
+- [x] $x'=Ax+b_1+b_2$
+- [ ] $x'=2Ax+b_1+b_2$
+- [ ] $x'=Ax+b_1$
+
+> Superposition der Störterme.
+
+### Struktur der Lösung
+Wie wird $x''+x=\sin t$ als System erster Ordnung geschrieben?
+
+- [x] $x'=\begin{pmatrix}0&1\\-1&0\end{pmatrix}x+\begin{pmatrix}0\\ \sin t\end{pmatrix}$
+- [ ] $x'=\begin{pmatrix}0&-1\\1&0\end{pmatrix}x$
+- [ ] $x'=\begin{pmatrix}0&1\\1&0\end{pmatrix}x+\begin{pmatrix}\sin t\\0\end{pmatrix}$
+- [ ] $x'=\begin{pmatrix}1&0\\0&1\end{pmatrix}x$
+
+> Mit $x_1=x$, $x_2=x'$: $x_1'=x_2$, $x_2'=-x_1+\sin t$.
+
+### Wronski-Determinante
+Für die Lösungen $x_1=(e^t,0)^T$ und $x_2=(0,e^{2t})^T$ eines Systems: Was ist die Wronski-Determinante?
+
+- [ ] $e^t$
+- [ ] $e^{2t}$
+- [ ] $0$
+- [x] $e^{3t}$
+
+> $W=\det\begin{pmatrix}e^t&0\\0&e^{2t}\end{pmatrix}$ – sie verschwindet nie, also liegt ein Fundamentalsystem vor.
+
+### Wronski-Determinante
+Für $x'=Ax$ mit konstanter Matrix, $\operatorname{tr}A=-2$ und $W(0)=5$: Was ist $W(t)$?
+
+- [ ] $5$
+- [x] $5e^{-2t}$
+- [ ] $5-2t$
+- [ ] $5e^{2t}$
+
+> Abelsche Formel: $W(t)=W(t_0)\exp\int_{t_0}^t\operatorname{tr}A(s)\,ds$.
+
+### Wronski-Determinante
+Für $x'=A(t)x$ gilt $\operatorname{tr}A(t)=2t$ und $W(0)=1$. Was ist $W(t)$?
+
+- [ ] $e^{2t}$
+- [ ] $1+t^2$
+- [ ] $2t$
+- [x] $e^{t^2}$
+
+> $\int_0^t 2s\,ds=t^2$.
+
+### Wronski-Determinante
+Die Wronski-Determinante zweier Lösungen ist bei $t=0$ gleich null. Was folgt?
+
+- [ ] Die Lösungen sind nur bei $t=0$ abhängig.
+- [ ] Später können sie unabhängig werden.
+- [ ] Nichts.
+- [x] Sie ist überall null; die Lösungen sind linear abhängig.
+
+> Satz 4.4: verschwindet $W$ an einer Stelle, dann überall.
+
+### Wronski-Determinante
+Die Vektorfunktionen $(1,t)^T$ und $(t,t^2)^T$ sind linear unabhängig, ihre Determinante ist aber überall null. Was folgt?
+
+- [x] Sie können nicht beide Lösungen desselben Systems $x'=A(t)x$ mit stetigem $A$ sein.
+- [ ] Satz 4.4 ist falsch.
+- [ ] Sie sind doch linear abhängig.
+- [ ] Sie bilden ein Fundamentalsystem.
+
+> Für Lösungen eines linearen Systems wäre $W\equiv0$ gleichbedeutend mit linearer Abhängigkeit.
+
+### Wronski-Determinante
+Was ist $\operatorname{tr}\begin{pmatrix}1&2\\3&4\end{pmatrix}$?
+
+- [ ] $10$
+- [ ] $4$
+- [ ] $-2$
+- [x] $5$
+
+> Summe der Diagonaleinträge; $-2$ wäre die Determinante.
+
+### Wronski-Determinante
+Ist $X(t)=\begin{pmatrix}e^t&e^{t}\\0&0\end{pmatrix}$ eine Fundamentalmatrix eines $2\times2$-Systems?
+
+- [x] Nein, ihre Spalten sind linear abhängig ($\det X=0$).
+- [ ] Nur bei $t=0$.
+- [ ] Ja, weil die Einträge Lösungen sind.
+- [ ] Ja, für $t>0$.
+
+> Eine Fundamentalmatrix ist für alle $t$ invertierbar.
+
+### Inhomogene Systeme
+Welche Gleichung erfüllt $C(t)$ beim Ansatz $x(t)=X(t)C(t)$ für $x'=A(t)x+b(t)$?
+
+- [ ] $C(t)=X(t)^{-1}$
+- [ ] $C'(t)=A(t)C(t)$
+- [x] $X(t)\,C'(t)=b(t)$
+- [ ] $X'(t)C(t)=b(t)$
+
+> Wegen $X'=AX$ heben sich die Terme mit $C$ auf – wie im skalaren Fall.
+
+### Inhomogene Systeme
+Welches Gleichgewicht hat $x'=Ax+b$ mit $A=\operatorname{diag}(-1,-2)$ und $b=(1,4)^T$?
+
+- [ ] $x_*=(0,0)^T$
+- [ ] $x_*=(1,4)^T$
+- [x] $x_*=(1,2)^T$
+- [ ] $x_*=(-1,-2)^T$
+
+> $Ax_*+b=0$ komponentenweise: $-x_1+1=0$, $-2x_2+4=0$.
+
+### Inhomogene Systeme
+Wie lautet die Lösung von $x'=Ax+b$ mit konstantem $b$, invertierbarem $A$ und Gleichgewicht $x_*$?
+
+- [ ] $x(t)=e^{tA}x_*$
+- [ ] $x(t)=e^{tA}x_0+b$
+- [ ] $x(t)=x_*$
+- [x] $x(t)=x_*+e^{tA}(x_0-x_*)$
+
+> $z=x-x_*$ löst die homogene Gleichung $z'=Az$.
+
+### Matrixexponential
+Für die $3\times3$-Matrix $N$ mit Einsen auf der ersten Nebendiagonale gilt $N^3=0$. Was ist $e^{tN}$?
+
+- [ ] $E+tN$
+- [ ] $E+tN+t^2N^2+t^3N^3$
+- [x] $E+tN+\frac{t^2}{2}N^2$
+- [ ] $e^tE$
+
+> Die Exponentialreihe bricht ab, weil alle höheren Potenzen verschwinden.
+
+### Matrixexponential
+Gilt $\left(e^{tA}\right)^{-1}=e^{-tA}$?
+
+- [ ] Nur für symmetrisches $A$.
+- [ ] Nein, das gilt nie.
+- [ ] Nur für Diagonalmatrizen.
+- [x] Ja, weil $tA$ und $-tA$ kommutieren und $e^{0}=E$ ist.
+
+> Satz 4.13: $e^{tA}e^{-tA}=e^{0}=E$.
+
+### Matrixexponential
+Für $A=\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix}$: Was ist $e^{tA}$?
+
+- [x] $e^{\lambda t}\begin{pmatrix}1&t\\0&1\end{pmatrix}$
+- [ ] $e^{\lambda t}E$
+- [ ] $\begin{pmatrix}e^{\lambda t}&1\\0&e^{\lambda t}\end{pmatrix}$
+- [ ] $\begin{pmatrix}e^{\lambda t}&e^{t}\\0&e^{\lambda t}\end{pmatrix}$
+
+> $A=\lambda E+N$ mit $N^2=0$; $\lambda E$ und $N$ kommutieren.
+
+### Matrixexponential
+Was bedeutet $\operatorname{tr}A=0$ für die Fundamentalmatrix $e^{tA}$?
+
+- [ ] $e^{tA}=E$
+- [ ] $e^{tA}$ ist nicht invertierbar.
+- [x] $\det e^{tA}=1$ – Flächen im Phasenraum bleiben erhalten.
+- [ ] $\det e^{tA}=0$
+
+> $\det e^{tA}=e^{t\operatorname{tr}A}$.
+
+### Matrixexponential
+Für $A=SDS^{-1}$ mit Diagonalmatrix $D$: Was ist $A^k$?
+
+- [ ] $kSDS^{-1}$
+- [x] $SD^kS^{-1}$
+- [ ] $D^k$
+- [ ] $S^kD^kS^{-k}$
+
+> Die inneren Faktoren $S^{-1}S$ heben sich auf; deshalb $e^{tA}=Se^{tD}S^{-1}$.
+
+### Matrixexponential
+Wie hängen $e^{tA}$ und eine beliebige Fundamentalmatrix $X(t)$ von $x'=Ax$ zusammen?
+
+- [x] $e^{tA}=X(t)X(0)^{-1}$
+- [ ] $e^{tA}=X(t)^{-1}$
+- [ ] $e^{tA}=X(t)$ immer
+- [ ] $e^{tA}=X(0)X(t)$
+
+> $X(t)X(0)^{-1}$ ist die Fundamentalmatrix mit dem Wert $E$ bei $t=0$.
+
+### Eigenwerte und Fundamentalsysteme
+$A=\begin{pmatrix}1&1\\0&2\end{pmatrix}$ hat den Eigenvektor $v=(1,1)^T$. Welche Lösung von $x'=Ax$ erhält man daraus?
+
+- [ ] $e^{t}(1,1)^T$
+- [ ] $(1+2t)(1,1)^T$
+- [ ] $e^{3t}(1,1)^T$
+- [x] $e^{2t}(1,1)^T$
+
+> $Av=(2,2)^T=2v$, also $\lambda=2$ und $x=e^{\lambda t}v$.
+
+### Eigenwerte und Fundamentalsysteme
+Welche Eigenwerte hat $\begin{pmatrix}3&5\\0&-1\end{pmatrix}$?
+
+- [ ] $5$ und $-1$
+- [x] $3$ und $-1$
+- [ ] $-3$ und $1$
+- [ ] $3$ und $5$
+
+> Bei Dreiecksmatrizen stehen die Eigenwerte auf der Diagonale.
+
+### Eigenwerte und Fundamentalsysteme
+Für $A=\begin{pmatrix}0&-2\\2&0\end{pmatrix}$: Welche Zeitfunktionen treten in einem reellen Fundamentalsystem auf?
+
+- [ ] Nur Konstanten
+- [x] $\cos(2t)$ und $\sin(2t)$
+- [ ] $t\,e^{2t}$
+- [ ] $e^{2t}$ und $e^{-2t}$
+
+> Die Eigenwerte sind $\pm2i$; Real- und Imaginärteil von $e^{2it}v$ ergeben reelle Lösungen.
+
+### Eigenwerte und Fundamentalsysteme
+Warum darf man bei reellem $A$ Real- und Imaginärteil einer komplexen Lösung $e^{\lambda t}v$ verwenden?
+
+- [x] Weil sie selbst reelle Lösungen von $x'=Ax$ sind
+- [ ] Weil die Eigenwerte immer reell sind
+- [ ] Weil $v$ reell ist
+- [ ] Das ist nicht erlaubt.
+
+> Mit $x$ ist auch $\bar x$ Lösung, also auch $(x+\bar x)/2$ und $(x-\bar x)/(2i)$.
+
+### Eigenwerte und Fundamentalsysteme
+Kann ein reelles $2\times2$-System genau einen nichtreellen Eigenwert haben?
+
+- [x] Nein, nichtreelle Eigenwerte treten in konjugiert-komplexen Paaren auf.
+- [ ] Nur wenn die Spur null ist.
+- [ ] Ja, bei symmetrischen Matrizen.
+- [ ] Ja, immer.
+
+> Das charakteristische Polynom hat reelle Koeffizienten.
+
+### Eigenwerte und Fundamentalsysteme
+Für eine $2\times2$-Matrix mit Eigenwerten $\lambda_1,\lambda_2$ gilt:
+
+- [ ] $\lambda_1=\lambda_2$ immer
+- [ ] $\lambda_1+\lambda_2=\det A$
+- [x] $\lambda_1+\lambda_2=\operatorname{tr}A$ und $\lambda_1\lambda_2=\det A$
+- [ ] $\lambda_1\lambda_2=\operatorname{tr}A$
+
+> Vergleich mit $\lambda^2-\operatorname{tr}A\,\lambda+\det A$.
+
+### Eigenwerte und Fundamentalsysteme
+$v$ ist Eigenvektor zum Eigenwert $\lambda$. Welche Lösung hat $x'=Ax$ mit $x(0)=3v$?
+
+- [x] $x(t)=3e^{\lambda t}v$
+- [ ] $x(t)=e^{\lambda t}(v+3)$
+- [ ] $x(t)=e^{3\lambda t}v$
+- [ ] $x(t)=3\lambda t\,v$
+
+> Linearität und $e^{tA}v=e^{\lambda t}v$.
+
+### Eigenwerte und Fundamentalsysteme
+$v_1,v_2$ sind Eigenvektoren zu $\lambda_1,\lambda_2$. Welche Lösung hat $x'=Ax$ mit $x(0)=v_1+v_2$?
+
+- [x] $e^{\lambda_1t}v_1+e^{\lambda_2t}v_2$
+- [ ] $e^{(\lambda_1+\lambda_2)t}(v_1+v_2)$
+- [ ] $e^{\lambda_1t}(v_1+v_2)$
+- [ ] $(v_1+v_2)$ konstant
+
+> Superposition der Eigenlösungen.
+
+### Eigenwerte und Fundamentalsysteme
+Welche Aussage über symmetrische reelle Matrizen ist richtig?
+
+- [ ] Sie sind nie diagonalisierbar.
+- [ ] Sie haben nur den Eigenwert null.
+- [x] Sie sind stets reell diagonalisierbar.
+- [ ] Sie haben nur komplexe Eigenwerte.
+
+> Spektralsatz: reelle Eigenwerte und eine Orthonormalbasis aus Eigenvektoren.
+
+### Hauptvektoren
+Welche algebraische und geometrische Vielfachheit hat der Eigenwert $2$ von $\begin{pmatrix}2&1\\0&2\end{pmatrix}$?
+
+- [ ] Beide $2$
+- [x] Algebraisch $2$, geometrisch $1$
+- [ ] Beide $1$
+- [ ] Algebraisch $1$, geometrisch $2$
+
+> Es gibt nur einen linear unabhängigen Eigenvektor $(1,0)^T$; die Matrix ist nicht diagonalisierbar.
+
+### Hauptvektoren
+Wie ist ein Hauptvektor zweiter Stufe $v_2$ zum Eigenwert $\lambda$ definiert?
+
+- [x] $(A-\lambda E)v_2=v_1$ mit einem Eigenvektor $v_1$
+- [ ] $(A-\lambda E)v_2=0$
+- [ ] $v_2=2v_1$
+- [ ] $Av_2=2\lambda v_2$
+
+> Zweimal angewandt: $(A-\lambda E)^2v_2=0$.
+
+### Hauptvektoren
+Mit Eigenvektor $v_1$ und Hauptvektor $v_2$ zu $\lambda$: Welche zweite Lösung ergänzt $e^{\lambda t}v_1$ zu einem Fundamentalsystem?
+
+- [ ] $e^{2\lambda t}v_2$
+- [ ] $e^{\lambda t}v_2$
+- [ ] $t\,v_2$
+- [x] $e^{\lambda t}(v_2+t\,v_1)$
+
+> Satz 4.19: $e^{tA}v_2=e^{\lambda t}e^{t(A-\lambda E)}v_2$.
+
+### Hauptvektoren
+Welche Matrix ist nicht diagonalisierbar?
+
+- [ ] $\begin{pmatrix}2&0\\0&2\end{pmatrix}$
+- [ ] $\begin{pmatrix}0&1\\1&0\end{pmatrix}$
+- [ ] $\begin{pmatrix}1&0\\0&2\end{pmatrix}$
+- [x] $\begin{pmatrix}1&1\\0&1\end{pmatrix}$
+
+> Doppelter Eigenwert $1$ mit nur einem Eigenvektor. Die Matrix $\begin{pmatrix}0&1\\1&0\end{pmatrix}$ hat die verschiedenen Eigenwerte $\pm1$.
+
+### Langzeitverhalten
+Die Matrix $A=\begin{pmatrix}-1&1\\0&-3\end{pmatrix}$ hat die Eigenwerte $-1$ und $-3$. Was gilt für alle Lösungen von $x'=Ax$?
+
+- [ ] Sie wachsen unbeschränkt.
+- [ ] Sie sind konstant.
+- [x] Sie streben für $t\to\infty$ gegen $0$.
+- [ ] Sie sind periodisch.
+
+> Alle exponentiellen Zeitfaktoren klingen ab.
+
+### Langzeitverhalten
+Für $A=\operatorname{diag}(0,-1)$: Wie verhalten sich die Lösungen von $x'=Ax$ für $t\to\infty$?
+
+- [ ] Sie streben immer gegen null.
+- [ ] Sie schwingen.
+- [ ] Sie wachsen unbeschränkt.
+- [x] Sie konvergieren gegen einen konstanten Vektor (nicht unbedingt null).
+
+> Die erste Komponente bleibt konstant, die zweite klingt ab.
+
+### Langzeitverhalten
+Die Eigenwerte sind $1$ und $-1$. Welche Lösungen von $x'=Ax$ bleiben für $t\to\infty$ beschränkt?
+
+- [ ] Alle
+- [x] Nur die mit Anfangswert auf der Eigengeraden zum Eigenwert $-1$
+- [ ] Nur die zum Eigenwert $1$
+- [ ] Keine, auch nicht die Nulllösung
+
+> Jeder Anteil in Richtung des Eigenvektors zu $1$ wächst wie $e^{t}$ (Sattel).
+
+### Langzeitverhalten
+Was beschreiben Eigenwerte $\alpha\pm i\beta$ mit $\alpha<0$, $\beta\neq0$?
+
+- [ ] Exponentielles Wachstum ohne Schwingung
+- [x] Gedämpfte Schwingungen, die gegen null gehen
+- [ ] Ungedämpfte Schwingungen
+- [ ] Konstante Lösungen
+
+> Lösungen enthalten $e^{\alpha t}\cos(\beta t)$ und $e^{\alpha t}\sin(\beta t)$.
+
+### Anwendungen
+Kammer 1 entleert sich in Kammer 2, aus der Stoff nach außen abfließt: $u'=-2u$, $v'=2u-v$. Was gilt für $t\to\infty$?
+
+- [ ] $v$ wächst unbeschränkt.
+- [ ] $u+v$ bleibt konstant.
+- [ ] $v$ strebt gegen $2$.
+- [x] Beide Mengen streben gegen $0$.
+
+> Die Eigenwerte der Dreiecksmatrix sind $-2$ und $-1$.
+
+### Anwendungen
+Warum bleibt bei $u'=-2u$, $v'=2u-v$ die Gesamtmenge $u+v$ nicht erhalten?
+
+- [x] Weil aus Kammer 2 Stoff nach außen abfließt: $(u+v)'=-v$
+- [ ] Weil die Matrix nicht invertierbar ist
+- [ ] Weil $u$ negativ wird
+- [ ] Sie bleibt doch erhalten.
+
+> Nur bei reinem Austausch heben sich die Flüsse in der Summe auf.
+
+### Anwendungen
+Ein Federschwinger $x''=-\omega^2x$ als System: Welche Eigenwerte hat die Systemmatrix $\begin{pmatrix}0&1\\-\omega^2&0\end{pmatrix}$?
+
+- [ ] $\pm\omega$
+- [ ] $-\omega$ doppelt
+- [x] $\pm i\omega$
+- [ ] $0$ doppelt
+
+> $\lambda^2+\omega^2=0$ – ungedämpfte Schwingung mit Kreisfrequenz $\omega$.
+
+### Anwendungen
+Welche Eigenwerte gehören zum gedämpften Schwinger $x''+2x'+5x=0$?
+
+- [x] $-1\pm2i$
+- [ ] $-2$ und $-5$
+- [ ] $\pm\sqrt5$
+- [ ] $1\pm2i$
+
+> $\lambda^2+2\lambda+5=0$; die Lösungen sind gedämpfte Schwingungen.
+
+### Anwendungen
+Zwei gleiche Pendel sind durch eine schwache Feder gekoppelt. Welche einfachen Bewegungsformen (Normalschwingungen) gibt es?
+
+- [ ] Nur exponentielles Abklingen
+- [x] Gleichphasige und gegenphasige Schwingung
+- [ ] Nur eine einzige Schwingungsform
+- [ ] Keine – die Bewegung ist immer chaotisch
+
+> Sie entsprechen den Eigenvektoren der Systemmatrix; jede Bewegung ist eine Überlagerung davon.
+
+### Anwendungen
+Warum führen Netzwerke aus Widerständen, Spulen und Kondensatoren auf lineare Differentialgleichungssysteme?
+
+- [ ] Weil Ströme immer konstant sind
+- [ ] Weil nur Widerstände vorkommen
+- [x] Die Bauteilgesetze ($U=RI$, $U=LI'$, $I=CU'$) und die Kirchhoffschen Regeln sind linear.
+- [ ] Das stimmt nicht, sie sind immer nichtlinear.
+
+> Unbekannte Ströme und Spannungen treten nur linear auf.
+
+### Anwendungen
+Ein Schwingkreis ohne Widerstand erfüllt $LI''+I/C=0$. Welche Kreisfrequenz hat die Schwingung?
+
+- [x] $\omega=1/\sqrt{LC}$
+- [ ] $\omega=L/C$
+- [ ] $\omega=\sqrt{LC}$
+- [ ] $\omega=1/(LC)$
+
+> $I''=-\frac{1}{LC}I$, also Eigenwerte $\pm i/\sqrt{LC}$.
 
