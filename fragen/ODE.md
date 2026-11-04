@@ -19,7 +19,10 @@ Löse $y'=-y,\ y(0)=1$.           ← Fragetext, Formeln zwischen $ ... $
 ```
 
 * Fragen stehen unter **„## Welt 1“**, **„## Welt 2“** oder **„## Welt 3“** und kommen nur in dieser Welt vor.
-* Jede Welt hat 15 Σ-Kisten und einen Endgegner. Mit 15 bis 18 Fragen pro Welt wiederholt sich nichts.
+* Pro Welt dürfen **beliebig viele Fragen** stehen. Beim Wählen des Katalogs sucht das Spiel für jede Welt
+  **zufällig 15 Fragen** aus und speichert diese Auswahl. Sie wird dann im Spiel (15 Σ-Kisten) und im Lernpfad
+  (3 Lektionen à 5 Fragen) dauerhaft verwendet – bis man im Titelbild „Neuer Katalog / Zurücksetzen“ wählt.
+* Die Reihenfolge der Antworten wird im Spiel jedes Mal gemischt; welche Antwort mit `[x]` markiert ist, bleibt richtig.
 * 2 bis 4 Antworten sind möglich. **Fett** mit `**Wort**`.
 
 ---
