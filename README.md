@@ -40,7 +40,10 @@ Löse das Anfangswertproblem $y'(t)+2y(t)=0,\ y(0)=3$.
 * Formeln in `$ ... $` (LaTeX, einfacher Backslash).
 * Pro Welt dürfen beliebig viele Fragen stehen (großer Fragekatalog). Beim Wählen des Katalogs sucht das Spiel für jede Welt
   zufällig 15 Fragen aus und speichert diese Auswahl im Browser. Diese 15 Fragen werden dann dauerhaft gespielt:
-  im Spielmodus in den 15 Σ-Kisten und bei den Endgegnern, im Lernpfad als 3 Lektionen à 5 Fragen.
+  im Spielmodus in den 15 Σ-Kisten, im Lernpfad als 3 Lektionen à 5 Fragen.
+  Bei jedem neuen Versuch einer Welt (z. B. nach einem Game Over) kommen diese 15 Fragen in neu gemischter Reihenfolge.
+* Die **Endgegner** stellen Fragen aus dem übrigen Katalog der Welt (nicht aus den 15 Kisten-Fragen),
+  innerhalb eines Versuchs ohne Wiederholung. Ein großer Katalog sorgt also für Abwechslung im Bosskampf.
 * Die Antworten werden bei jeder Frage neu gemischt – A, B, C, D sind also nicht fest vergeben.
 
 Hinweis: Wer die Fragen in der Repository-Ansicht liest, sieht auch die richtigen Antworten.

@@ -6922,7 +6922,9 @@ function hitBlock(c,r){const ch=tile(c,r);
         else{const type=P.power===0?'potion':'flower';if(P.power===2)score(1000,c*8,r*8-20);else{CUR.items.push({type,x:c*8,y:r*8,w:8,h:8,vx:0,vy:0,emerge:16});SFX.appear()}}}
       else G.run.wrong++})}
   else SFX.bump()}
-function kickTop(c,r){const box={x:c*8,y:r*8-4,w:8,h:4};for(const e of CUR.enemies)if(!e.dead&&e.active&&overlap(box,e))killFlip(e,200)}
+function kickTop(c,r){const box={x:c*8,y:r*8-4,w:8,h:4};for(const e of CUR.enemies)if(!e.dead&&e.active&&overlap(box,e))killFlip(e,200);
+  for(const it of CUR.items)if((it.type==='flower'||it.type==='potion')&&!it.emerge&&overlap(box,it)){it.vx=(P.x+4<it.x+4?.6:-.6);it.vy=-2.6;it.moving=true}}
+function lowCeil(it){const c=fl((it.x+4)/8),r=fl(it.y/8);for(let k=1;k<=3;k++)if(SOLID.has(tile(c,r-k)))return true;return false}
 function killFlip(e,pts){e.dead=true;e.vy=-2.5;e.vx=e.x<P.x?-.6:.6;score(pts,e.x,e.y-6);SFX.stomp()}
 
 /* ---------------- Fragefenster ---------------- */
@@ -7085,13 +7087,13 @@ function updateHazards(){const pb={x:P.x+1,y:P.y+2,w:P.w-2,h:P.h-3};
 function updateItems(){for(const it of CUR.items){
     if(it.type==='pop'){it.y+=it.vy;it.vy+=.25;if(--it.t<=0)it.gone=true;continue}
     if(it.type==='star'){if(overlap(it,P)){it.gone=true;L.stars++;score(500);SFX.star();burst(it.x+4,it.y+4,6,['#ffd23a','#fff'])}continue}
-    if(it.emerge>0){it.y-=.5;it.emerge--;if(!it.emerge&&it.type==='potion')it.vx=.6;continue}
+    if(it.emerge>0){it.y-=.5;it.emerge--;if(!it.emerge&&it.type==='potion')it.vx=.6;if(!it.emerge&&it.type==='flower'&&lowCeil(it)){it.vx=P.x+4<it.x+4?.6:-.6;it.moving=true}continue}
     if(it.type==='frog'){it.hop--;it.life=(it.life||0)+1;const dx=(P.x+4)-(it.x+5),dy=(P.y+P.h/2)-(it.y+4);
       if(!it.wild&&it.life>300){const dd=Math.hypot(dx,dy)||1;it.x+=dx/dd*2.5;it.y+=dy/dd*2.5;it.face=Math.sign(dx)||1;if(dd<6){it.gone=true;addLife(it.x,it.y);burst(it.x+5,it.y+4,12,['#5cf06a','#fff'])}continue}
       if(it.on&&it.hop<=0){const sg=it.wild?(Math.random()<.5?-1:1):(Math.sign(dx)||1);it.vx=sg*(it.wild?.6:Math.max(.8,Math.min(1.5,Math.abs(dx)*.04)));it.vy=it.wild?-2.4:-3;it.hop=it.wild?50:24;it.face=sg}
       phys(it,.2);if(it.on)it.vx*=.8;if(it.y>MAPH){it.gone=true;addLife(P.x,P.y);continue}
       if(overlap(it,P)){it.gone=true;addLife(it.x,it.y);burst(it.x+5,it.y+4,12,['#5cf06a','#fff'])}continue}
-    if(it.type==='potion'){if(phys(it))it.vx=-it.vx;if(it.y>MAPH)it.gone=true}
+    if(it.type==='potion'||it.moving){if(phys(it))it.vx=-it.vx;if(it.type==='flower'&&it.on&&!lowCeil(it)){it.vx=0;it.moving=false}if(it.y>MAPH)it.gone=true}
     if(overlap(it,P)&&state==='play'){it.gone=true;score(1000,it.x,it.y-6);
       if(it.type==='potion'){if(P.power===0){setPower(1);P.freeze=40;P.frz='grow'}SFX.power()}
       else{const was=P.power;setPower(2);P.freeze=was===0?40:24;P.frz='grow';SFX.power();msg(G.hero===0?'HELGA: FEUER MIT B!':'EMMY: RENNEN + SPRINGEN = FLIEGEN!',150,'#8ee4ff')}}}
