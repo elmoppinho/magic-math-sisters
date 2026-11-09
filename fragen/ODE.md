@@ -368,7 +368,7 @@ Wann ist $h(t,x)x'+g(t,x)=0$ exakt?
 > Dann ist die Gleichung die Ableitung von $F(t,x(t))=C$.
 
 ### Exakte Differentialgleichungen
-Welche Bedingung ist bei $C^1$-Koeffizienten notwendig für Exaktheit?
+Für die Gleichung $h(t,x)\,x'+g(t,x)=0$ mit $C^1$-Koeffizienten $g,h$: Welche Bedingung ist notwendig für Exaktheit?
 
 - [ ] $g_x=-h_t$
 - [ ] $g=h$
@@ -378,7 +378,7 @@ Welche Bedingung ist bei $C^1$-Koeffizienten notwendig für Exaktheit?
 > Gemischte zweite Ableitungen eines Potentials stimmen überein.
 
 ### Exakte Differentialgleichungen
-Welche zusätzliche Gebietseigenschaft macht $g_x=h_t$ hinreichend?
+Für $h(t,x)\,x'+g(t,x)=0$ gelte $g_x=h_t$. Welche zusätzliche Eigenschaft des Gebiets macht diese Bedingung hinreichend für Exaktheit?
 
 - [ ] Beschränktheit des Gebiets.
 - [ ] Dass das Gebiet nur einen Punkt enthält.
@@ -408,7 +408,7 @@ Welche implizite Lösung gehört zu $2x x'+2t=0$?
 > Die linke Seite ist die Ableitung von $x^2+t^2$.
 
 ### Exakte Differentialgleichungen
-Sind $g(t,x)=3x$ und $h(t,x)=3t$ kompatibel mit einem Potential?
+Gehört zur Gleichung $h(t,x)\,x'+g(t,x)=0$ mit $g(t,x)=3x$ und $h(t,x)=3t$ ein Potential, ist sie also exakt?
 
 - [x] Ja, denn $g_x=h_t=3$.
 - [ ] Nein, weil $g$ von $x$ abhängt.
@@ -418,7 +418,7 @@ Sind $g(t,x)=3x$ und $h(t,x)=3t$ kompatibel mit einem Potential?
 > Die Integrabilitätsbedingung ist erfüllt; auf $\mathbb R^2$ existiert ein Potential.
 
 ### Exakte Differentialgleichungen
-Welche Aussage über einen integrierenden Faktor ist richtig?
+Welche Aussage über einen integrierenden Faktor für eine Gleichung $h(t,x)\,x'+g(t,x)=0$ ist richtig?
 
 - [ ] Er beseitigt die Anfangsbedingung.
 - [x] Er kann eine nicht exakte Gleichung in eine exakte verwandeln.
@@ -438,7 +438,7 @@ Für $F(t,x)=t^2+x^2$: Welche Gleichung folgt aus $F(t,x(t))=C$?
 > Die Kettenregel liefert $F_t+F_x x'=0$.
 
 ### Exakte Differentialgleichungen
-Warum genügt $g_x=h_t$ auf einem Gebiet mit Loch nicht immer?
+Für $h(t,x)\,x'+g(t,x)=0$ gelte $g_x=h_t$. Warum folgt daraus auf einem Gebiet mit Loch nicht immer die Exaktheit?
 
 - [x] Es können globale Hindernisse für ein Potential auftreten.
 - [ ] Weil jede Kurve dort konstant ist.
@@ -448,7 +448,7 @@ Warum genügt $g_x=h_t$ auf einem Gebiet mit Loch nicht immer?
 > Die Bedingung ist lokal; global ist die Topologie relevant.
 
 ### Exakte Differentialgleichungen
-Was beschreibt $F(t,x(t))=C$ bei einer exakten Gleichung?
+Die Gleichung $h(t,x)\,x'+g(t,x)=0$ sei exakt mit Potential $F$. Was beschreibt $F(t,x(t))=C$?
 
 - [ ] Die Funktion $F$ ist identisch null.
 - [ ] Die Ableitung $x'$ ist stets eins.
@@ -1030,7 +1030,7 @@ Welche Voraussetzungen verlangt der Satz von Picard-Lindelöf für lokale Existe
 > Die Lipschitz-Bedingung betrifft die Zustandsvariable.
 
 ### Existenz und Eindeutigkeit
-Was garantiert bloße Stetigkeit von $f(t,x)$ im Allgemeinen?
+Was garantiert für das Anfangswertproblem $x'=f(t,x)$, $x(t_0)=x_0$ die bloße Stetigkeit der rechten Seite $f$ im Allgemeinen?
 
 - [x] Lokale Existenz, aber nicht notwendig Eindeutigkeit.
 - [ ] Immer globale Eindeutigkeit.
@@ -1080,7 +1080,7 @@ Was ist eine Lipschitz-Konstante für $f(x)=3x$?
 > Es gilt $|f(x)-f(y)|=3|x-y|$.
 
 ### Existenz und Eindeutigkeit
-Was bedeutet „$f$ ist lokal Lipschitz in $x$“?
+Was bedeutet für die rechte Seite $f(t,x)$ einer Differentialgleichung $x'=f(t,x)$ die Aussage „$f$ ist lokal Lipschitz in $x$“?
 
 - [ ] Die Funktion ist global beschränkt.
 - [x] In einer Umgebung jedes Punkts gilt eine Lipschitz-Abschätzung in $x$.
@@ -1100,7 +1100,7 @@ Wozu dient das Lemma von Gronwall?
 > Eine Integralungleichung wird in eine Exponentialabschätzung überführt.
 
 ### Existenz und Eindeutigkeit
-Warum folgt aus $|x(t)-y(t)|\le0$ die Eindeutigkeit?
+Für zwei Lösungen $x,y$ desselben Anfangswertproblems gelte $|x(t)-y(t)|\le0$. Warum folgt daraus die Eindeutigkeit?
 
 - [ ] Weil $y$ nicht differenzierbar ist.
 - [ ] Weil die Lösungen periodisch sind.
@@ -1120,7 +1120,7 @@ Wie lautet die Integralgleichung zum AWP $x'=f(t,x)$, $x(t_0)=x_0$?
 > Der Hauptsatz der Integralrechnung liefert die äquivalente Form.
 
 ### Existenz und Eindeutigkeit
-Was ist die nullte Picard-Iterierte?
+Was ist beim Anfangswertproblem $x'=f(t,x)$, $x(t_0)=x_0$ die nullte Picard-Iterierte?
 
 - [x] $x^{(0)}(t)=x_0$
 - [ ] $x^{(0)}(t)=0$ immer
@@ -1150,7 +1150,7 @@ Was ist die zweite Picard-Iterierte für $x'=x$, $x(0)=1$?
 > Integration von $1+s$ liefert $t+t^2/2$.
 
 ### Existenz und Eindeutigkeit
-Warum erscheint bei Picard-Iteration eine Fakultät?
+Warum erscheint in der Fehlerabschätzung der Picard-Iteration für $x'=f(t,x)$ eine Fakultät?
 
 - [ ] Weil der Anfangswert null ist.
 - [ ] Weil jede Lösung periodisch ist.
@@ -1160,7 +1160,7 @@ Warum erscheint bei Picard-Iteration eine Fakultät?
 > $\int_0^t s^n\,ds=t^{n+1}/(n+1)$.
 
 ### Existenz und Eindeutigkeit
-Was zeigt die Konvergenz der Picard-Iterierten?
+Was zeigt die Konvergenz der Picard-Iterierten für das Anfangswertproblem $x'=f(t,x)$, $x(t_0)=x_0$?
 
 - [x] Sie liefert eine Lösung der Integralgleichung.
 - [ ] Sie verhindert Fortsetzung.
@@ -1170,7 +1170,7 @@ Was zeigt die Konvergenz der Picard-Iterierten?
 > Der Grenzübergang in der Integralgleichung ergibt eine Lösung.
 
 ### Existenz und Eindeutigkeit
-Welche Aussage ist falsch?
+Welche Aussage über die Lösungen von $x'=f(t,x)$ mit stetigem, lokal Lipschitz-stetigem $f$ ist falsch?
 
 - [x] Lokale Lipschitz-Stetigkeit erzwingt globale Existenz.
 - [ ] Stetigkeit ist eine Voraussetzung des lokalen Satzes.
@@ -1240,7 +1240,7 @@ Was bedeutet stetige Abhängigkeit von Anfangswerten?
 > Eine Gronwall-Abschätzung kontrolliert die Differenz.
 
 ### Existenz und Eindeutigkeit
-Welche Schranke folgt bei Lipschitz-Konstante $L$ für zwei Lösungen?
+Die rechte Seite von $x'=f(t,x)$ sei Lipschitz-stetig in $x$ mit Konstante $L$. Welche Schranke gilt dann für zwei Lösungen $x,y$?
 
 - [ ] $|x(t)-y(t)|\ge e^{L|t-t_0|}$
 - [x] $|x(t)-y(t)|\le e^{L|t-t_0|}|x_0-y_0|$
@@ -1310,7 +1310,7 @@ Ist $f(t,x)=t^2+x$ auf $[-2,2]\times\mathbb R$ global Lipschitz in $x$?
 > Der Term $t^2$ fällt bei der Differenz in $x$ weg.
 
 ### Existenz und Eindeutigkeit
-Was passiert mit Eindeutigkeit, wenn $f$ nur stetig ist?
+Was kann mit der Eindeutigkeit beim Anfangswertproblem $x'=f(t,x)$, $x(t_0)=x_0$ passieren, wenn $f$ nur stetig ist?
 
 - [x] Sie kann gelten, muss aber nicht.
 - [ ] Es gibt keine Lösungen.
@@ -1360,7 +1360,7 @@ Für $x'=-5x$, $x(0)=\lambda$ mit $\lambda>1$: Was ist die Lösung?
 > Die Lösung hängt linear vom Anfangsparameter $\lambda$ ab.
 
 ### Lösungsabschätzungen
-Für $x'=x$ mit Anfangswerten $x(0)=1$ und $y(0)=2$: Wie groß ist $|x(1)-y(1)|$?
+Zwei Lösungen $x,y$ von $z'=z$ erfüllen $x(0)=1$ und $y(0)=2$. Wie groß ist $|x(1)-y(1)|$?
 
 - [ ] $1$
 - [x] $e^1$
@@ -1520,7 +1520,7 @@ Ist $f(x)=x^{2/3}$ in einer Umgebung von $x=0$ Lipschitz-stetig?
 > Differenzenquotienten $|f(x)-f(0)|/|x|=|x|^{-1/3}$ sind nicht beschränkt.
 
 ### Lipschitz-Bedingungen
-Welche Voraussetzung sichert nach dem Skript (Lemma 3.8) auf einem kompakten Quader $Q$ eine Lipschitz-Bedingung?
+Welche Voraussetzung an die rechte Seite $f(t,x)$ sichert nach dem Skript (Lemma 3.8) auf einem kompakten Quader $Q$ eine Lipschitz-Bedingung in $x$?
 
 - [x] Stetige partielle Ableitungen von $f$ nach $x_1,\dots,x_n$
 - [ ] Nur Stetigkeit von $f$
@@ -1560,7 +1560,7 @@ Warum ist $f(t,x)=t\,x$ auf $\mathbb R\times\mathbb R$ nicht global Lipschitz in
 > Die Lipschitz-Konstante darf nicht von $t$ abhängen. Auf beschränkten Zeitintervallen klappt es.
 
 ### Lipschitz-Bedingungen
-Hängt es von der gewählten Norm im $\mathbb R^n$ ab, ob $f$ eine Lipschitz-Bedingung erfüllt?
+Hängt es von der gewählten Norm im $\mathbb R^n$ ab, ob die rechte Seite $f(t,x)$ eines Systems $x'=f(t,x)$ eine Lipschitz-Bedingung in $x$ erfüllt?
 
 - [x] Nein, nur der Wert der Konstanten ändert sich.
 - [ ] Ja, man braucht immer die euklidische Norm.
@@ -1580,7 +1580,7 @@ Welche Funktion ist auf $[-1,1]\times[-1,1]$ Lipschitz in $x$, obwohl sie in $t$
 > Für die Lipschitz-Bedingung zählt nur die Abhängigkeit von $x$; hier ist $L=1$.
 
 ### Satz von Picard-Lindelöf
-Was bedeutet die Größe $\beta/M$ in $\delta=\min(\alpha,\beta/M)$ anschaulich?
+Im Satz von Picard-Lindelöf für $x'=f(t,x)$, $x(t_0)=x_0$ ist $\delta=\min(\alpha,\beta/M)$ mit $M=\max_Q|f|$. Was bedeutet die Größe $\beta/M$ anschaulich?
 
 - [ ] Den Anfangswert
 - [ ] Die Lipschitz-Konstante
@@ -1590,7 +1590,7 @@ Was bedeutet die Größe $\beta/M$ in $\delta=\min(\alpha,\beta/M)$ anschaulich?
 > Mit Steigung $\le M$ ändert sich $x$ in der Zeit $\delta$ um höchstens $M\delta\le\beta$.
 
 ### Satz von Picard-Lindelöf
-Für $f(t,x)=1+x^2$ auf $Q=\{|t|\le1,\ |x|\le1\}$: Welches $\delta$ liefert Picard-Lindelöf?
+Für das Anfangswertproblem $x'=f(t,x)$, $x(0)=0$ mit $f(t,x)=1+x^2$ auf $Q=\{|t|\le1,\ |x|\le1\}$: Welches $\delta$ liefert Picard-Lindelöf?
 
 - [ ] $\delta=1$
 - [ ] $\delta=2$
@@ -1600,7 +1600,7 @@ Für $f(t,x)=1+x^2$ auf $Q=\{|t|\le1,\ |x|\le1\}$: Welches $\delta$ liefert Pica
 > $M=\max|f|=2$, also $\delta=\min(1,1/2)$.
 
 ### Satz von Picard-Lindelöf
-Für $f(t,x)=t$ auf $Q=\{|t|\le1,\ |x|\le3\}$: Welches $\delta$ liefert Picard-Lindelöf?
+Für das Anfangswertproblem $x'=f(t,x)$, $x(0)=0$ mit $f(t,x)=t$ auf $Q=\{|t|\le1,\ |x|\le3\}$: Welches $\delta$ liefert Picard-Lindelöf?
 
 - [ ] $\delta=3$
 - [ ] $\delta=0$
@@ -1670,7 +1670,7 @@ Aus $0\le r(t)\le2+\int_0^t r(s)\,ds$ für $t\ge0$ folgt:
 > Gronwall mit $\varepsilon=2$, $\delta=1$.
 
 ### Lemma von Gronwall
-Wie folgt die Eindeutigkeit aus der Abschätzung $|x(t)-y(t)|\le|x_0-y_0|e^{L|t-t_0|}$?
+Zwei Lösungen $x,y$ von $x'=f(t,x)$ mit $x(t_0)=x_0$, $y(t_0)=y_0$ erfüllen $|x(t)-y(t)|\le|x_0-y_0|e^{L|t-t_0|}$. Wie folgt daraus die Eindeutigkeit?
 
 - [ ] Gar nicht – man braucht zusätzlich Linearität.
 - [ ] Durch eine Taylor-Entwicklung
@@ -1770,7 +1770,7 @@ Was gilt für $x'=|x|$?
 > $|x|$ ist global Lipschitz mit $L=1$ – ein Knick schadet nicht.
 
 ### Eindeutigkeit und Gegenbeispiele
-$f$ ist stetig, aber nicht Lipschitz. Folgt daraus, dass das Anfangswertproblem mehrere Lösungen hat?
+Die rechte Seite $f$ des Anfangswertproblems $x'=f(t,x)$, $x(t_0)=x_0$ ist stetig, aber nicht Lipschitz-stetig. Folgt daraus, dass das Anfangswertproblem mehrere Lösungen hat?
 
 - [ ] Ja, immer.
 - [x] Nein, die Lipschitz-Bedingung ist hinreichend, aber nicht notwendig für Eindeutigkeit.
@@ -1820,7 +1820,7 @@ Welches maximale Existenzintervall hat $x'=x^3$, $x(0)=1$?
 > $x^{-2}=1-2t$, also $x=(1-2t)^{-1/2}$.
 
 ### Maximale Fortsetzung
-Ist das maximale Existenzintervall einer Lösung offen oder abgeschlossen?
+Ist das maximale Existenzintervall einer Lösung von $x'=f(t,x)$ mit stetigem $f$ auf einem offenen Gebiet offen oder abgeschlossen?
 
 - [ ] Abgeschlossen
 - [ ] Immer ganz $\mathbb R$
@@ -1830,7 +1830,7 @@ Ist das maximale Existenzintervall einer Lösung offen oder abgeschlossen?
 > Läge der Endpunkt noch im Definitionsbereich, liefert Picard-Lindelöf dort eine Fortsetzung.
 
 ### Maximale Fortsetzung
-Was passiert, wenn die Lösung nur bis $t_+<\infty$ existiert und $t\to t_+$?
+Eine maximale Lösung von $x'=f(t,x)$ mit stetigem $f\colon\mathbb R\times\mathbb R^n\to\mathbb R^n$ existiert nur bis $t_+<\infty$. Was passiert für $t\to t_+$?
 
 - [ ] Die Lösung wird periodisch.
 - [ ] Nichts Besonderes, man hat nur aufgehört zu rechnen.
@@ -1970,7 +1970,7 @@ Für $x'=\mu x^2$, $x(0)=1$, $\mu>0$: Wie hängt der Explosionszeitpunkt von $\m
 > $x=1/(1-\mu t)$.
 
 ### Parameterabhängige Probleme
-Welche Unabhängigkeit verlangt Satz 3.17 von der Lipschitz-Konstanten $L$?
+Welche Unabhängigkeit verlangt Satz 3.17 für parameterabhängige Probleme $x'=f(t,x,\mu)$ von der Lipschitz-Konstanten $L$?
 
 - [x] $L$ darf weder von $x,y,t$ noch vom Parameter $\mu$ abhängen.
 - [ ] Eine Lipschitz-Bedingung ist nicht nötig.
@@ -1992,7 +1992,7 @@ Welche Form hat ein lineares inhomogenes System?
 > Die Zustandsvariable tritt linear auf.
 
 ### Struktur linearer Systeme
-Welche Aussage gilt bei stetigen $A,b$ auf einem Intervall $I$?
+Welche Aussage gilt für das System $x'=A(t)x+b(t)$ bei stetigen $A,b$ auf einem Intervall $I$?
 
 - [ ] Nur lokale Lösungen sind möglich.
 - [ ] Eindeutigkeit gilt nur für diagonale Matrizen.
@@ -2012,7 +2012,7 @@ Sind $u,v$ Lösungen von $x'=A(t)x$, so ist für beliebige solche Lösungen auch
 > Das Superpositionsprinzip gilt für homogene lineare Systeme.
 
 ### Struktur linearer Systeme
-Was ist eine Fundamentalmatrix?
+Was ist eine Fundamentalmatrix des homogenen linearen Systems $x'=A(t)x$?
 
 - [x] Eine Matrix, deren Spalten ein Fundamentalsystem von Lösungen bilden.
 - [ ] Die Nullmatrix.
@@ -2022,7 +2022,7 @@ Was ist eine Fundamentalmatrix?
 > Die Spalten müssen linear unabhängige Lösungen sein.
 
 ### Struktur linearer Systeme
-Welche Bedingung kennzeichnet eine Fundamentalmatrix $X(t)$?
+Welche Bedingung kennzeichnet eine Fundamentalmatrix $X(t)$ des Systems $x'=A(t)x$?
 
 - [x] $\det X(t)\ne0$ für alle $t$ im Intervall.
 - [ ] $X'(t)=0$ immer.
@@ -2032,7 +2032,7 @@ Welche Bedingung kennzeichnet eine Fundamentalmatrix $X(t)$?
 > Eine Fundamentalmatrix ist an jedem Zeitpunkt invertierbar.
 
 ### Struktur linearer Systeme
-Wie erhält man aus einer Fundamentalmatrix alle homogenen Lösungen?
+Wie erhält man aus einer Fundamentalmatrix $X(t)$ alle Lösungen des homogenen Systems $x'=A(t)x$?
 
 - [ ] $x(t)=X(t)^{-1}$ ausschließlich.
 - [x] $x(t)=X(t)c$ mit konstantem Vektor $c$.
@@ -2062,7 +2062,7 @@ Welche Aussage gilt für zwei Fundamentalmatrizen $X,Y$ desselben Systems?
 > Jede Spalte von $Y$ ist eine feste Linearkombination der Spalten von $X$.
 
 ### Struktur linearer Systeme
-Was ist eine normierte Fundamentalmatrix am Zeitpunkt $t_0$?
+Was ist eine normierte Fundamentalmatrix des Systems $x'=A(t)x$ am Zeitpunkt $t_0$?
 
 - [x] Eine Fundamentalmatrix mit $X(t_0)=I$.
 - [ ] Eine Matrix mit $X(t_0)=0$.
@@ -2082,7 +2082,7 @@ Was ist die Lösung von $x'=0$ mit $x(0)=x_0$?
 > Jede Komponente hat verschwindende Ableitung.
 
 ### Struktur linearer Systeme
-Welche Gleichung erfüllt die Fundamentalmatrix?
+Welche Gleichung erfüllt eine Fundamentalmatrix $X(t)$ des Systems $x'=A(t)x$?
 
 - [x] $X'(t)=A(t)X(t)$
 - [ ] $X'(t)=A(t)+X(t)$
@@ -2092,7 +2092,7 @@ Welche Gleichung erfüllt die Fundamentalmatrix?
 > Jede Spalte löst $x'=A(t)x$.
 
 ### Struktur linearer Systeme
-Was folgt, wenn zwei Lösungen eines linearen Systems zur selben Zeit übereinstimmen?
+Was folgt, wenn zwei Lösungen eines linearen Systems $x'=A(t)x+b(t)$ zur selben Zeit übereinstimmen?
 
 - [ ] Sie sind beide null.
 - [ ] Sie müssen periodisch sein.
@@ -2122,7 +2122,7 @@ Was gilt für die Differenz zweier Lösungen von $x'=Ax+b$?
 > Die inhomogenen Terme heben sich bei der Subtraktion auf.
 
 ### Struktur linearer Systeme
-Was gilt für eine partikuläre Lösung $x_p$ eines inhomogenen Systems?
+$x_p$ sei eine partikuläre Lösung von $x'=A(t)x+b(t)$ und $X$ eine Fundamentalmatrix von $x'=A(t)x$. Was gilt?
 
 - [ ] Alle Lösungen sind $x_p X$.
 - [ ] Alle Lösungen sind $Xc$ ohne Zusatz.
@@ -2132,7 +2132,7 @@ Was gilt für eine partikuläre Lösung $x_p$ eines inhomogenen Systems?
 > Allgemeine Lösung = partikuläre + homogene Lösung.
 
 ### Struktur linearer Systeme
-Welche Formel ist die Variation der Konstanten bei $X(t_0)=I$?
+Wie lautet die Formel der Variation der Konstanten für $x'=A(t)x+b(t)$, $x(t_0)=x_0$, wenn $X$ eine Fundamentalmatrix mit $X(t_0)=I$ ist?
 
 - [ ] $x(t)=\int_{t_0}^t b(s)\,ds$
 - [x] $x(t)=X(t)\left(x_0+\int_{t_0}^t X(s)^{-1}b(s)\,ds\right)$
@@ -2142,7 +2142,7 @@ Welche Formel ist die Variation der Konstanten bei $X(t_0)=I$?
 > Setze $x=Xc(t)$ und löse $c'=X^{-1}b$.
 
 ### Struktur linearer Systeme
-Was ist die Definition von $e^{tA}$?
+Wie ist das Matrixexponential $e^{tA}$ für eine quadratische Matrix $A$ definiert?
 
 - [ ] $I+tA$ für jedes $A$
 - [ ] $e^t A$
@@ -2152,7 +2152,7 @@ Was ist die Definition von $e^{tA}$?
 > Das Matrixexponential ist durch eine absolut konvergente Potenzreihe definiert.
 
 ### Struktur linearer Systeme
-Was gilt für $A=0$?
+Was gilt für das Matrixexponential $e^{tA}$ im Fall $A=0$?
 
 - [ ] $e^{tA}=0$
 - [x] $e^{tA}=I$
@@ -2162,7 +2162,7 @@ Was gilt für $A=0$?
 > Alle Potenzen mit positivem Exponenten verschwinden.
 
 ### Struktur linearer Systeme
-Was gilt für konstantes $A$?
+Was gilt für die Ableitung des Matrixexponentials $e^{tA}$ bei konstanter Matrix $A$?
 
 - [ ] $\frac{d}{dt}e^{tA}=e^{tA}$
 - [x] $\frac{d}{dt}e^{tA}=Ae^{tA}$
@@ -2202,7 +2202,7 @@ Ist allgemein $e^{A+B}=e^Ae^B$?
 > Die Produktformel gilt beispielsweise bei $AB=BA$.
 
 ### Struktur linearer Systeme
-Welche Aussage ist für $A=\operatorname{diag}(1,-2)$ richtig?
+Welche Aussage über das Matrixexponential ist für $A=\operatorname{diag}(1,-2)$ richtig?
 
 - [x] $e^{tA}=\operatorname{diag}(e^t,e^{-2t})$
 - [ ] $e^{tA}=A$
@@ -2232,7 +2232,7 @@ Welche Beziehung gilt für einen Eigenvektor $v$ mit $Av=\lambda v$?
 > Jede Potenz erfüllt $A^kv=\lambda^kv$.
 
 ### Struktur linearer Systeme
-Was ist bei $A=\operatorname{diag}(-1,-3)$ das Langzeitverhalten aller Lösungen?
+Was ist das Langzeitverhalten aller Lösungen von $x'=Ax$ mit $A=\operatorname{diag}(-1,-3)$?
 
 - [ ] Alle Lösungen sind periodisch.
 - [ ] Alle Lösungen sind konstant.
@@ -2302,7 +2302,7 @@ Was gilt für eine Matrix mit zwei verschiedenen reellen Eigenwerten in Dimensio
 > Eigenvektoren zu verschiedenen Eigenwerten sind linear unabhängig.
 
 ### Struktur linearer Systeme
-Welche Zeitfaktoren treten bei einem Jordanblock der Größe zwei zum Eigenwert $\lambda$ auf?
+Welche Zeitfaktoren treten in den Lösungen von $x'=Ax$ auf, wenn $A$ einen Jordanblock der Größe zwei zum Eigenwert $\lambda$ hat?
 
 - [ ] $1$ und $t^2$ immer
 - [ ] $e^{\lambda t}$ und $e^{2\lambda t}$
@@ -2392,7 +2392,7 @@ Was ist das Gleichgewicht von $x'=Ax+b$ bei invertierbarem $A$?
 > Im Gleichgewicht gilt $Ax_*+b=0$.
 
 ### Struktur linearer Systeme
-Welche Formel gilt für konstantes $A$ und konstantes $b$ mit $x(0)=0$?
+Welche Formel gilt für die Lösung von $x'=Ax+b$ mit konstanter Matrix $A$, konstantem Vektor $b$ und $x(0)=0$?
 
 - [ ] $x(t)=e^{tA}b$
 - [ ] $x(t)=A^{-1}b$ immer
@@ -2432,7 +2432,7 @@ Für $x_1'=x_1$, $x_2'=-x_2$ mit $x_1(0)=x_2(0)=1$: Was gilt für $t>0$?
 > Lösungen: $x_1=c_1e^t$, $x_2=c_2e^{-t}$.
 
 ### Struktur linearer Systeme
-Welche Rolle haben Eigenwerte bei konstanten linearen Systemen?
+Welche Rolle spielen die Eigenwerte von $A$ bei konstanten linearen Systemen $x'=Ax$?
 
 - [x] Sie bestimmen exponentielle Zeitfaktoren.
 - [ ] Sie ersetzen die rechte Seite $b(t)$.
@@ -2442,7 +2442,7 @@ Welche Rolle haben Eigenwerte bei konstanten linearen Systemen?
 > Für Eigenvektoren gilt $e^{tA}v=e^{\lambda t}v$.
 
 ### Struktur linearer Systeme
-Welche Aussage gilt für $A(t)$ zeitabhängig?
+Welche Aussage gilt für das System $x'=A(t)x$, wenn die Matrix $A(t)$ zeitabhängig ist?
 
 - [ ] Es gibt nur die Nulllösung.
 - [x] Im Allgemeinen ist $X(t)$ nicht einfach $e^{\int_{t_0}^t A(s)ds}$.
@@ -2602,7 +2602,7 @@ Für $x'=A(t)x$ gilt $\operatorname{tr}A(t)=2t$ und $W(0)=1$. Was ist $W(t)$?
 > $\int_0^t 2s\,ds=t^2$.
 
 ### Wronski-Determinante
-Die Wronski-Determinante zweier Lösungen ist bei $t=0$ gleich null. Was folgt?
+Die Wronski-Determinante zweier Lösungen eines Systems $x'=A(t)x$ im $\mathbb R^2$ ist bei $t=0$ gleich null. Was folgt?
 
 - [ ] Die Lösungen sind nur bei $t=0$ abhängig.
 - [ ] Später können sie unabhängig werden.
@@ -2762,7 +2762,7 @@ Für $A=\begin{pmatrix}0&-2\\2&0\end{pmatrix}$: Welche Zeitfunktionen treten in 
 > Die Eigenwerte sind $\pm2i$; Real- und Imaginärteil von $e^{2it}v$ ergeben reelle Lösungen.
 
 ### Eigenwerte und Fundamentalsysteme
-Warum darf man bei reellem $A$ Real- und Imaginärteil einer komplexen Lösung $e^{\lambda t}v$ verwenden?
+Warum darf man für $x'=Ax$ mit reeller Matrix $A$ Real- und Imaginärteil einer komplexen Lösung $e^{\lambda t}v$ verwenden?
 
 - [x] Weil sie selbst reelle Lösungen von $x'=Ax$ sind
 - [ ] Weil die Eigenwerte immer reell sind
@@ -2782,7 +2782,7 @@ Kann ein reelles $2\times2$-System genau einen nichtreellen Eigenwert haben?
 > Das charakteristische Polynom hat reelle Koeffizienten.
 
 ### Eigenwerte und Fundamentalsysteme
-Für eine $2\times2$-Matrix mit Eigenwerten $\lambda_1,\lambda_2$ gilt:
+Für eine $2\times2$-Matrix $A$ mit Eigenwerten $\lambda_1,\lambda_2$ gilt:
 
 - [ ] $\lambda_1=\lambda_2$ immer
 - [ ] $\lambda_1+\lambda_2=\det A$
@@ -2792,7 +2792,7 @@ Für eine $2\times2$-Matrix mit Eigenwerten $\lambda_1,\lambda_2$ gilt:
 > Vergleich mit $\lambda^2-\operatorname{tr}A\,\lambda+\det A$.
 
 ### Eigenwerte und Fundamentalsysteme
-$v$ ist Eigenvektor zum Eigenwert $\lambda$. Welche Lösung hat $x'=Ax$ mit $x(0)=3v$?
+$v$ ist Eigenvektor der Matrix $A$ zum Eigenwert $\lambda$. Welche Lösung hat $x'=Ax$ mit $x(0)=3v$?
 
 - [x] $x(t)=3e^{\lambda t}v$
 - [ ] $x(t)=e^{\lambda t}(v+3)$
@@ -2802,7 +2802,7 @@ $v$ ist Eigenvektor zum Eigenwert $\lambda$. Welche Lösung hat $x'=Ax$ mit $x(0
 > Linearität und $e^{tA}v=e^{\lambda t}v$.
 
 ### Eigenwerte und Fundamentalsysteme
-$v_1,v_2$ sind Eigenvektoren zu $\lambda_1,\lambda_2$. Welche Lösung hat $x'=Ax$ mit $x(0)=v_1+v_2$?
+$v_1,v_2$ sind Eigenvektoren der Matrix $A$ zu $\lambda_1,\lambda_2$. Welche Lösung hat $x'=Ax$ mit $x(0)=v_1+v_2$?
 
 - [x] $e^{\lambda_1t}v_1+e^{\lambda_2t}v_2$
 - [ ] $e^{(\lambda_1+\lambda_2)t}(v_1+v_2)$
@@ -2832,7 +2832,7 @@ Welche algebraische und geometrische Vielfachheit hat der Eigenwert $2$ von $\be
 > Es gibt nur einen linear unabhängigen Eigenvektor $(1,0)^T$; die Matrix ist nicht diagonalisierbar.
 
 ### Hauptvektoren
-Wie ist ein Hauptvektor zweiter Stufe $v_2$ zum Eigenwert $\lambda$ definiert?
+Wie ist ein Hauptvektor zweiter Stufe $v_2$ einer Matrix $A$ zum Eigenwert $\lambda$ definiert?
 
 - [x] $(A-\lambda E)v_2=v_1$ mit einem Eigenvektor $v_1$
 - [ ] $(A-\lambda E)v_2=0$
@@ -2842,7 +2842,7 @@ Wie ist ein Hauptvektor zweiter Stufe $v_2$ zum Eigenwert $\lambda$ definiert?
 > Zweimal angewandt: $(A-\lambda E)^2v_2=0$.
 
 ### Hauptvektoren
-Mit Eigenvektor $v_1$ und Hauptvektor $v_2$ zu $\lambda$: Welche zweite Lösung ergänzt $e^{\lambda t}v_1$ zu einem Fundamentalsystem?
+Mit Eigenvektor $v_1$ und Hauptvektor $v_2$ der Matrix $A$ zum Eigenwert $\lambda$: Welche zweite Lösung ergänzt $e^{\lambda t}v_1$ zu einem Fundamentalsystem von $x'=Ax$?
 
 - [ ] $e^{2\lambda t}v_2$
 - [ ] $e^{\lambda t}v_2$
@@ -2882,7 +2882,7 @@ Für $A=\operatorname{diag}(0,-1)$: Wie verhalten sich die Lösungen von $x'=Ax$
 > Die erste Komponente bleibt konstant, die zweite klingt ab.
 
 ### Langzeitverhalten
-Die Eigenwerte sind $1$ und $-1$. Welche Lösungen von $x'=Ax$ bleiben für $t\to\infty$ beschränkt?
+Die Eigenwerte der $2\times2$-Matrix $A$ sind $1$ und $-1$. Welche Lösungen von $x'=Ax$ bleiben für $t\to\infty$ beschränkt?
 
 - [ ] Alle
 - [x] Nur die mit Anfangswert auf der Eigengeraden zum Eigenwert $-1$
@@ -2892,7 +2892,7 @@ Die Eigenwerte sind $1$ und $-1$. Welche Lösungen von $x'=Ax$ bleiben für $t\t
 > Jeder Anteil in Richtung des Eigenvektors zu $1$ wächst wie $e^{t}$ (Sattel).
 
 ### Langzeitverhalten
-Was beschreiben Eigenwerte $\alpha\pm i\beta$ mit $\alpha<0$, $\beta\neq0$?
+Was beschreiben Eigenwerte $\alpha\pm i\beta$ mit $\alpha<0$, $\beta\neq0$ einer reellen $2\times2$-Matrix $A$ für die Lösungen von $x'=Ax$?
 
 - [ ] Exponentielles Wachstum ohne Schwingung
 - [x] Gedämpfte Schwingungen, die gegen null gehen

@@ -149,7 +149,7 @@ Was passiert mit räumlich konstanten Lösungen von $u_t=\Delta u$ ohne Quellen?
 > Für konstantes $u$ gilt $\Delta u=0$, also $u_t=0$.
 
 ### Wellen
-Welche Größe ist $u_{tt}$ bei der schwingenden Saite?
+Welche Größe ist $u_{tt}$ bei der schwingenden Saite, wenn $u(t,x)$ die Auslenkung bezeichnet?
 
 - [x] die vertikale Beschleunigung
 - [ ] die vertikale Geschwindigkeit
@@ -339,7 +339,7 @@ Für $u(t,x)=\sin(2x-2t)$: Welche Gleichung gilt identisch für alle $(t,x)$?
 > $u_{tt}=-4u$ und $u_{xx}=-4u$.
 
 ### Wärme
-Ein Stab habe $u(x)=2x+2$ und $k=2$. Wie groß ist $q=-ku_x$? 
+Ein Stab habe das Temperaturprofil $u(x)=2x+2$ und den Wärmeleitkoeffizienten $k=2$. Wie groß ist der Wärmefluss $q=-ku_x$?
 
 - [ ] $-8$
 - [x] $-4$
@@ -359,7 +359,7 @@ Ist $u(x,y)=2xy+3$ harmonisch?
 > Beide reinen zweiten Ableitungen verschwinden.
 
 ### Wärme
-Für $u(t,x)=2t+x^2$ und $k=1$: Was ist $f=u_t-u_{xx}$?
+Für $u(t,x)=2t+x^2$ in der Wärmeleitungsgleichung $u_t-k\,u_{xx}=f$ mit $k=1$: Was ist die Quelle $f$?
 
 - [ ] $-2$
 - [ ] $4$
@@ -389,7 +389,7 @@ Für $u(x,y)=2x^2-2y^2$: Wie groß ist $\Delta u$?
 > Die beiden zweiten Ableitungen heben sich auf.
 
 ### Wellen
-Bei $T_0=4$ und $\rho=1$: Wie groß ist die Wellengeschwindigkeit? 
+Eine Saite hat die Spannung $T_0=4$ und die Massendichte $\rho=1$. Wie groß ist die Wellengeschwindigkeit $c$?
 
 - [x] $2$
 - [ ] $3$
@@ -819,7 +819,7 @@ Was unterscheidet die Navier-Stokes-Gleichung von der Euler-Gleichung?
 > Die Euler-Gleichung beschreibt reibungsfreie Fluide.
 
 ### Strömung
-Was bewirkt der Term $\frac1\rho\operatorname{grad}p$?
+Was bewirkt der Term $\frac1\rho\operatorname{grad}p$ in der Euler- bzw. Navier-Stokes-Gleichung?
 
 - [x] Eine Beschleunigung durch Druckunterschiede
 - [ ] Die Reibung
@@ -1131,7 +1131,7 @@ Warum entsteht beim Separationsansatz eine Konstante?
 > Beide voneinander unabhängigen Seiten müssen konstant sein.
 
 ### Separation
-Welche Ortsgleichung ergibt $u_t=u_{{xx}}$ mit $u=XY$?
+Welche Ortsgleichung ergibt $u_t=u_{{xx}}$ mit dem Ansatz $u(t,x)=X(t)Y(x)$?
 
 - [ ] $Y^{\prime\prime}=\lambda X$
 - [ ] $Y=\lambda t$
@@ -1141,7 +1141,7 @@ Welche Ortsgleichung ergibt $u_t=u_{{xx}}$ mit $u=XY$?
 > Einsetzen ergibt $X^{\prime}/X=Y^{\prime\prime}/Y=\lambda$.
 
 ### Separation
-Welche Zeitgleichung ergibt $u_t=u_{{xx}}$ mit $u=XY$?
+Welche Zeitgleichung ergibt $u_t=u_{{xx}}$ mit dem Ansatz $u(t,x)=X(t)Y(x)$?
 
 - [ ] $X^{\prime\prime}=\lambda X$
 - [ ] $X^{\prime}=\lambda Y$
@@ -1171,7 +1171,7 @@ Welcher Separationswert gehört zu $\sin(n\pi x)$ bei $Y^{\prime\prime}=\lambda 
 > Zweimaliges Ableiten liefert $Y^{\prime\prime}=-n^2\pi^2Y$.
 
 ### Separation
-Wie verhält sich der $n$-te Sinusmodus der Wärmegleichung mit der Zeit?
+Wie verhält sich der $n$-te Sinusmodus $\sin(n\pi x)$ der Wärmeleitungsgleichung $u_t=u_{xx}$ auf $(0,1)$ mit Nullrändern mit der Zeit?
 
 - [ ] Er schwingt wie $\cos(nt)$.
 - [ ] Er bleibt stets konstant.
@@ -1181,7 +1181,7 @@ Wie verhält sich der $n$-te Sinusmodus der Wärmegleichung mit der Zeit?
 > Die Zeitgleichung ist $X^{\prime}=-n^2\pi^2X$.
 
 ### Separation
-Was geschieht bei höherer Modenzahl $n$ für die Wärmegleichung?
+Was geschieht bei höherer Modenzahl $n$ für die Wärmeleitungsgleichung $u_t=u_{xx}$ auf $(0,1)$ mit Nullrändern?
 
 - [ ] Die Moden werden zeitlich periodisch.
 - [ ] Höhere Moden wachsen schneller.
@@ -1211,7 +1211,7 @@ Welchen Vorteil hat die Fourier’sche Methode bei allgemeinen Anfangsdaten?
 > Die Fourier-Koeffizienten bestimmen die Beiträge der Moden.
 
 ### Separation
-Welche Zeitgleichung entsteht bei $u_{tt}=u_{{xx}}$ aus $u=XY$?
+Welche Zeitgleichung entsteht bei $u_{tt}=u_{{xx}}$ aus dem Ansatz $u(t,x)=X(t)Y(x)$?
 
 - [ ] $X^{\prime}=\lambda X$
 - [x] $X^{\prime\prime}=\lambda X$
@@ -1331,7 +1331,7 @@ Welche Funktion erfüllt auf ganz $\mathbb R$ $X^{\prime\prime}=-4X$?
 > $(\cos 2t)''=-4\cos 2t$.
 
 ### Anfangswerte
-Für $u(0,x)=2\sin(2\pi x)$: Welcher Sinusmodus ist vorgegeben?
+Bei $u_t=u_{xx}$ auf $(0,1)$ mit Nullrändern sei $u(0,x)=2\sin(2\pi x)$. Welcher Sinusmodus ist vorgegeben?
 
 - [x] der zweite Modus
 - [ ] der dritte Modus
@@ -1371,7 +1371,7 @@ Für $u(t,x)=e^{-2t}\sin x$: Was ist $u(0,x)$?
 > Bei $t=0$ ist der Exponentialfaktor eins.
 
 ### Randwerte
-Für $u(x)=2x+2$: Welche Dirichlet-Werte gelten auf $(0,1)$?
+Für $u(x)=2x+2$: Welche Dirichlet-Werte hat $u$ an den Rändern des Intervalls $(0,1)$?
 
 - [ ] $u(0)=2,\ u(1)=2$
 - [ ] $u(0)=0,\ u(1)=2$
@@ -1611,7 +1611,7 @@ Welche Zeitgleichung entsteht aus $u_{tt}=c^2u_{xx}$ mit $u=X(t)Y(x)$ und $Y''=\
 > $X''Y=c^2XY''$.
 
 ### Separation
-Welche Zeitgleichung entsteht aus $u_t=u_{xx}-u$ (Wärmeverlust an die Umgebung) mit $Y''=\lambda Y$?
+Welche Zeitgleichung entsteht aus $u_t=u_{xx}-u$ (Wärmeverlust an die Umgebung) mit $u(t,x)=X(t)Y(x)$ und $Y''=\lambda Y$?
 
 - [ ] $X''=(\lambda-1)X$
 - [x] $X'=(\lambda-1)X$
@@ -1721,7 +1721,7 @@ Eine Gitarrensaite wird in der Mitte gegriffen, schwingt also nur noch auf halbe
 > Die Grundfrequenz der Mode $\sin(\pi x/L)$ ist $\pi c/L$.
 
 ### Separation
-Warum verlangt der allgemeine Separationssatz $u(t_0,x_0)\neq0$?
+Warum verlangt der allgemeine Separationssatz für $u_t=\Delta u$ mit $u(t,x)=X(t)Y(x)$ die Bedingung $u(t_0,x_0)\neq0$?
 
 - [ ] Damit die PDE linear wird
 - [x] Damit man durch $X(t_0)Y(x_0)$ teilen darf
@@ -1861,7 +1861,7 @@ Welche Anfangsfunktion lässt sich bei $u_t=u_{xx}$ auf $(0,1)$ mit Nullrändern
 > $x(1-x)$ ist kein einzelner Sinus; man braucht eine unendliche Reihe von Moden.
 
 ### Separation
-Welche Zeitgleichung entsteht bei der gedämpften Wellengleichung $u_{tt}+2u_t=u_{xx}$ mit $Y''=\lambda Y$?
+Welche Zeitgleichung entsteht bei der gedämpften Wellengleichung $u_{tt}+2u_t=u_{xx}$ mit $u(t,x)=X(t)Y(x)$ und $Y''=\lambda Y$?
 
 - [x] $X''+2X'=\lambda X$
 - [ ] $X''=\lambda X$
@@ -1961,7 +1961,7 @@ Welche Fälle für die Separationskonstante $\lambda$ untersucht man bei $Y''=\l
 > Je nach Vorzeichen hat die ODE exponentielle, affine oder trigonometrische Lösungen.
 
 ### Separation
-Warum betrachtet man bei $\sin(k\pi x)$ nur $k\ge1$?
+Warum betrachtet man bei den Eigenfunktionen $\sin(k\pi x)$ von $Y''=\lambda Y$, $Y(0)=Y(1)=0$ nur $k\ge1$?
 
 - [ ] Weil negative Zahlen verboten sind
 - [x] $k=0$ ergibt die Nullfunktion, negative $k$ liefern bis aufs Vorzeichen dieselben Funktionen.
@@ -2043,7 +2043,7 @@ Was liefert eine Orthonormalbasis zusätzlich zur Orthonormalität?
 > Vollständigkeit erlaubt eine Entwicklung in der Basis.
 
 ### Hilberträume
-Was besagt Parseval für eine Orthonormalbasis $(e_n)$?
+Was besagt die Parseval-Gleichung für eine Orthonormalbasis $(e_n)$ eines Hilbertraums $H$?
 
 - [ ] $\|f\|=\sum_n\langle f,e_n\rangle$
 - [ ] $\langle f,e_n\rangle=1$ für alle $n$
@@ -2093,7 +2093,7 @@ Für $n\ge 1$: Welcher Eigenwert gehört zu $\sin(nx)$ für $\partial_{xx}$?
 > Die zweite Ableitung ist $-n^2\sin(nx)$.
 
 ### Eigenfunktionen
-Welche Eigenfunktion gehört bei Neumann-Bedingungen zum Eigenwert null?
+Welche Eigenfunktion von $\partial_{xx}$ auf einem Intervall gehört bei homogenen Neumann-Bedingungen zum Eigenwert null?
 
 - [ ] $x$
 - [ ] $e^x$
@@ -2573,7 +2573,7 @@ Welches Vorzeichen haben die Eigenwerte von $\partial_{xx}$ mit homogenen Dirich
 > $\lambda=-(k\pi/L)^2<0$.
 
 ### Eigenfunktionen
-Welche ODE erfüllt der Koeffizient $u_k(t)=\langle\varphi_k,u(t,\cdot)\rangle$ bei $u_t=u_{xx}$ mit Dirichlet-Rand auf $(0,\pi)$?
+Bei $u_t=u_{xx}$ auf $(0,\pi)$ mit Dirichlet-Rand entwickelt man nach $\varphi_k(x)=\sqrt{2/\pi}\,\sin(kx)$. Welche ODE erfüllt der Koeffizient $u_k(t)=\langle\varphi_k,u(t,\cdot)\rangle$?
 
 - [ ] $u_k''=-k^2u_k$
 - [x] $u_k'=-k^2u_k$ mit $u_k(0)=\langle\varphi_k,f\rangle$
@@ -2593,7 +2593,7 @@ Lösung von $u_t=u_{xx}$ auf $(0,\pi)$ mit Nullrand und $u(0,x)=\sin x+\sin(2x)$
 > Jeder Koeffizient klingt mit $e^{-k^2t}$ ab.
 
 ### Eigenfunktionen
-Welche ODE erfüllen die Koeffizienten $s_k$ einer Wellengleichung $w_{tt}=\Delta w+g$ nach Entwicklung in Eigenfunktionen $\varphi_k$ zu $\lambda_k$?
+Welche ODE erfüllen die Koeffizienten $s_k$ einer Wellengleichung $w_{tt}=\Delta w+g$ nach Entwicklung in Eigenfunktionen $\varphi_k$ des Laplace-Operators zu den Eigenwerten $\lambda_k$?
 
 - [ ] $s_k=\lambda_kg_k$
 - [ ] $s_k''=g_k$
@@ -2603,7 +2603,7 @@ Welche ODE erfüllen die Koeffizienten $s_k$ einer Wellengleichung $w_{tt}=\Delt
 > Ein entkoppeltes System unendlich vieler ODEs zweiter Ordnung.
 
 ### Eigenfunktionen
-Warum konstruiert man bei inhomogenen Randdaten zuerst eine Hilfsfunktion $v$ mit denselben Randwerten?
+Warum konstruiert man bei einer PDE mit inhomogenen Randdaten zuerst eine Hilfsfunktion $v$ mit denselben Randwerten?
 
 - [ ] Damit $u=v$ gilt
 - [ ] Damit die Anfangsdaten verschwinden
@@ -2753,7 +2753,7 @@ Kann die Fouriertransformierte einer Funktion $f\in L^1(\mathbb R)$ konstant gle
 > Die Deltadistribution, deren Transformierte konstant ist, ist keine $L^1$-Funktion.
 
 ### Fourier
-Was besagt der Faltungssatz?
+Was besagt der Faltungssatz der Fouriertransformation (in der Normierung des Skripts)?
 
 - [x] $\mathcal F(f*g)=(2\pi)^{n/2}\,\mathcal Ff\cdot\mathcal Fg$
 - [ ] $\mathcal F(fg)=\mathcal Ff*\mathcal Fg$ ohne Faktor
@@ -2793,7 +2793,7 @@ Für die Wärmeleitung auf $\mathbb R$ gilt $v(t,\xi)=e^{-k\xi^2t}\widehat f(\xi
 > Deshalb glättet die Wärmeleitung.
 
 ### Fourier
-Warum fällt beim Dirichlet-Problem in der Halbebene der Term $c_2(\xi)e^{|\xi|y}$ weg?
+Beim Dirichlet-Problem $\Delta u=0$ in der Halbebene $y>0$ mit Abklingbedingung liefert die Fouriertransformation in $x$ die Lösung $c_1(\xi)e^{-|\xi|y}+c_2(\xi)e^{|\xi|y}$. Warum fällt der Term $c_2(\xi)e^{|\xi|y}$ weg?
 
 - [ ] Weil $\xi$ negativ ist
 - [x] Wegen der Abklingbedingung $|u|\to0$ für $y\to\infty$
@@ -2803,7 +2803,7 @@ Warum fällt beim Dirichlet-Problem in der Halbebene der Term $c_2(\xi)e^{|\xi|y
 > Ein exponentiell wachsender Term ist ausgeschlossen.
 
 ### Fourier
-Warum transformiert man beim Halbebenen-Problem $y>0$, $x\in\mathbb R$ bezüglich $x$ und nicht bezüglich $y$?
+Warum transformiert man beim Dirichlet-Problem $\Delta u=0$ in der Halbebene $y>0$, $x\in\mathbb R$ bezüglich $x$ und nicht bezüglich $y$?
 
 - [x] Weil $x$ über ganz $\mathbb R$ läuft, $y$ aber nur über eine Halbachse
 - [ ] Weil $y$ keine Variable ist
@@ -2973,7 +2973,7 @@ Welche Gleichung definiert $g$ als schwache Ableitung von $f$ nach $x_k$?
 > Das ist die partielle Integration ohne Randterme, als Definition gelesen.
 
 ### Schwache Ableitungen
-Warum verschwinden Testfunktionen in der Nähe des Randes?
+Warum verschwinden die Testfunktionen in der Definition schwacher Ableitungen in der Nähe des Randes?
 
 - [ ] Damit sie unstetig sind
 - [ ] Damit sie konstant sind
@@ -3023,7 +3023,7 @@ Für Hutfunktionen auf einem gleichmäßigen Gitter mit Schrittweite $h$: Was is
 > Die Steigung ist $\pm1/h$ auf zwei Teilintervallen der Länge $h$: $2\cdot h\cdot h^{-2}$.
 
 ### FEM
-Für Hutfunktionen benachbarter Knoten auf einem gleichmäßigen Gitter: Was ist $\langle u_j',u_{j+1}'\rangle$?
+Für Hutfunktionen benachbarter Knoten auf einem gleichmäßigen Gitter mit Schrittweite $h$: Was ist $\langle u_j',u_{j+1}'\rangle$?
 
 - [ ] $0$
 - [x] $-1/h$
@@ -3073,7 +3073,7 @@ Wie erhält man mit der FEM eine genauere Näherung?
 > Mit wachsendem $n$ konvergiert die Näherung gegen die Lösung.
 
 ### FEM
-Warum erfüllt der FEM-Ansatz $\sum_j\alpha_ju_j$ die Randbedingung $u(a)=u(b)=0$ automatisch?
+Warum erfüllt der FEM-Ansatz $\sum_j\alpha_ju_j$ für $-u''=f$ auf $(a,b)$ die Randbedingung $u(a)=u(b)=0$ automatisch?
 
 - [x] Weil alle Hutfunktionen $u_j$ an $a$ und $b$ verschwinden
 - [ ] Weil die $\alpha_j$ null sind
@@ -3083,7 +3083,7 @@ Warum erfüllt der FEM-Ansatz $\sum_j\alpha_ju_j$ die Randbedingung $u(a)=u(b)=0
 > Die Basisfunktionen gehören nur zu inneren Knoten.
 
 ### FEM
-Wie viele Gleichungen und Unbekannte entstehen bei $n$ inneren Knoten?
+Wie viele Gleichungen und Unbekannte entstehen bei der FEM in 1D mit Hutfunktionen und $n$ inneren Knoten?
 
 - [x] Je $n$
 - [ ] $n$ Unbekannte und $1$ Gleichung
